@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing 2026-03-30</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117; color: #e0e0e0; padding: 16px; line-height: 1.5;
+  }
+  .container { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+  h2 {
+    font-size: 1.05em; color: #7eb8ff; margin: 20px 0 8px 0;
+    padding-bottom: 4px; border-bottom: 1px solid #222;
+  }
+  .card {
+    background: #1a1d27; border-radius: 8px; padding: 12px; margin-bottom: 10px;
+    border-left: 3px solid #333;
+  }
+  .card:hover { border-left-color: #7eb8ff; }
+  .card-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-header a {
+    color: #c0d0ff; text-decoration: none; font-weight: 600; font-size: 0.95em;
+    flex: 1;
+  }
+  .card-header a:hover { text-decoration: underline; }
+  .index { color: #555; font-size: 0.8em; font-weight: bold; min-width: 24px; }
+  .score {
+    background: #2a2d3a; color: #9ca3af; font-size: 0.75em; padding: 2px 6px;
+    border-radius: 4px; white-space: nowrap;
+  }
+  .meta { font-size: 0.8em; color: #777; margin-top: 4px; }
+  .tag {
+    display: inline-block; font-size: 0.7em; padding: 1px 6px; border-radius: 3px;
+    margin-left: 4px; font-weight: 600;
+  }
+  .tag.focus { background: #1e3a2f; color: #6ee7a0; }
+  .tag.competitor { background: #3a2a1e; color: #f0a060; }
+  .extract { font-size: 0.85em; color: #b0b0b0; margin-top: 6px; }
+  .relevance {
+    font-size: 0.78em; color: #7eb8ff; margin-top: 4px; font-style: italic;
+  }
+  .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
+  .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
+  .llm-yes { color: #ffd700; margin-left: 4px; font-size: 0.85em; }
+  .llm-no { color: #666; margin-left: 4px; font-size: 0.85em; }
+  .fb-buttons { display: flex; gap: 6px; margin-top: 6px; }
+  .fb-btn {
+    border: 1px solid #333; background: #2a2d3a; color: #ccc; border-radius: 6px;
+    padding: 4px 10px; font-size: 0.85em; cursor: pointer; transition: all 0.15s;
+    min-width: 36px; text-align: center;
+  }
+  .fb-btn:active { transform: scale(0.95); }
+  .fb-btn-ok.active { border-color: #6ee7a0; background: #1e3a2f; color: #6ee7a0; }
+  .fb-btn-no.active { border-color: #f06060; background: #3a1e1e; color: #f06060; }
+  .stats {
+    margin-top: 24px; padding: 12px; background: #1a1d27; border-radius: 8px;
+    font-size: 0.82em; color: #888;
+  }
+  .feedback-panel {
+    margin-top: 12px; padding: 16px; background: #1a2332; border: 1px solid #2a4060;
+    border-radius: 8px; position: sticky; bottom: 12px;
+  }
+  .fb-summary { font-size: 0.82em; color: #aaa; margin-bottom: 8px; }
+  .fb-text {
+    width: 100%; min-height: 88px; resize: vertical; margin-bottom: 8px;
+    border-radius: 8px; border: 1px solid #35507a; background: #0f1724; color: #dbeafe;
+    padding: 10px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .fb-copy-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 8px;
+    background: #2563eb; color: #fff; font-size: 1em; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .fb-copy-btn:hover { background: #1d4ed8; }
+  .fb-copy-btn:active { transform: scale(0.98); }
+  .fb-copy-btn.copied { background: #16a34a; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Briefing diario</h1>
+<p class="subtitle">Cobertura: 2026-03-30 &middot; generado 31/03/2026 06:30</p>
+<h2>IA</h2>
+<div class="card" data-idx="1">
+  <div class="card-header">
+    <span class="index">#1</span>
+    <a href="https://www.marktechpost.com/2026/03/29/agent-infra-releases-aio-sandbox-an-all-in-one-runtime-for-ai-agents-with-browser-shell-shared-filesystem-and-mcp/" target="_blank">Agent-Infra Releases AIO Sandbox: An All-in-One Runtime for AI Agents with Browser, Shell, Shared Filesystem, and MCP</a>
+    <span class="score">41.0</span>
+    <span class="llm-no" title="LLM: no relevante">&#9734;</span>
+    
+  </div>
+  <div class="meta">MarkTechPost </div>
+  <p class="extract">Agent-Infra ha lanzado un entorno todo en uno para ejecutar agentes de IA con navegador, shell, sistema de archivos compartido y soporte MCP, facilitando automatizaciones más operativas. Es una novedad técnica relevante para la evolución...</p>
+  <p class="relevance">Puede ser una señal útil para futuras automatizaciones internas, aunque no tiene relevancia estratégica, competitiva ni comercial inmediata para Saltoki.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="2">
+  <div class="card-header">
+    <span class="index">#2</span>
+    <a href="https://www.marktechpost.com/2026/03/30/salesforce-ai-research-releases-voiceagentrag-a-dual-agent-memory-router-that-cuts-voice-rag-retrieval-latency-by-316x/" target="_blank">Salesforce AI Research Releases VoiceAgentRAG: A Dual-Agent Memory Router that Cuts Voice RAG Retrieval Latency by 316x</a>
+    <span class="score">37.0</span>
+    <span class="llm-no" title="LLM: no relevante">&#9734;</span>
+    
+  </div>
+  <div class="meta">MarkTechPost </div>
+  <p class="extract">Salesforce AI Research presenta una arquitectura para asistentes de voz con RAG que reduce drásticamente la latencia de recuperación, mejorando la naturalidad de la conversación en tiempo real. Es un avance técnico interesante para...</p>
+  <p class="relevance">Apunta a posibles mejoras futuras en canales de atención o soporte, pero no tiene impacto estratégico inmediato para Saltoki.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="3">
+  <div class="card-header">
+    <span class="index">#3</span>
+    <a href="https://www.marktechpost.com/2026/03/29/how-to-build-advanced-cybersecurity-ai-agents-with-cai-using-tools-guardrails-handoffs-and-multi-agent-workflows/" target="_blank">How to Build Advanced Cybersecurity AI Agents with CAI Using Tools, Guardrails, Handoffs, and Multi-Agent Workflows</a>
+    <span class="score">33.0</span>
+    <span class="llm-no" title="LLM: no relevante">&#9734;</span>
+    
+  </div>
+  <div class="meta">MarkTechPost </div>
+  <p class="extract">La pieza muestra cómo construir agentes avanzados de ciberseguridad con herramientas, guardrails, handoffs y flujos multiagente dentro del framework CAI. Es contenido tutorial y técnico, orientado a implementación más que a movimientos...</p>
+  <p class="relevance">Puede interesar como referencia para equipos técnicos, pero no aporta relevancia estratégica, competitiva ni comercial directa para Saltoki.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="4">
+  <div class="card-header">
+    <span class="index">#4</span>
+    <a href="https://openai.com/index/helping-disaster-response-teams-asia" target="_blank">Helping disaster response teams turn AI into action across Asia</a>
+    <span class="score">24.0</span>
+    
+    
+  </div>
+  <div class="meta">OpenAI News </div>
+  <p class="extract">AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation</p>
+  <p class="relevance">Keywords: ai</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="5">
+  <div class="card-header">
+    <span class="index">#5</span>
+    <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNQmdOWXYySHVUTHZmMkp2Q29EN204VGlSM0pPMHo1cjl1eTVXTkJUeU9vQVhoUE53SHdPbTYxZEdYY01LdzRXZlU4OGJ0Q3hldWRraTFuVFEzbmlaWDBjdU1OWGN4VktQN2tpUThZVFVDbzNpbE95UmJPLWNwV1RtWlFDbnhBbWRCWEdWWlJlYzIyZEtLUU5IdmFTakI0SWhHMUpPVURB?oc=5" target="_blank">Mistral secures $830M for Nvidia-powered Paris AI hub expansion - CryptoRank</a>
+    <span class="score">21.0</span>
+    
+    
+  </div>
+  <div class="meta">CryptoRank </div>
+  <p class="extract">Mistral secures $830M for Nvidia-powered Paris AI hub expansion CryptoRank</p>
+  <p class="relevance">Keywords: ai</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="6">
+  <div class="card-header">
+    <span class="index">#6</span>
+    <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNOHF3dW9wZXg3X1Bfa1lUdGQwWjhrZW54UXFWS0wxLUYzclZBU0hwZ3g2Z1RfVTVVMngyTG5CemNrVkt0YlpTRUtnc0cyNHV2VkdGYXBGZTVWTVBtZ0JtaDNtMXBQWXE2OUFtS09UbnFwMmFmVTNPblhlbnNXZkFHWVNmNk9FeEhTTXJ3M3lnUF9wS0ZXUVl4OVhZZ21sUQ?oc=5" target="_blank">Sora no murió: OpenAI la ejecutó para salvarse a sí misma - Enrique Dans</a>
+    <span class="score">21.0</span>
+    
+    
+  </div>
+  <div class="meta">Enrique Dans </div>
+  <p class="extract">Sora no murió: OpenAI la ejecutó para salvarse a sí misma Enrique Dans</p>
+  <p class="relevance">Keywords: ai</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="7">
+  <div class="card-header">
+    <span class="index">#7</span>
+    <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE1Gb1ppaDVrRmVDd2JqaXo5NklrOGlLZV84ZmduNGZCWnZfQnZnRF9Gc3R1VVNOZE54OXdpcDkyRmlXandjRWthWEpyVkJvWTZucXRfN201TVZaajdkdTRSODk2elZSY0xrTnoyZXVldDNXdUphNWduWg?oc=5" target="_blank">ChatGPT aumenta su recopilación de datos en un 70% y reabre el debate sobre la privacidad en la IA - madboxpc</a>
+    <span class="score">21.0</span>
+    
+    
+  </div>
+  <div class="meta">madboxpc </div>
+  <p class="extract">ChatGPT aumenta su recopilación de datos en un 70% y reabre el debate sobre la privacidad en la IA madboxpc</p>
+  <p class="relevance">Keywords: gpt</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="8">
+  <div class="card-header">
+    <span class="index">#8</span>
+    <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQm01Q2c2eFBDMnJQbVkxNERYMF9yQS0ta1BXRVFaRjI0eXdnUEJtTF82MEJSZzFJcWxqZWxUckdpcEVGdUcyWS1wdTBINnlBamNsWmZkdFFhUFB0ZUxiMk9EWFJYMFhsSFZVNGRHU0RFX3NVV1pHNFMyWElXd1ZmVGhlM09NNUJNWWJqMkZzMXVKNEhnWW1UNGNCQ3ZjSDJNZU1VWE54aXJrazBHMjh0ZGJsbm9GZzg0bXBr0gHIAUFVX3lxTE1MWXBRUW1WaFQ1Q3ljZ2NHYU13YVd6a0dqV04xTWplSE5IWFA4aThmRk11NnpjSEJTMGhEYnB0b3ZtWE5xV1FDVDY0T0NIQ2dhTkh4Ti12UTVkV2xWYm1ndGMzSUNHeEVXQjIzdDRvaDVIelR4WVRVRmY3UzdNMU5ySW1fZW1xMTVpT3B4VWVmS1NmSE41YjNMM1VEdjZ6S05FR3Z4UGZMZ1NGMzlaOHRMSWpaWHE0OGI5SE94R0lYUlY5SXZ5OHRf?oc=5" target="_blank">Mistral AI, el competidor europeo de OpenAI, instalará un data center en París - expansion.mx</a>
+    <span class="score">21.0</span>
+    
+    
+  </div>
+  <div class="meta">expansion.mx </div>
+  <p class="extract">Mistral AI, el competidor europeo de OpenAI, instalará un data center en París expansion.mx</p>
+  <p class="relevance">Keywords: ai</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="9">
+  <div class="card-header">
+    <span class="index">#9</span>
+    <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQcVI4cGNGZmN3eGJwWENidjczeTFNdFhzSDNJMlNYVFgyY2d6aFU2OVlfNXEycm9rWjl6TU5vUlJZYlQ5UHp1Q1R2RHJ3em5KQjZHQkdjUGxvS0lVMDNvbS1Nd0M1VzFvY3NudGdxZG5ITkhVeTdSUWk2RFVUT0JYTHNEZExSY05qcEs4aXEzUWZ6ZE9yWTF1bDN4TnFKT1BlTGRRNUZ6LTVoOWEtbnl6M1lPTm1qWEsyOXV0YjFEWXRodw?oc=5" target="_blank">Qué es Google AI Studio y cómo funciona para crear apps sin saber programar - ITSitio</a>
+    <span class="score">21.0</span>
+    
+    
+  </div>
+  <div class="meta">ITSitio </div>
+  <p class="extract">Qué es Google AI Studio y cómo funciona para crear apps sin saber programar ITSitio</p>
+  <p class="relevance">Keywords: ai</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(9,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(9,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="10">
+  <div class="card-header">
+    <span class="index">#10</span>
+    <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxNMHRKaDFpVzFfZ3Q3WVZSR2haQzBIdDNHcWlCRUoweVFKV01jSVl1N05GTnJqTU5HcmpkNzY5ZlBkQk9XcWh5MkN5cjFyTVp5OFdycEdtRi1uMk41cmxYX2dGWGl6NFhrLThaY1lKMkRIR1hHWlF3eUxZZDdGWVk0bkRsWnZrSFdLQWpJLXV4RnQtN0RhTmwyNUg0VFZ4TmJvWFNzZE9kZ1VPSnVFTDVGSUhTMGFuV3p3d2lyQ3FNckxhXzVybDZBZWg0Wno?oc=5" target="_blank">¿Invade tu privacidad? La verdad sobre el botón de Meta AI que apareció en tu WhatsApp - FayerWayer</a>
+    <span class="score">21.0</span>
+    
+    
+  </div>
+  <div class="meta">FayerWayer </div>
+  <p class="extract">¿Invade tu privacidad? La verdad sobre el botón de Meta AI que apareció en tu WhatsApp FayerWayer</p>
+  <p class="relevance">Keywords: ai</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(10,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(10,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="11">
+  <div class="card-header">
+    <span class="index">#11</span>
+    <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxNY1VFLWZ2eThiYVVZSWxmSkZfaVZRS2ZGblI4T0YyeUtfWDl1QzVjd0gyakRoNVFnbVoySS1pUHhscGxBa1puM1VYbEFQQktUR1p1ZWV4dkl5WkhvUHpUZmhGbmF4ZXZydV9TaFk4M1RIQ1A1QXJVZkt1WW01eWsyRW01LXV0MU9mZ0tWb3hnU3VFTmNienBRZFNQcG9Kd2xNTHdsWUFkSUhQNmtneEFJQnlLc09WX0t0NEV4V1NiRW5rRUpKeXlGYWloaU15SkJk?oc=5" target="_blank">¿Milagro o algoritmo? Cómo Meta AI está inundando las redes con Deepfakes de Semana Santa - FayerWayer</a>
+    <span class="score">21.0</span>
+    
+    
+  </div>
+  <div class="meta">FayerWayer </div>
+  <p class="extract">¿Milagro o algoritmo? Cómo Meta AI está inundando las redes con Deepfakes de Semana Santa FayerWayer</p>
+  <p class="relevance">Keywords: ai</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(11,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(11,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="12">
+  <div class="card-header">
+    <span class="index">#12</span>
+    <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxNN29NNFFCNVpLNEJFejlWbWg2bnc1SDFhZjY4YkJURFJzSEtLRnA1aU4xUk1lblhfTkh1MkU2NldMa1pRQVp1LTFLUXh5OUdCdHFHZ1B4U2tXODZwSHpNejdvNGFYOTJvWXk5cEpJOW5QeFkyclR1N3NjSkVLaHR0OXdwTUxobGtMemx5MW9KYmpROEpydDV0dm9zRkRJT0dybzRXa1BoWExBRVJYQjJYcm5zNFNnTXNKcXJz?oc=5" target="_blank">Tenable Stock Plummets 8% as New Anthropic AI Model Sparks Cybersecurity Fears - TIKR.com</a>
+    <span class="score">20.0</span>
+    <span class="llm-no" title="LLM: no relevante">&#9734;</span>
+    
+  </div>
+  <div class="meta">TIKR.com </div>
+  <p class="extract">La noticia recoge una caída de Tenable en bolsa atribuida al temor del mercado sobre el efecto de nuevos modelos de IA en el sector de ciberseguridad. Es una señal financiera y sectorial centrada en software de seguridad, sin vínculo...</p>
+  <p class="relevance">No tiene relevancia estratégica, competitiva ni comercial directa para Saltoki.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(12,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(12,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="13">
+  <div class="card-header">
+    <span class="index">#13</span>
+    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOMnluRExVVUdBNEdqWjNrcjQxSmhXOERaXzBueFRGS2RCLUdjemxvempFUGp5VU44bS1MQjAwZmYxZVpZVWoxOGh5TDIzTG9fbU1DU1lVbjNfNXBYajhJeHdOaWFJYmFmX3gyOU93bnJGdzE5RTBrODJ1QWk3bmIxOWhJX1Z4N2FnVEJlZFhKZC1RQWw3UFJidkducHd0TjdNVmNWc0FESmliU0pXNnBhZWN3?oc=5" target="_blank">En exclusiva: Diez años después de AlphaGo, el líder de Google DeepMind predice el próximo &quot;punto de inflexión&quot; en la IA. - Vietnam.vn</a>
+    <span class="score">17.0</span>
+    
+    
+  </div>
+  <div class="meta">Vietnam.vn </div>
+  <p class="extract">En exclusiva: Diez años después de AlphaGo, el líder de Google DeepMind predice el próximo &quot;punto de inflexión&quot; en la IA. Vietnam.vn</p>
+  <p class="relevance">Tema: IA</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(13,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(13,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="14">
+  <div class="card-header">
+    <span class="index">#14</span>
+    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPcmpQTHpqckVVQU5YY2hmUm51QllBeVZyX2JrT3ZGc01xMG43M242XzQyd09FZ2hieHh5aWQ1aVBXUlF0OXhKeXdaX0ljbmdkT0hxRlNoTnRDX3FtRW1pNEtkR21ZQWJUVmJRa1JpeU9uMjZ6ZmVFdEU4LWxpc21fQU5jV0xPYzJqM3pHb0xwa2I4enZHektnQ2FKY3hUZHNYclJTWXpPNzJySl9Ga2liU1ZTaw?oc=5" target="_blank">Amnistía Internacional aplaude veredicto contra las redes sociales Meta y YouTube - Crónica Viva</a>
+    <span class="score">17.0</span>
+    
+    
+  </div>
+  <div class="meta">Crónica Viva </div>
+  <p class="extract">Amnistía Internacional aplaude veredicto contra las redes sociales Meta y YouTube Crónica Viva</p>
+  <p class="relevance">Tema: IA</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(14,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(14,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="15">
+  <div class="card-header">
+    <span class="index">#15</span>
+    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOREpULXRVS2VBU3lKMkFBNXBXLXR3ekNuME0wbFBIZF9EVEFHS2RRcU5ZRk5uVHdoNHkxdi0xYU03QW9wbW9HLVFpZ2NxU0wxWXo4cE1TLUZBal9ReXFwVk9uVzloRHJLTU82dThlNXBrRzNXQnktaUc1THFWc3NZZHZERGJSUC1STExaN2NxQ1ZCSDUtQkpabFRMNFBxMmRuVm9ueXZlNXNMaDBMUWk3My02UlNvZw?oc=5" target="_blank">nCino (NCNO) Reports Earnings Tomorrow: What To Expect - TradingView</a>
+    <span class="score">17.0</span>
+    
+    
+  </div>
+  <div class="meta">TradingView </div>
+  <p class="extract">nCino (NCNO) Reports Earnings Tomorrow: What To Expect TradingView</p>
+  <p class="relevance">Tema: IA</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(15,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(15,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="16">
+  <div class="card-header">
+    <span class="index">#16</span>
+    <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1GN1AtS3RzZGZhVjZVU2dCWndhS1ZXb0pFQXR6ODd5c1ZlRW9OMG0zVlgybG8wWml3T3hMVDRaMGk3X0txbmxUQVhzOWNpTzRSR2x6RmxKQ2FhOXJ3VWNtTVQwRldxZw?oc=5" target="_blank">Mistral asegura $830M para ampliar centro de IA en París impulsado por Nvidia - TradingView</a>
+    <span class="score">17.0</span>
+    
+    
+  </div>
+  <div class="meta">TradingView </div>
+  <p class="extract">Mistral asegura $830M para ampliar centro de IA en París impulsado por Nvidia TradingView</p>
+  <p class="relevance">Tema: IA</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(16,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(16,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="17">
+  <div class="card-header">
+    <span class="index">#17</span>
+    <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1lUUs4dTJEeVNRQ3pmdEpaMGlhYnhnb0w1VnMxVG8zdWRoU0M0Q0xyWDVkWkplMzBzR1NEYnpfVWJZYkhHSFJwU2ZWRGlicC1lZ0oxMktCcjhaTTRpRlJBajZVNk8teFlhRFUtZC0xVHBNTnp1TW1FdGxoVVFMYU0?oc=5" target="_blank">Así activas las 3 cámaras ocultas de WhatsApp: el método que jubila a Google Lens de tu móvil - moncloa.com</a>
+    <span class="score">17.0</span>
+    
+    
+  </div>
+  <div class="meta">moncloa.com </div>
+  <p class="extract">Así activas las 3 cámaras ocultas de WhatsApp: el método que jubila a Google Lens de tu móvil moncloa.com</p>
+  <p class="relevance">Tema: IA</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(17,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(17,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="18">
+  <div class="card-header">
+    <span class="index">#18</span>
+    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxONVY5V3FsNUUxdFRyRUJIZUxxWWdzNGozTTBHc2xZdG1RUEVWU1RGLVhYdFpDcFp6N0V4bjFiX2VlZV9qQVdyT1FISGpMcndJeXJlS1F6LW1NalU1N1lHN0dlTTJwV1JSNlpJdHM0SWpscHBVVTJLLW1vM01YRWc1NU1OUUJ0dkZOeWtCU3dHSWN3R01Xa2trT29QTkt2Q1lYSkROcG8yODhoRGRRejRfZQ?oc=5" target="_blank">Meta lanza sus gafas con IA para usuarios con graduación - Business Insider España</a>
+    <span class="score">17.0</span>
+    
+    
+  </div>
+  <div class="meta">Business Insider España </div>
+  <p class="extract">Meta lanza sus gafas con IA para usuarios con graduación Business Insider España</p>
+  <p class="relevance">Tema: IA</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(18,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(18,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="19">
+  <div class="card-header">
+    <span class="index">#19</span>
+    <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxNUkloWVJZU1Vvdk1hcEVrczY3a1RfRFl3d2htRUlmT2FieGlvSjFaZi13NGdUWEdlVnhrajZUamZFbEctM0R4NTlKRDhYdmN4OE5pd0lmRjRDQnF4ZG9XcmhmX3F6dU5BT01uS2czak9EdWFaMDFqcThJS0FCT1VTUEZpa1FuRzJ3aWgtcWdjblY5ZG9IWG9fQ0pMWHEtVS1aS0pj0gGoAUFVX3lxTE1ET2tCTGczcDZhd2h4M3hlQmlfaE1qVEV3NVQ2NXFmRy1La1JKTmJ4Q1lSRVpKTFpXYTE1QXR2Qm1fMzhTSVFlcHRDZ3oyaDI0M2x4RC15UWF2MDZXbDhQeXd3UEdnYnBuX3MyRVAtazZHSk5faWxlZ2g5VnZrd3IxTW03VDJsZVVkQ2F0UjRxYTgyMmF0T1Q0bW5hVGE4bjB3RUFlX0FoTg?oc=5" target="_blank">Ganadores del Oscar impulsan el documental definitivo sobre la IA - sipse.com</a>
+    <span class="score">17.0</span>
+    
+    
+  </div>
+  <div class="meta">sipse.com </div>
+  <p class="extract">Ganadores del Oscar impulsan el documental definitivo sobre la IA sipse.com</p>
+  <p class="relevance">Tema: IA</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(19,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(19,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="20">
+  <div class="card-header">
+    <span class="index">#20</span>
+    <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMW5ibktYdzFaWTZKZXFROXBValBWZ3RpUVJKenpPVWh4Ym8tajdBODBYZzB2eFNCZThnNDlSRldWc1VJSWhYS1hUWmk3NzFBaEdUMXItc0ZPX18wckVWUTQ4alZTTm1rMlpwLXVYanFHM0thMFFwOTlxWTNwNGxCeTBHUnFUS2VLWm45NlRoLXpZX3NfUEFNbFN2bktqSHRLcXFFaXZWZDlHa2kwLU13TEktQV9xRkxPSUs00gHAAUFVX3lxTFBFOHhrNGhuLXJrSVJjVGJKOGRUQW9RTG1KN1pFT1NVSTNfT1U3cUttWnBBR1NubGZhNFRYaFltNFUyNWRxYnNnTUs0TGpfX3ZmUGduN045Z2dadlZwYVBrYUpSU0pCbHowb1BQQ1cydXdydFE1ZVBraldsZ2h5THBTNTVvRnlGNnVHWW5ZY0pmOUdXRzdRcUhkck5ueEhfSlAtLWVIR0JaLV9QSUNTNU54U1MydXl3UHFjN21uV0VkcQ?oc=5" target="_blank">Adiós Meta IA: el truco para eliminar el círculo azul de WhatsApp para siempre - iProUP</a>
+    <span class="score">17.0</span>
+    
+    
+  </div>
+  <div class="meta">iProUP </div>
+  <p class="extract">Adiós Meta IA: el truco para eliminar el círculo azul de WhatsApp para siempre iProUP</p>
+  <p class="relevance">Tema: IA</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(20,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(20,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Ecommerce B2B</h2>
+<div class="card" data-idx="21">
+  <div class="card-header">
+    <span class="index">#21</span>
+    <a href="https://www.digitalcommerce360.com/2026/03/30/ai-pushes-b2b-ecommerce-toward-fewer-platforms-as-budgets-shift/" target="_blank">AI pushes B2B ecommerce toward fewer platforms as budgets shift</a>
+    <span class="score">38.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Digital Commerce 360 </div>
+  <p class="extract">La IA está empujando al ecommerce B2B hacia menos plataformas y más suites integradas que combinan comercio, datos de cliente y flujos operativos. Es una señal clara de cambio en la arquitectura digital del canal B2B y en cómo se...</p>
+  <p class="relevance">Es estratégicamente relevante porque anticipa decisiones de plataforma e integración que pueden afectar directamente a la evolución comercial digital de Saltoki.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(21,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(21,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="22">
+  <div class="card-header">
+    <span class="index">#22</span>
+    <a href="https://www.digitalcommerce360.com/2026/03/30/wurth-expands-e-procurement-integration-b2b-purchasing/" target="_blank">Würth expands e-procurement integration to streamline B2B purchasing</a>
+    <span class="score">34.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Digital Commerce 360 </div>
+  <p class="extract">Würth amplía su integración de e-procurement con SAP Business Network para estandarizar la compra B2B, reducir pedidos manuales y mejorar la conexión con los sistemas de sus clientes. Es un movimiento claro de digitalización comercial y...</p>
+  <p class="relevance">Es claramente relevante de forma competitiva y estratégica porque muestra cómo un actor similar eleva el estándar de integración digital con clientes B2B.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(22,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(22,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="23">
+  <div class="card-header">
+    <span class="index">#23</span>
+    <a href="https://www.digitalcommerce360.com/2026/03/30/gigacloud-otto-group-european-marketplace-assortment/" target="_blank">GigaCloud partners with Otto Group to expand European marketplace assortment</a>
+    <span class="score">32.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Digital Commerce 360 </div>
+  <p class="extract">GigaCloud se alía con Otto Group para ampliar surtido en su marketplace europeo mediante una red global de vendedores y proveedores. La operación refuerza la tendencia hacia plataformas con más escala, más oferta agregada y mayor...</p>
+  <p class="relevance">Es relevante como señal competitiva del avance de modelos marketplace y agregación de oferta en Europa, aunque con impacto más indirecto para Saltoki.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(23,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(23,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="24">
+  <div class="card-header">
+    <span class="index">#24</span>
+    <a href="https://ecommerce-news.es/austria-frena-la-compra-de-ceconomy-por-jd-com/" target="_blank">Austria frena la compra de CECONOMY por JD.com y pone en riesgo el acuerdo en Europa</a>
+    <span class="score">19.5</span>
+    
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="extract">Sephora prueba su app dentro de ChatGPT en Estados Unidos Agentic Commerce</p>
+  <p class="relevance">Keywords: ecommerce, europe, europa</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(24,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(24,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="25">
+  <div class="card-header">
+    <span class="index">#25</span>
+    <a href="https://ecommerce-news.es/costco-impulsa-su-retail-media-con-nuevos-formatos-publicitarios-onsite-basados-en-ia/" target="_blank">Costco impulsa su Retail Media con nuevos formatos publicitarios onsite basados en IA</a>
+    <span class="score">17.5</span>
+    
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="extract">Sephora prueba su app dentro de ChatGPT en Estados Unidos Agentic Commerce</p>
+  <p class="relevance">Keywords: ecommerce, edi</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(25,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(25,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="26">
+  <div class="card-header">
+    <span class="index">#26</span>
+    <a href="https://ecommerce-news.es/whatsapp-refuerza-su-apuesta-por-la-ia-con-respuestas-automaticas-edicion-de-fotos-y-mejoras-de-almacenamiento/" target="_blank">WhatsApp refuerza su apuesta por la IA con respuestas automáticas, edición de fotos y mejoras de almacenamiento</a>
+    <span class="score">17.5</span>
+    
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="extract">Sephora prueba su app dentro de ChatGPT en Estados Unidos Agentic Commerce</p>
+  <p class="relevance">Keywords: ecommerce, edi</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(26,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(26,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="27">
+  <div class="card-header">
+    <span class="index">#27</span>
+    <a href="https://ecommerce-news.es/la-conversacion-se-esta-convirtiendo-en-una-nueva-interfaz-para-el-comercio/" target="_blank">“La conversación se está convirtiendo en una nueva interfaz para el comercio”</a>
+    <span class="score">17.5</span>
+    
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="extract">Sephora prueba su app dentro de ChatGPT en Estados Unidos Agentic Commerce</p>
+  <p class="relevance">Keywords: ecommerce, edi</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(27,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(27,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="28">
+  <div class="card-header">
+    <span class="index">#28</span>
+    <a href="https://ecommerce-news.es/amazon-alcanza-100-proyectos-de-energia-renovable-en-espana-y-se-consolida-como-el-mayor-comprador-corporativo-de-energia-libre-de-carbono/" target="_blank">Amazon alcanza 100 proyectos de energía renovable en España y se consolida como el mayor comprador corporativo de energía libre de carbono</a>
+    <span class="score">16.5</span>
+    
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="extract">Sephora prueba su app dentro de ChatGPT en Estados Unidos Agentic Commerce</p>
+  <p class="relevance">Keywords: ecommerce, españa</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(28,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(28,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="29">
+  <div class="card-header">
+    <span class="index">#29</span>
+    <a href="https://ecommerce-news.es/la-ue-impondra-una-nueva-tasa-a-paquetes-internacionales-que-podria-encarecer-el-ecommerce/" target="_blank">La UE reforma sus aduanas por primera vez desde 1968: así afectará al ecommerce</a>
+    <span class="score">16.5</span>
+    
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="extract">Sephora prueba su app dentro de ChatGPT en Estados Unidos Agentic Commerce</p>
+  <p class="relevance">Keywords: ecommerce, europe</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(29,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(29,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="30">
+  <div class="card-header">
+    <span class="index">#30</span>
+    <a href="https://www.digitalcommerce360.com/2026/03/30/bad-address-data-starts-at-checkout-and-carries-through-fulfillment/" target="_blank">Bad address data starts at checkout — and carries through fulfillment</a>
+    <span class="score">16.5</span>
+    
+    
+  </div>
+  <div class="meta">Digital Commerce 360 </div>
+  <p class="extract">Sponsored Content Bad address data starts at checkout — and carries through fulfillment Digital Commerce 360 Staff | Mar 30, 2026 Credit:</p>
+  <p class="relevance">Keywords: digital commerce</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(30,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(30,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="31">
+  <div class="card-header">
+    <span class="index">#31</span>
+    <a href="https://ecommerce-news.es/nacex-publica-su-memoria-de-sostenibilidad-2025/" target="_blank">NACEX publica su Memoria de Sostenibilidad 2025</a>
+    <span class="score">13.5</span>
+    
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="extract">Sephora prueba su app dentro de ChatGPT en Estados Unidos Agentic Commerce</p>
+  <p class="relevance">Keywords: ecommerce</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(31,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(31,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="32">
+  <div class="card-header">
+    <span class="index">#32</span>
+    <a href="https://ecommerce-news.es/google-lanza-su-core-update-de-marzo-de-2026-que-esta-pasando-y-por-que-vuelve-a-sacudir-el-seo/" target="_blank">Google lanza su core update de marzo de 2026: qué está pasando y por qué vuelve a sacudir el SEO</a>
+    <span class="score">13.5</span>
+    
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="extract">Sephora prueba su app dentro de ChatGPT en Estados Unidos Agentic Commerce</p>
+  <p class="relevance">Keywords: ecommerce</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(32,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(32,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="33">
+  <div class="card-header">
+    <span class="index">#33</span>
+    <a href="https://ecommerce-news.es/amazon-prueba-integrar-envios-prime-en-tiendas-externas/" target="_blank">Amazon prueba integrar envíos Prime en tiendas externas sin pasar por su plataforma</a>
+    <span class="score">13.5</span>
+    
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="extract">Sephora prueba su app dentro de ChatGPT en Estados Unidos Agentic Commerce</p>
+  <p class="relevance">Keywords: ecommerce</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(33,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(33,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="34">
+  <div class="card-header">
+    <span class="index">#34</span>
+    <a href="https://ecommerce-news.es/sephora-prueba-su-app-dentro-de-chatgpt-en-estados-unidos/" target="_blank">Sephora prueba su app dentro de ChatGPT en Estados Unidos</a>
+    <span class="score">13.5</span>
+    
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="extract">Sephora prueba su app dentro de ChatGPT en Estados Unidos Agentic Commerce</p>
+  <p class="relevance">Keywords: ecommerce</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(34,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(34,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Distribución de materiales de construcción</h2>
+<div class="card" data-idx="35">
+  <div class="card-header">
+    <span class="index">#35</span>
+    <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxNS2JZOFVoSUJWR3hacFhZRDFMVlFOX2I4WWJzbE9jRHFaOFhFZjRWS0Vwd3N1X1JCSHB5MWtLNldlWk92UWVCc243eUxCVmREaFhLUVB2M214ME1rS244OXpaVzlmVlNHeERLclA1ZTI4Zm9jOFgtb2lGajZqSmZLWmQzdnFyeFhYVG45T0ZxVEgxdjZxMGQ1c2JUajJXbXRzeS13YTBPd2NwWU56a3NFcllGQmtDd2l1WE81VTBJV3lYdlRiUE5Wa0FfdnJ4TnEzRElMekJDRWlJcEVKM196dGs0N0hxeW80SFhBZFAzWkRIQ0dzZ1U5eEl0eEJGQdIBgwJBVV95cUxPLTlJWDRld25Ibm9DamtZbmxma19NOER6LVhZU21EbWhKQnVRbFl4ZWtaRTdnUXhwUjM1LUNGMDY4c2Z3QjNPZGUwSHl0cHNyV2RMX2h1cG5YZDRzMnVMa1hpQlJLWVZ0TGtvVU1GNHhLNm9Xc1B0ZHcwNjBxNDQtTUZKeC1SV2xsdzdockY4MDlGZjBYXzJkbVg2TFBhbVJRQ3VqNWFKWm03VFc0OTVSV3k0VGFsNWU1NjJuS3BjS2RhU0tWTEhaQW5CQ0p2aEh2TmIzU0YwRXhCaFBocFFhY2hOY0tveVB3WGVzeEh5OUVCVi1zSzFyNUo5bVhudTZpRmRB?oc=5" target="_blank">Natucer, Das Tech Solutions y la evolución de las reformas en España, entre las 5 noticias más leídas de la semana - elperiodicodelazulejo.es</a>
+    <span class="score">16.5</span>
+    
+    
+  </div>
+  <div class="meta">elperiodicodelazulejo.es </div>
+  <p class="extract">Natucer, Das Tech Solutions y la evolución de las reformas en España, entre las 5 noticias más leídas de la semana elperiodicodelazulejo.es</p>
+  <p class="relevance">Keywords: reforma, españa</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(35,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(35,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="36">
+  <div class="card-header">
+    <span class="index">#36</span>
+    <a href="https://www.constructiondive.com/news/walbridge-ford-waste-reduction-woodchuck-blueoval/816059/" target="_blank">Walbridge uses contech to reduce waste on $2.5B Ford build</a>
+    <span class="score">13.5</span>
+    
+    
+  </div>
+  <div class="meta">Construction Dive - Latest News </div>
+  <p class="extract">Woodchuck, which manages wood waste and refuse, has helped Walbridge reach 40% of its material savings goals on Ford’s BlueOval Battery Park project in Michigan.</p>
+  <p class="relevance">Keywords: construction</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(36,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(36,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="37">
+  <div class="card-header">
+    <span class="index">#37</span>
+    <a href="https://www.constructiondive.com/news/trump-executive-order-federal-contractors-dei-canceled-contracts/816076/" target="_blank">Trump order directs federal contractors to dump DEI — or risk canceled contracts</a>
+    <span class="score">13.5</span>
+    
+    
+  </div>
+  <div class="meta">Construction Dive - Latest News </div>
+  <p class="extract">Departments and agencies have until April 25 to insert a clause in their contracts that requires contractors and subcontractors to not engage in “racially discriminatory DEI activities.”</p>
+  <p class="relevance">Keywords: construction</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(37,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(37,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="38">
+  <div class="card-header">
+    <span class="index">#38</span>
+    <a href="https://www.constructiondive.com/news/jacobs-awards-wisconsin-infrastructure-project/816112/" target="_blank">Jacobs wins awards on $4.9B Wisconsin infrastructure project</a>
+    <span class="score">13.5</span>
+    
+    
+  </div>
+  <div class="meta">Construction Dive - Latest News </div>
+  <p class="extract">The Dallas-based contractor will begin the design phase for the I-39, I-90 and I-94 corridor later this year.</p>
+  <p class="relevance">Keywords: construction</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(38,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(38,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="39">
+  <div class="card-header">
+    <span class="index">#39</span>
+    <a href="https://www.constructiondive.com/news/construction-new-york-build-robot-use/816116/" target="_blank">Construction data woes hold back robot use</a>
+    <span class="score">13.5</span>
+    
+    
+  </div>
+  <div class="meta">Construction Dive - Latest News </div>
+  <p class="extract">There are successful use cases, but firms are seeing a familiar constraint pop up for these applications, according to a panel at New York Build.</p>
+  <p class="relevance">Keywords: construction</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(39,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(39,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Saltoki y competidores</h2>
+<div class="card" data-idx="40">
+  <div class="card-header">
+    <span class="index">#40</span>
+    <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxNcGkyanhpTHFXRUhkOGotSUF5OUhObE5vVEkxclpKTWJzTXRremtGU1VLV3pzWnozelphTFlXeENrR3YxaWx2OG10cm1zTV9oMWl2NWpSd0EzNEdEY0daY3lxcktDcnpsTFhZOXZGdnVac0wzbTlUQlI4ck81WExQTjNtZHNCQlFJSkg1SzVsTkF5Rm1rbzFyMmlOMGhpLXhtWEdRMl9fY1Z5U1BfbXJMRVdtX2tfZng2aml5MWdBS1BqRkJOMzFrNFN1WTRWbHl2YWhSNHI1Ni0zUdIB2gFBVV95cUxPeUpobnI2dWNRMy01dVBIcHdrNmFRVzVQSkMxaV9FcGVabXRNeEZ2YXlaLU5QUThwOVBpdUxzZDRteThseGdFQl9aQXVWakdkT2dNbG0yR3RES1YzOHQ0ZHNkZmo3TS14Z0Q5dEJPNlctVmxmUUx5VV9pQXAzMWk0bkM2Vms2emE4SG8xYmQ3UmlLSW41Ul9pNmdGcFR0T3FVWWN4TnpiTU9XNGg5b2tWZDhUR3g0aG4zV2htWU9FRHZKLVh6Y3F3RFVpTFB2M0syV0gtOTI2dTRWZw?oc=5" target="_blank">El talento ibicenco del Saltoki Trikideak brilla en el Campeonato de España - Periódico de Ibiza y Formentera</a>
+    <span class="score">28.0</span>
+    <span class="llm-no" title="LLM: no relevante">&#9734;</span>
+    
+  </div>
+  <div class="meta">Periódico de Ibiza y Formentera <span class="tag focus">Saltoki</span></div>
+  <p class="extract">La noticia destaca el buen rendimiento del equipo patrocinado por Saltoki Trikideak en el Campeonato de España. Refuerza visibilidad de marca en el ámbito deportivo, pero no aporta información sobre negocio, competencia o actividad...</p>
+  <p class="relevance">Tiene valor reputacional o de patrocinio, pero no relevancia estratégica, competitiva ni comercial para un directivo de Saltoki.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(40,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(40,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="41">
+  <div class="card-header">
+    <span class="index">#41</span>
+    <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOQ2l0RVJ4TmFPdWN0VHVCYjFTQlIyQmI5SlhkTjBBUXR0TVVOTXVHZjUyYXIxbzBTR1pteVFPMFp3cHFUNnd2dEdtNUR1MEhsZndwWnVFTEh3TXZuUDVlQW1SZDJ6bURZOXl6NUpjeUE5ODdTc1QyZVpoVVpiWFB6WDVxVmk4d1Zhb3c?oc=5" target="_blank">Punto de encuentro de talento local 3.0 - enAranda</a>
+    <span class="score">17.0</span>
+    
+    
+  </div>
+  <div class="meta">enAranda </div>
+  <p class="extract">Punto de encuentro de talento local 3.0 enAranda</p>
+  <p class="relevance">Tema: Saltoki y competidores</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(41,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(41,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="stats">
+  <p>50 noticias procesadas (50 brutas)</p>
+  <p>Fuentes con fallo: 1</p>
+</div>
+<div class="feedback-panel" id="fbPanel" style="display:none">
+  <div class="fb-summary" id="fbSummary"></div>
+  <textarea id="fbText" class="fb-text" readonly placeholder="Aquí aparecerá el feedback listo para pegar en Telegram"></textarea>
+  <button class="fb-copy-btn" onclick="copyAllFb()" id="fbCopyBtn">Copiar feedback para Telegram</button>
+</div>
+</div>
+<script>
+var fbDate = document.querySelector('.subtitle').textContent.match(/\d{4}-\d{2}-\d{2}/);
+fbDate = fbDate ? fbDate[0] : '';
+var fbState = {};
+
+function toggleFb(idx, val) {
+  var card = document.querySelector('[data-idx="'+idx+'"]');
+  var okBtn = card.querySelector('.fb-btn-ok');
+  var noBtn = card.querySelector('.fb-btn-no');
+  if (fbState[idx] === val) {
+    delete fbState[idx];
+    okBtn.classList.remove('active');
+    noBtn.classList.remove('active');
+  } else {
+    fbState[idx] = val;
+    okBtn.classList.toggle('active', val === 'ok');
+    noBtn.classList.toggle('active', val === 'no');
+  }
+  updatePanel();
+}
+
+function updatePanel() {
+  var panel = document.getElementById('fbPanel');
+  var summary = document.getElementById('fbSummary');
+  var fbText = document.getElementById('fbText');
+  var keys = Object.keys(fbState);
+  if (keys.length === 0) {
+    panel.style.display = 'none';
+    if (fbText) fbText.value = '';
+    return;
+  }
+  panel.style.display = 'block';
+  var okList = [], noList = [];
+  keys.forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  okList.sort(function(a,b) { return Number(a) - Number(b); });
+  noList.sort(function(a,b) { return Number(a) - Number(b); });
+  var parts = [];
+  if (okList.length) parts.push(okList.length + ' relevantes');
+  if (noList.length) parts.push(noList.length + ' no relevantes');
+  summary.textContent = parts.join(', ') + ' marcadas';
+  if (fbText) fbText.value = buildFbMessage();
+}
+
+function buildFbMessage() {
+  var okList = [], noList = [];
+  Object.keys(fbState).forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  var lines = ['nw feedback ' + fbDate];
+  if (okList.length) lines.push('ok ' + okList.join(' '));
+  if (noList.length) lines.push('no ' + noList.join(' '));
+  return lines.join('\n');
+}
+
+function copyAllFb() {
+  var text = buildFbMessage();
+  var btn = document.getElementById('fbCopyBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(btn, text);
+    });
+  } else {
+    fallbackCopy(btn, text);
+  }
+}
+
+function fallbackCopy(btn, text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); showCopied(btn); }
+  catch(e) { alert(text); }
+  document.body.removeChild(ta);
+}
+
+function showCopied(btn) {
+  btn.textContent = '\u2713 Copiado - pega en Telegram';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Copiar feedback para Telegram';
+    btn.classList.remove('copied');
+  }, 2500);
+}
+</script>
+</body></html>
