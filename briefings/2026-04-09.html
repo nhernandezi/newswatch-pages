@@ -40,9 +40,15 @@
   }
   .tag.focus { background: #1e3a2f; color: #6ee7a0; }
   .tag.competitor { background: #3a2a1e; color: #f0a060; }
-  .extract { font-size: 0.85em; color: #b0b0b0; margin-top: 6px; }
+  .summary {
+    font-size: 0.92em; color: #e5e7eb; margin-top: 8px; line-height: 1.45;
+  }
   .relevance {
-    font-size: 0.78em; color: #7eb8ff; margin-top: 4px; font-style: italic;
+    font-size: 0.84em; color: #8ab4f8; margin-top: 5px; line-height: 1.4;
+  }
+  .label {
+    display: inline-block; font-size: 0.72em; text-transform: uppercase;
+    letter-spacing: .04em; color: #9ca3af; margin-right: 6px; font-weight: 700;
   }
   .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
   .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
@@ -84,19 +90,19 @@
 <body>
 <div class="container">
 <h1>Briefing diario</h1>
-<p class="subtitle">Cobertura: 2026-04-09 &middot; generado 11/04/2026 01:12</p>
+<p class="subtitle">Cobertura: 2026-04-09 &middot; generado 11/04/2026 02:02</p>
 <h2>Saltoki y competidores</h2>
 <div class="card" data-idx="1">
   <div class="card-header">
     <span class="index">#1</span>
     <a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxPTWNmelJ2M2lHSFdiRk1ZUGY2SDBmNnlvYTRRMXhSTGFTVEp6YTk4dGZJZkJLVDVqak5TX1RIb0JuOTFmSjlDN0pRaFB5bjgxOFFTUlZRT1B4WG9kcEVxQjdjQk1JT2FsbjhlUFZOeXViYzg2U0doaVNlNlREUVBTQ2ZvcUVWMUlxb01LLWg3bU9uTTk4cU1KYnktNkFJc3NRVE4tdW9JckVIX3JvSEV1M3VCOW1rTk5qVllPZW41SU5xSVd6NE05WE16bjVhQQ?oc=5" target="_blank">Obramat ultima la apertura de dos nuevas tiendas y avanza en otro proyecto en Galicia - Alimarket.es</a>
     <span class="score">36.0</span>
-    
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
     
   </div>
   <div class="meta">Alimarket.es <span class="tag competitor">Obramat</span></div>
-  <p class="extract">Obramat ultima la apertura de dos nuevas tiendas y avanza en otro proyecto en Galicia Alimarket.es</p>
-  <p class="relevance">Competidor: Obramat | Señal sectorial: obramat, apertura, Obramat</p>
+  <p class="summary"><span class="label">Resumen</span> La noticia apunta a aperturas o expansión de un competidor, útil para vigilar presión comercial y cobertura.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Competidor: Obramat | Señal sectorial: obramat, apertura, Obramat</p>
   <div class="fb-buttons">
     <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
     <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
@@ -112,8 +118,8 @@
     
   </div>
   <div class="meta">elperiodicodelazulejo.es </div>
-  <p class="extract">El absentismo lastra en España la competitividad y la cuenta de resultados de la distribución profesional de materiales de construcción elperiodicodelazulejo.es</p>
-  <p class="relevance">Señal sectorial: construcción, materiales, distribución</p>
+  <p class="summary"><span class="label">Resumen</span> La pieza deja una señal sectorial sobre distribución de materiales de construcción con posible impacto comercial.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Señal sectorial: construcción, materiales, distribución</p>
   <div class="fb-buttons">
     <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
     <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
@@ -128,8 +134,8 @@
     
   </div>
   <div class="meta">Cadena SER <span class="tag competitor">Obramat</span></div>
-  <p class="extract">OBRAMAT Murcia Norte reúne a más de 100 colaboradores en una jornada previa a su inauguración en Churra Cadena SER</p>
-  
+  <p class="summary"><span class="label">Resumen</span> La noticia apunta a aperturas o expansión de un competidor, útil para vigilar presión comercial y cobertura.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Competidor: Obramat | Señal sectorial: obra, Obramat</p>
   <div class="fb-buttons">
     <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
     <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
@@ -141,12 +147,12 @@
     <span class="index">#4</span>
     <a href="https://ecommerce-news.es/ecommerce-tour-sevilla-26-de-sevilla-al-mundo-como-wikifarmer-esta-reinventando-el-b2b-con-ia/" target="_blank">Ecommerce Tour Sevilla ’26: De Sevilla al mundo, cómo Wikifarmer está reinventando el B2B con IA</a>
     <span class="score">25.55</span>
-    
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
     
   </div>
   <div class="meta">Ecommerce News </div>
-  <p class="extract">El ecommerce en EE.UU.. crece un 5,4% en 2025 y consolida su desaceleración pese a marcar nuevos récords ECOMMERCE , EEUU</p>
-  <p class="relevance">Señal sectorial: b2b, ecommerce, marketplace</p>
+  <p class="summary"><span class="label">Resumen</span> El ecommerce en EE.UU.. crece un 5,4% en 2025 y consolida su desaceleración pese a marcar nuevos récords ECOMMERCE , EEUU</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Señal sectorial: b2b, ecommerce, marketplace</p>
   <div class="fb-buttons">
     <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
     <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
@@ -157,12 +163,12 @@
     <span class="index">#5</span>
     <a href="https://ecommerce-news.es/el-comercio-minorista-europeo-frena-en-febrero-las-ventas-caen-un-02-en-la-eurozona-pero-espana-aguanta/" target="_blank">El comercio minorista europeo frena en febrero: las ventas caen un 0,2% en la eurozona, pero España aguanta</a>
     <span class="score">23.55</span>
-    
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
     
   </div>
   <div class="meta">Ecommerce News </div>
-  <p class="extract">El ecommerce en EE.UU.. crece un 5,4% en 2025 y consolida su desaceleración pese a marcar nuevos récords ECOMMERCE , EEUU</p>
-  <p class="relevance">Señal sectorial: ecommerce, edi, españa</p>
+  <p class="summary"><span class="label">Resumen</span> El ecommerce en EE.UU.. crece un 5,4% en 2025 y consolida su desaceleración pese a marcar nuevos récords ECOMMERCE , EEUU</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Señal sectorial: ecommerce, edi, españa</p>
   <div class="fb-buttons">
     <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
     <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
@@ -173,12 +179,12 @@
     <span class="index">#6</span>
     <a href="https://ecommerce-news.es/iab-spain-y-ceoe-campus-presentan-el-programa-formativo-marketing-r_evolution/" target="_blank">IAB Spain y CEOE Campus presentan el programa formativo ‘Marketing r_evolution’</a>
     <span class="score">23.55</span>
-    
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
     
   </div>
   <div class="meta">Ecommerce News </div>
-  <p class="extract">El ecommerce en EE.UU.. crece un 5,4% en 2025 y consolida su desaceleración pese a marcar nuevos récords ECOMMERCE , EEUU</p>
-  <p class="relevance">Señal sectorial: ecommerce, edi, españa</p>
+  <p class="summary"><span class="label">Resumen</span> El ecommerce en EE.UU.. crece un 5,4% en 2025 y consolida su desaceleración pese a marcar nuevos récords ECOMMERCE , EEUU</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Señal sectorial: ecommerce, edi, españa</p>
   <div class="fb-buttons">
     <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
     <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
@@ -193,25 +199,24 @@
     
   </div>
   <div class="meta">Ecommerce News </div>
-  <p class="extract">El ecommerce en EE.UU. volvió a batir récords en 2025, pero confirmó que el crecimiento se ralentiza a medida que el mercado madura. De acuerdo con los datos analizados por Digital Commerce 360, las ventas en línea llegaron a 1.234 billones de euros, lo que representa un aumento del 5,4%...</p>
-  
+  <p class="summary"><span class="label">Resumen</span> El ecommerce en EE.UU. volvió a batir récords en 2025, pero confirmó que el crecimiento se ralentiza a medida que el mercado madura. De acuerdo con los datos analizados por Digital Commerce 360, las ventas en línea llegaron a 1.234…</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Señal sectorial: ecommerce, digital commerce, edi</p>
   <div class="fb-buttons">
     <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
     <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
   </div>
 </div>
-<h2>IA</h2>
 <div class="card" data-idx="8">
   <div class="card-header">
     <span class="index">#8</span>
-    <a href="https://openai.com/index/cyberagent" target="_blank">CyberAgent moves faster with ChatGPT Enterprise and Codex</a>
-    <span class="score">37.5</span>
+    <a href="https://www.digitalcommerce360.com/2026/04/09/rezolve-ai-takes-merger-proposal-to-commerce-com-shareholders/" target="_blank">Rezolve Ai takes merger proposal to Commerce.com’s shareholders</a>
+    <span class="score">20.5</span>
     
     
   </div>
-  <div class="meta">OpenAI News </div>
-  <p class="extract">CyberAgent uses ChatGPT Enterprise and Codex to securely scale AI adoption, improve quality, and accelerate decisions across advertising, media, and gaming.</p>
-  <p class="relevance">Señal de IA a validar por impacto estructural: ai, agent, rag</p>
+  <div class="meta">Digital Commerce 360 </div>
+  <p class="summary"><span class="label">Resumen</span> The ecommerce platform Commerce.com’s board of directors publicly rebuffed the terms of a proposed acquisition by the technology company Rezolve Ai. Rezolve announced on April 8 that it would take its offer directly to Commerce.com…</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Señal sectorial: ecommerce, digital commerce</p>
   <div class="fb-buttons">
     <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
     <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
@@ -220,30 +225,31 @@
 <div class="card" data-idx="9">
   <div class="card-header">
     <span class="index">#9</span>
-    <a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxOS2tOX1pEbks0TUZhVGVvZEhRTEtzV1p3RDZQc2lBc3JPcU1JV0V5QW4zbEt3V28zNjEzdE16X2M4SDdrOVktMVdjQlVnWm1MY1d5VS1UUk5kcVlkOW0xeEE0SnpNUmFvUjktNkw4N0xHeGpZOUZsQW5WMTgybVcyRk1rZ0NNTjV2M1JSdkhjTXJQVGJXX05aX3djalJxcVB2amc3YlZWR082VWNabmJrekRYRHBCbE1ZWWhWWkhhdkRuVEstb1lFbkh2alRnUdIB4gFBVV95cUxPcWtIVWgyWUQtamFLVnRFSkRuUXVLRy1ydjNIQzBPbGNPemlGVmVBTkJpUmdVbVJHeVUwU0NZdmdTSFpxblJBd055NmUwRDZvX2JKem9lTF8xOEZKam81TFJ3QVlfOVlPNTFnbmpqbEYwV2o0NGZrMWY1ZkxhUkpxYVdPMU1JcC1pbGt5Q0twaFo4dUF1ZG02c0dKSk16M0IyN1liUEhVSzNFN05DUjl5RVZjc1RKX190UEZOSF85Q1BvUmlRQWhJVEZKRERxN1VENEFjYUpkX2hwQ1NZRVdMOXp3?oc=5" target="_blank">Meta trata de reaccionar en la IA como un nuevo modelo frente a Google, OpenAI y Anthropic - EL PAÍS</a>
-    <span class="score">25.75</span>
+    <a href="https://www.digitalcommerce360.com/2026/04/09/ecommerce-trends-what-is-ai-role-in-resale-growth/" target="_blank">Ecommerce Trends: What is AI’s role in resale growth?</a>
+    <span class="score">20.5</span>
     
     
   </div>
-  <div class="meta">EL PAÍS </div>
-  <p class="extract">Meta trata de reaccionar en la IA como un nuevo modelo frente a Google, OpenAI y Anthropic EL PAÍS</p>
-  <p class="relevance">Señal de IA a validar por impacto estructural: ai, model</p>
+  <div class="meta">Digital Commerce 360 </div>
+  <p class="summary"><span class="label">Resumen</span> Ecommerce entered 2026 with momentum behind online resale growth, and some of the biggest names in the space — along with young startups — are trying to capitalize on that interest with artificial intelligence (AI). In Seattle, venture-…</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Señal sectorial: ecommerce, digital commerce</p>
   <div class="fb-buttons">
     <button class="fb-btn fb-btn-ok" onclick="toggleFb(9,'ok')" title="Relevante">&#128077;</button>
     <button class="fb-btn fb-btn-no" onclick="toggleFb(9,'no')" title="No relevante">&#128078;</button>
   </div>
 </div>
+<h2>IA</h2>
 <div class="card" data-idx="10">
   <div class="card-header">
     <span class="index">#10</span>
-    <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxPVnJBc3Fha2JXVGI5Z09uYm5hX09Ud2g0bWp1QnVoMG1kbGZ4RUdra3ppVk4wTnZ6alVqdWJ6blR3S2tvQVlycW0tdmtxVlVyc3VOdy04YXJXNEhSZGh4WF9rWmJ0RDgyZW90V0J0aWI5dkZXbnctNlJMYmp6U2hyLXdDbm5yV3o5U29zTWpCME5iV2VHQkZTM1FNQjhzc1A5WGJvRHB2OWVZcUwzVUxIWGFSOXRkY1JvU0RFSFVCT3ZUdWtFQmFkR3VoZVMzb3NSQm9UT2k0NFZqZmdZSkHSAd4BQVVfeXFMT1ZyQXNxYWtiV1RiOWdPbmJuYV9PVHdoNG1qdUJ1aDBtZGxmeEVHa2t6aVZOME52empVanViem5Ud0trb0FZcnFtLXZrcVZVcnN1TnctOGFyVzRIUmRoeFhfa1pidEQ4MmVvdFdCdGliOXZGV253LTZSTGJqelNoci13Q25ucld6OVNvc01qQjBOYldlR0JGUzNRTUI4c3NQOVhib0RwdjllWXFMM1VMSFhhUjl0ZGNSb1NERUhVQk92VHVrRUJhZEd1aGVTM29zUkJvVE9pNDRWamZnWUpB?oc=5" target="_blank">Investigadores de Microsoft, Google y Columbia Proponen Estándar de Seguros para Cubrir Fallos de Agentes de IA - Decrypt</a>
-    <span class="score">21.75</span>
-    
+    <a href="https://openai.com/index/cyberagent" target="_blank">CyberAgent moves faster with ChatGPT Enterprise and Codex</a>
+    <span class="score">37.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
     
   </div>
-  <div class="meta">Decrypt </div>
-  <p class="extract">Investigadores de Microsoft, Google y Columbia Proponen Estándar de Seguros para Cubrir Fallos de Agentes de IA Decrypt</p>
-  
+  <div class="meta">OpenAI News </div>
+  <p class="summary"><span class="label">Resumen</span> CyberAgent uses ChatGPT Enterprise and Codex to securely scale AI adoption, improve quality, and accelerate decisions across advertising, media, and gaming.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Señal de IA a validar por impacto estructural: ai, agent, rag</p>
   <div class="fb-buttons">
     <button class="fb-btn fb-btn-ok" onclick="toggleFb(10,'ok')" title="Relevante">&#128077;</button>
     <button class="fb-btn fb-btn-no" onclick="toggleFb(10,'no')" title="No relevante">&#128078;</button>
@@ -252,39 +258,103 @@
 <div class="card" data-idx="11">
   <div class="card-header">
     <span class="index">#11</span>
-    <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQOWFMUFJmX2lvUzNUbXo2M1N4SklsWGNyVzBYYnRudXFkRGxuaHJNR2U3Z0R4SEJlM3loOW82WmROQmpMaTlIY0FuSmZjY0RRaXdMOVJBdzVrOVlPUUt2NzNXbjNSMGFrMWtadXR1VFJyUXdMWXBiMnJ2VEYwT01iME55WkVidTZNVDlMU1BGQmdlSVlCQWRv?oc=5" target="_blank">Google Gemini genera modelos 3D y simulaciones en tiempo real - Ecosistema Startup</a>
-    <span class="score">25.0</span>
-    
+    <a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxOS2tOX1pEbks0TUZhVGVvZEhRTEtzV1p3RDZQc2lBc3JPcU1JV0V5QW4zbEt3V28zNjEzdE16X2M4SDdrOVktMVdjQlVnWm1MY1d5VS1UUk5kcVlkOW0xeEE0SnpNUmFvUjktNkw4N0xHeGpZOUZsQW5WMTgybVcyRk1rZ0NNTjV2M1JSdkhjTXJQVGJXX05aX3djalJxcVB2amc3YlZWR082VWNabmJrekRYRHBCbE1ZWWhWWkhhdkRuVEstb1lFbkh2alRnUdIB4gFBVV95cUxPcWtIVWgyWUQtamFLVnRFSkRuUXVLRy1ydjNIQzBPbGNPemlGVmVBTkJpUmdVbVJHeVUwU0NZdmdTSFpxblJBd055NmUwRDZvX2JKem9lTF8xOEZKam81TFJ3QVlfOVlPNTFnbmpqbEYwV2o0NGZrMWY1ZkxhUkpxYVdPMU1JcC1pbGt5Q0twaFo4dUF1ZG02c0dKSk16M0IyN1liUEhVSzNFN05DUjl5RVZjc1RKX190UEZOSF85Q1BvUmlRQWhJVEZKRERxN1VENEFjYUpkX2hwQ1NZRVdMOXp3?oc=5" target="_blank">Meta trata de reaccionar en la IA como un nuevo modelo frente a Google, OpenAI y Anthropic - EL PAÍS</a>
+    <span class="score">25.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
     
   </div>
-  <div class="meta">Ecosistema Startup </div>
-  <p class="extract">Google Gemini genera modelos 3D y simulaciones en tiempo real Ecosistema Startup</p>
-  <p class="relevance">Señal de IA a validar por impacto estructural: model, gemini</p>
+  <div class="meta">EL PAÍS </div>
+  <p class="summary"><span class="label">Resumen</span> OpenAI muestra adopción empresarial de ChatGPT/Codex en un caso real.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Señal de IA a validar por impacto estructural: ai, model</p>
   <div class="fb-buttons">
     <button class="fb-btn fb-btn-ok" onclick="toggleFb(11,'ok')" title="Relevante">&#128077;</button>
     <button class="fb-btn fb-btn-no" onclick="toggleFb(11,'no')" title="No relevante">&#128078;</button>
   </div>
 </div>
-<h2>Cartera — compañías</h2>
 <div class="card" data-idx="12">
   <div class="card-header">
     <span class="index">#12</span>
-    <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQYmwtUEl4a0VfYkFvb2tRU2xHbU03RGh0ekUyUlJnYXA2RGZSckJiT3JpUHYzdmFnU25Mei1yOGlFRGl0MnV2M0tLQ2pFOUx0Y3VvSklNcHA0NUFzWXM1SVJIMFhfSTRCbWFPbmd6V29rSVM3YmRSbU9ELVlHRDBveFVUc204MGlDUzlxOVItcGdjWXZjbEtwaWhpZ0hUbUJFSnc?oc=5" target="_blank">La Fundación Ethereum convierte 5.000 ETH para financiar sus operaciones - Bitcoin.com News</a>
-    <span class="score">33.47</span>
+    <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxPVnJBc3Fha2JXVGI5Z09uYm5hX09Ud2g0bWp1QnVoMG1kbGZ4RUdra3ppVk4wTnZ6alVqdWJ6blR3S2tvQVlycW0tdmtxVlVyc3VOdy04YXJXNEhSZGh4WF9rWmJ0RDgyZW90V0J0aWI5dkZXbnctNlJMYmp6U2hyLXdDbm5yV3o5U29zTWpCME5iV2VHQkZTM1FNQjhzc1A5WGJvRHB2OWVZcUwzVUxIWGFSOXRkY1JvU0RFSFVCT3ZUdWtFQmFkR3VoZVMzb3NSQm9UT2k0NFZqZmdZSkHSAd4BQVVfeXFMT1ZyQXNxYWtiV1RiOWdPbmJuYV9PVHdoNG1qdUJ1aDBtZGxmeEVHa2t6aVZOME52empVanViem5Ud0trb0FZcnFtLXZrcVZVcnN1TnctOGFyVzRIUmRoeFhfa1pidEQ4MmVvdFdCdGliOXZGV253LTZSTGJqelNoci13Q25ucld6OVNvc01qQjBOYldlR0JGUzNRTUI4c3NQOVhib0RwdjllWXFMM1VMSFhhUjl0ZGNSb1NERUhVQk92VHVrRUJhZEd1aGVTM29zUkJvVE9pNDRWamZnWUpB?oc=5" target="_blank">Investigadores de Microsoft, Google y Columbia Proponen Estándar de Seguros para Cubrir Fallos de Agentes de IA - Decrypt</a>
+    <span class="score">21.75</span>
     
     
   </div>
-  <div class="meta">Bitcoin.com News </div>
-  <p class="extract">La Fundación Ethereum convierte 5.000 ETH para financiar sus operaciones Bitcoin.com News</p>
-  <p class="relevance">Potencial relación con activos/temáticas en cartera: bitcoin, ethereum, eth</p>
+  <div class="meta">Decrypt </div>
+  <p class="summary"><span class="label">Resumen</span> La pieza añade una señal de IA relevante para seguir la evolución del sector.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Señal de IA a validar por impacto estructural: agent</p>
   <div class="fb-buttons">
     <button class="fb-btn fb-btn-ok" onclick="toggleFb(12,'ok')" title="Relevante">&#128077;</button>
     <button class="fb-btn fb-btn-no" onclick="toggleFb(12,'no')" title="No relevante">&#128078;</button>
   </div>
 </div>
+<div class="card" data-idx="13">
+  <div class="card-header">
+    <span class="index">#13</span>
+    <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQOWFMUFJmX2lvUzNUbXo2M1N4SklsWGNyVzBYYnRudXFkRGxuaHJNR2U3Z0R4SEJlM3loOW82WmROQmpMaTlIY0FuSmZjY0RRaXdMOVJBdzVrOVlPUUt2NzNXbjNSMGFrMWtadXR1VFJyUXdMWXBiMnJ2VEYwT01iME55WkVidTZNVDlMU1BGQmdlSVlCQWRv?oc=5" target="_blank">Google Gemini genera modelos 3D y simulaciones en tiempo real - Ecosistema Startup</a>
+    <span class="score">25.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> La noticia presenta un lanzamiento de IA con posible impacto estructural.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Señal de IA a validar por impacto estructural: model, gemini</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(13,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(13,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="14">
+  <div class="card-header">
+    <span class="index">#14</span>
+    <a href="https://www.marktechpost.com/2026/04/08/google-ai-research-introduces-paperorchestra-a-multi-agent-framework-for-automated-ai-research-paper-writing/" target="_blank">Google AI Research Introduces PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing</a>
+    <span class="score">26.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">MarkTechPost </div>
+  <p class="summary"><span class="label">Resumen</span> Editors Pick Agentic AI Artificial Intelligence AI Infrastructure Tech News AI Paper Summary Technology AI Shorts Language Model Large Language Model Machine Learning Software Engineering Staff Writing a research paper is brutal.. Even…</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Señal de IA a validar por impacto estructural: ai, agent</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(14,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(14,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="15">
+  <div class="card-header">
+    <span class="index">#15</span>
+    <a href="https://www.marktechpost.com/2026/04/09/sigmoid-vs-relu-activation-functions-the-inference-cost-of-losing-geometric-context/" target="_blank">Sigmoid vs ReLU Activation Functions: The Inference Cost of Losing Geometric Context</a>
+    <span class="score">21.0</span>
+    
+    
+  </div>
+  <div class="meta">MarkTechPost </div>
+  <p class="summary"><span class="label">Resumen</span> A deep neural network can be understood as a geometric system, where each layer reshapes the input space to form increasingly complex decision boundaries. For this to work effectively, layers must preserve meaningful spatial information —…</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Señal de IA a validar por impacto estructural: inference</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(15,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(15,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — compañías</h2>
+<div class="card" data-idx="16">
+  <div class="card-header">
+    <span class="index">#16</span>
+    <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQYmwtUEl4a0VfYkFvb2tRU2xHbU03RGh0ekUyUlJnYXA2RGZSckJiT3JpUHYzdmFnU25Mei1yOGlFRGl0MnV2M0tLQ2pFOUx0Y3VvSklNcHA0NUFzWXM1SVJIMFhfSTRCbWFPbmd6V29rSVM3YmRSbU9ELVlHRDBveFVUc204MGlDUzlxOVItcGdjWXZjbEtwaWhpZ0hUbUJFSnc?oc=5" target="_blank">La Fundación Ethereum convierte 5.000 ETH para financiar sus operaciones - Bitcoin.com News</a>
+    <span class="score">33.47</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Bitcoin.com News </div>
+  <p class="summary"><span class="label">Resumen</span> La pieza da una señal de cartera sobre cartera — compañías con posible impacto en tesis o valoración.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Potencial relación con activos/temáticas en cartera: bitcoin, ethereum, eth</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(16,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(16,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
 <div class="stats">
   <p>196 noticias procesadas (246 brutas)</p>
-  <p>Selección editorial: 12 items en 5 secciones</p>
+  <p>Selección editorial: 16 items en 5 secciones</p>
   <p>Duplicados filtrados: 9 por storyline, 1 cross-topic</p>
   <p>Fuentes con fallo: 1</p>
 </div>
