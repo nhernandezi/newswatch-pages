@@ -1,8 +1,12 @@
 {
-  "latest": "2026-08-31",
-  "generated_at": "2026-09-01T06:46:20.785244+00:00",
+  "latest": "2026-09-01",
+  "generated_at": "2026-09-02T06:47:27.603353+00:00",
   "latest_url": "https://nhernandezi.github.io/newswatch-pages/latest.html",
   "history": [
+    {
+      "date": "2026-09-01",
+      "path": "briefings/2026-09-01.html"
+    },
     {
       "date": "2026-08-31",
       "path": "briefings/2026-08-31.html"
