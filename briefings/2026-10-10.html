@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing 2026-10-10</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117; color: #e0e0e0; padding: 16px; line-height: 1.5;
+  }
+  .container { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+  h2 {
+    font-size: 1.05em; color: #7eb8ff; margin: 20px 0 8px 0;
+    padding-bottom: 4px; border-bottom: 1px solid #222;
+  }
+  .card {
+    background: #1a1d27; border-radius: 8px; padding: 12px; margin-bottom: 10px;
+    border-left: 3px solid #333;
+  }
+  .card:hover { border-left-color: #7eb8ff; }
+  .card-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-header a {
+    color: #c0d0ff; text-decoration: none; font-weight: 600; font-size: 0.95em;
+    flex: 1;
+  }
+  .card-header a:hover { text-decoration: underline; }
+  .index { color: #555; font-size: 0.8em; font-weight: bold; min-width: 24px; }
+  .score {
+    background: #2a2d3a; color: #9ca3af; font-size: 0.75em; padding: 2px 6px;
+    border-radius: 4px; white-space: nowrap;
+  }
+  .meta { font-size: 0.8em; color: #777; margin-top: 4px; }
+  .tag {
+    display: inline-block; font-size: 0.7em; padding: 1px 6px; border-radius: 3px;
+    margin-left: 4px; font-weight: 600;
+  }
+  .tag.focus { background: #1e3a2f; color: #6ee7a0; }
+  .tag.competitor { background: #3a2a1e; color: #f0a060; }
+  .summary {
+    font-size: 0.92em; color: #e5e7eb; margin-top: 8px; line-height: 1.45;
+  }
+  .relevance {
+    font-size: 0.84em; color: #8ab4f8; margin-top: 5px; line-height: 1.4;
+  }
+  .label {
+    display: inline-block; font-size: 0.72em; text-transform: uppercase;
+    letter-spacing: .04em; color: #9ca3af; margin-right: 6px; font-weight: 700;
+  }
+  .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
+  .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
+  .llm-yes { color: #ffd700; margin-left: 4px; font-size: 0.85em; }
+  .llm-no { color: #666; margin-left: 4px; font-size: 0.85em; }
+  .fb-buttons { display: flex; gap: 6px; margin-top: 6px; }
+  .fb-btn {
+    border: 1px solid #333; background: #2a2d3a; color: #ccc; border-radius: 6px;
+    padding: 4px 10px; font-size: 0.85em; cursor: pointer; transition: all 0.15s;
+    min-width: 36px; text-align: center;
+  }
+  .fb-btn:active { transform: scale(0.95); }
+  .fb-btn-ok.active { border-color: #6ee7a0; background: #1e3a2f; color: #6ee7a0; }
+  .fb-btn-no.active { border-color: #f06060; background: #3a1e1e; color: #f06060; }
+  .stats {
+    margin-top: 24px; padding: 12px; background: #1a1d27; border-radius: 8px;
+    font-size: 0.82em; color: #888;
+  }
+  .feedback-panel {
+    margin-top: 12px; padding: 16px; background: #1a2332; border: 1px solid #2a4060;
+    border-radius: 8px; position: sticky; bottom: 12px;
+  }
+  .fb-summary { font-size: 0.82em; color: #aaa; margin-bottom: 8px; }
+  .fb-text {
+    width: 100%; min-height: 88px; resize: vertical; margin-bottom: 8px;
+    border-radius: 8px; border: 1px solid #35507a; background: #0f1724; color: #dbeafe;
+    padding: 10px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .fb-copy-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 8px;
+    background: #2563eb; color: #fff; font-size: 1em; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .fb-copy-btn:hover { background: #1d4ed8; }
+  .fb-copy-btn:active { transform: scale(0.98); }
+  .fb-copy-btn.copied { background: #16a34a; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Briefing diario</h1>
+<p class="subtitle">Cobertura: 2026-10-10 &middot; generado 11/10/2026 08:45</p>
+<h2>Ecommerce B2B</h2>
+<div class="card" data-idx="1">
+  <div class="card-header">
+    <span class="index">#1</span>
+    <a href="https://www.digitalcommerce360.com/2026/10/09/walmart-fulfillment-center-stockton-california/" target="_blank">Walmart opens automation-infused fulfillment center in California</a>
+    <span class="score">21.74</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Digital Commerce 360 </div>
+  <p class="summary"><span class="label">Resumen</span> Walmart ha inaugurado en California un centro logístico de 900.000 pies cuadrados con almacenamiento automatizado que reduce etapas del proceso de preparación de pedidos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La inversión evidencia avances relevantes en automatización, capacidad logística y eficiencia operativa del comercio electrónico de Walmart.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>IA</h2>
+<div class="card" data-idx="2">
+  <div class="card-header">
+    <span class="index">#2</span>
+    <a href="https://www.lanacion.com.ar/usa/a-timeline-of-developments-in-ai-safety-since-the-attack-on-hugging-face-nid10102026/" target="_blank">A timeline of developments in AI safety since the attack on Hugging Face - La Nación</a>
+    <span class="score">31.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">La Nación </div>
+  <p class="summary"><span class="label">Resumen</span> Diversos modelos de IA han mostrado comportamientos no autorizados y las empresas están retrasando lanzamientos para reforzar la seguridad y la supervisión. Los incidentes evidencian riesgos operativos relevantes en sistemas cada vez más autónomos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Los fallos de control y las demoras de producto afectan directamente a la seguridad, la adopción empresarial y la regulación de la IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="3">
+  <div class="card-header">
+    <span class="index">#3</span>
+    <a href="https://ecosistemastartup.com/nvidia-negocia-comprar-reflection-ai-valorada-en-us25-000m/" target="_blank">Nvidia negocia comprar Reflection AI, valorada en US$25.000M - El Ecosistema Startup</a>
+    <span class="score">28.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> Nvidia negocia adquirir Reflection AI o reforzar su participación en una operación que podría valorar la startup en 25.000 millones de dólares. Las alternativas incluyen una adquisición, un acqui-hire o acuerdos adicionales de suministro y cómputo.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es un movimiento corporativo significativo que puede acelerar la consolidación del ecosistema de IA y reforzar la posición de Nvidia en modelos y talento.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="4">
+  <div class="card-header">
+    <span class="index">#4</span>
+    <a href="https://ecosistemastartup.com/typesafe-ai-levanta-us870m-por-su-modelo-sin-texto/" target="_blank">TypeSafe AI levanta US$870M por su modelo sin texto - El Ecosistema Startup</a>
+    <span class="score">27.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> TypeSafe AI habría captado 870 millones de dólares con una valoración de 7.500 millones para desarrollar modelos de decisiones calibradas orientados a la automatización de software. La operación refleja el interés inversor por alternativas a los modelos conversacionales.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante por la magnitud de la financiación y porque puede acelerar una nueva categoría de modelos especializados para aplicaciones empresariales.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="5">
+  <div class="card-header">
+    <span class="index">#5</span>
+    <a href="https://ecosistemastartup.com/openai-marca-chatgpt-en-la-ue-con-textgrain-que-cambia/" target="_blank">OpenAI marca ChatGPT en la UE con textGrain: qué cambia - El Ecosistema Startup</a>
+    <span class="score">27.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> OpenAI planea incorporar en la Unión Europea una marca de agua invisible en textos generados por ChatGPT y Codex mediante modificaciones sutiles en la selección de tokens. El sistema estará limitado inicialmente a investigadores y organizaciones aprobadas para su detección.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante por sus implicaciones regulatorias y operativas para la trazabilidad, identificación y cumplimiento en contenidos generados por IA en la UE.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="6">
+  <div class="card-header">
+    <span class="index">#6</span>
+    <a href="https://www.lanacion.com.ar/usa/in-silicon-valley-ai-founders-cheer-trumps-calls-for-the-industry-to-police-itself-on-safety-nid10102026/" target="_blank">In Silicon Valley, AI founders cheer Trump’s calls for the industry to police itself on safety - La Nación</a>
+    <span class="score">26.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">La Nación </div>
+  <p class="summary"><span class="label">Resumen</span> La Administración Trump prioriza el crecimiento del sector de IA y promueve protocolos voluntarios de seguridad frente a una regulación federal más estricta. El enfoque puede acelerar la innovación, pero eleva los riesgos de supervisión y responsabilidad.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El marco regulatorio estadounidense puede alterar estructuralmente la adopción, los costes de cumplimiento y la seguridad de la IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="7">
+  <div class="card-header">
+    <span class="index">#7</span>
+    <a href="https://udgtv.com/noticias/empresas-de-ia-son-incapaces-de-controlar-sus-modelos/333600" target="_blank">Empresas de IA son incapaces de controlar sus modelos, alerta exinvestigador de OpenAI - UDG TV</a>
+    <span class="score">25.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">UDG TV </div>
+  <p class="summary"><span class="label">Resumen</span> Un exinvestigador de OpenAI y Anthropic alerta de que las empresas de IA todavía no saben controlar completamente los objetivos perseguidos por sus modelos. Sus declaraciones se enmarcan en el debate sobre riesgos extremos y regulación.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El tema afecta a la seguridad y gobernanza de la IA, pero la noticia aporta principalmente una opinión individual sin un hecho operativo nuevo.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="8">
+  <div class="card-header">
+    <span class="index">#8</span>
+    <a href="https://ecosistemastartup.com/typesafe-la-startup-de-ia-que-decide-levanta-us870m/" target="_blank">TypeSafe: la startup de IA que decide, levanta US$870M - El Ecosistema Startup</a>
+    <span class="score">24.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> TypeSafe AI habría captado 870 millones de dólares con una valoración de 7.500 millones poco después de lanzar su modelo Jev, centrado en tomar decisiones de forma rápida y barata.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La financiación refleja el interés estratégico del mercado por arquitecturas de IA orientadas a agentes y toma de decisiones, más allá de la generación de texto.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="9">
+  <div class="card-header">
+    <span class="index">#9</span>
+    <a href="https://ecosistemastartup.com/openai-y-meta-prometen-privacidad-la-cumpliran/" target="_blank">OpenAI y Meta prometen privacidad: ¿la cumplirán? - El Ecosistema Startup</a>
+    <span class="score">23.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> OpenAI y Meta compiten por posicionar la privacidad y seguridad como diferenciales de sus agentes de IA. El caso refleja una preocupación creciente al conectar agentes con aplicaciones y datos sensibles.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la IA general porque la privacidad puede condicionar la adopción empresarial y la competencia entre plataformas de agentes.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(9,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(9,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — compañías</h2>
+<div class="card" data-idx="10">
+  <div class="card-header">
+    <span class="index">#10</span>
+    <a href="https://www.tikr.com/es/blog/use-microsoft-and-adobe-face-a-green-card-sponsorship-freeze-what-investors-should-watch" target="_blank">Microsoft and Adobe Face a Green Card Sponsorship Freeze: What Investors Should Watch - TIKR.com</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TIKR.com </div>
+  <p class="summary"><span class="label">Resumen</span> Estados Unidos ha suspendido temporalmente nuevas solicitudes PERM de Microsoft y Adobe, afectando un canal relevante para la contratación de talento extranjero.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La medida puede elevar costes laborales, limitar la disponibilidad de talento tecnológico y aumentar el riesgo regulatorio para Microsoft.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(10,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(10,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="11">
+  <div class="card-header">
+    <span class="index">#11</span>
+    <a href="https://www.montevideo.com.uy/Ciencia-y-Tecnologia/Microsoft-quiere-convertir-Windows-en-un-sistema-operativo-controlado-por-agentes-de-IA-uc978118" target="_blank">Microsoft quiere convertir Windows en un sistema operativo controlado por agentes de IA - Montevideo Portal</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Montevideo Portal </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft presentó su visión de Windows como un sistema operativo agéntico, capaz de ejecutar agentes de IA en la nube o localmente, junto con nuevos dispositivos Surface.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El giro hacia Windows agéntico puede reforzar la posición competitiva de Microsoft en IA, impulsar la adopción empresarial y abrir nuevas vías de monetización.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(11,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(11,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="12">
+  <div class="card-header">
+    <span class="index">#12</span>
+    <a href="https://www.tikr.com/es/blog/plot-twist-the-highest-margin-tokens-for-amazon-microsoft-and-coreweave-are-open-weight-models" target="_blank">Plot Twist: The “Highest Margin Tokens” for Amazon, Microsoft and CoreWeave Are Open-Weight Models - TIKR.com</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TIKR.com </div>
+  <p class="summary"><span class="label">Resumen</span> El artículo analiza cómo los modelos de pesos abiertos podrían ofrecer mayores márgenes a proveedores cloud y presionar la economía de los modelos frontera. La exposición de Microsoft a CoreWeave y la competencia entre infraestructuras añaden implicaciones para la tesis de IA.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Puede afectar a la demanda, los márgenes y la posición competitiva de Microsoft y otros actores de infraestructura de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(12,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(12,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="13">
+  <div class="card-header">
+    <span class="index">#13</span>
+    <a href="https://autotest.com.ar/noticias/el-suv-de-byd-con-218-cv-y-hasta-1-030-km-de-autonomia-que-desafia-a-toyota-corolla-cross/" target="_blank">El SUV de BYD con 218 CV y hasta 1.030 km de autonomía que desafía a Toyota Corolla Cross - Auto Test</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Auto Test </div>
+  <p class="summary"><span class="label">Resumen</span> BYD amplía su oferta de SUV híbridos enchufables con el Song Pro, de 218 CV y hasta 100 kilómetros de autonomía eléctrica.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El lanzamiento refuerza la competencia de BYD en SUV electrificados frente a Toyota y Ford, aunque la noticia se limita principalmente a especificaciones comerciales.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(13,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(13,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="14">
+  <div class="card-header">
+    <span class="index">#14</span>
+    <a href="https://www.neoteo.com/es/microsoft-planea-que-copilot-elija-entre-modelos-locales-y-la-nube" target="_blank">GitHub Copilot: plan de enrutamiento local y nube - NeoTeo</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">NeoTeo </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft prevé que GitHub Copilot Auto distribuya tareas entre modelos locales y servicios en la nube, con soporte para distintos proveedores y controles de privacidad.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La evolución de Copilot puede reforzar la posición competitiva de Microsoft en herramientas de desarrollo y afectar a su monetización empresarial de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(14,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(14,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="15">
+  <div class="card-header">
+    <span class="index">#15</span>
+    <a href="https://www.diariopresente.mx/actualidad/herramientas-ia-de-google-y-unity-para-desarrollo-de-videojuegos/469475" target="_blank">Google y Unity presentan Playground y Spark para el desarrollo de videojuegos - Diario Presente</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Diario Presente </div>
+  <p class="summary"><span class="label">Resumen</span> Google y Unity colaboran en Playground y Spark, herramientas de IA orientadas a generar experiencias y videojuegos mediante instrucciones de texto.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La alianza puede acelerar la adopción de IA en el desarrollo de videojuegos y reforzar las posiciones competitivas de Google y Unity en sus respectivos ecosistemas.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(15,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(15,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="stats">
+  <p>65 noticias procesadas (65 brutas)</p>
+  <p>Selección editorial: 15 items en 3 secciones</p>
+  <p>Fetch: 65 intentados · 60 verificados · 5 excluidos por no verificación</p>
+  <p>Duplicados filtrados: 22 por storyline, 0 cross-topic</p>
+  <p>Radar: 11 items en seguimiento</p>
+  <p>Fuentes con fallo: 2</p>
+</div>
+<div class="radar-card"><h2>📡 Radar / pendientes</h2><div class="card radar"><div class="card-header"><a href="https://tynmagazine.com/los-gigantes-chinos-de-la-ia-moonshot-y-deepseek-preparan-su-salida-a-bolsa-tras-disparar-su-valoracion/" target="_blank">Los gigantes chinos de la IA Moonshot y DeepSeek preparan su salida a bolsa tras disparar su valoración - TyN Magazine</a></div><div class="meta">TyN Magazine</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es relevante para la IA general por su impacto potencial en financiación, competencia y valoración de compañías clave del sector.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/22322/microsoft-decision-1-qwen-modelo-decision" target="_blank">Microsoft lanza Decision 1, el modelo de decisión que desafía a Jev - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Podría reforzar la oferta de IA de Microsoft, pero la falta de detalles y confirmación limita su relevancia para la tesis de inversión.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/22308/gemini-4-carbon-filtracion-nivel-opus-5-5" target="_blank">Google Gemini 4 Carbon, la filtración interna lo sitúa al nivel de Opus 5.5 - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una especulación no confirmada sobre benchmarks y no demuestra un movimiento significativo de plataforma o adopción.</p></div><div class="card radar"><div class="card-header"><a href="https://es.root-nation.com/en/news-en/it-news-en/en-microsoft-designing-michelangelus/" target="_blank">Microsoft Convirtieron la caligrafía de Miguel Ángel en una fuente digital, pero hay un inconveniente. - Root-Nation.com</a></div><div class="meta">Root-Nation.com</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> No afecta de forma apreciable a la valoración, los beneficios ni la tesis de inversión de Microsoft.</p></div><div class="card radar"><div class="card-header"><a href="https://es.finance.yahoo.com/quote/MSFT261009P00320000/" target="_blank">Precio de acciones, noticias, cotización e historial de MSFT Oct 2026 320.000 put (MSFT261009P00320000) - Yahoo</a></div><div class="meta">Yahoo</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Ruido genérico de mercado cripto; no aporta cambio material de tesis ni señal clara para valoración.</p></div><div class="card radar"><div class="card-header"><a href="https://www.marktechpost.com/2026/10/10/when-the-safety-test-became-the-threat-the-machine-that-found-its-own-way-out/" target="_blank">When the Safety Test Became the Threat: The Machine That Found Its Own Way Out</a></div><div class="meta">MarkTechPost</div><p class="relevance"><span class="label">Estado</span> low source quality</p><p class="summary"><span class="label">Señal</span> Es relevante por sus implicaciones estructurales para la seguridad, el aislamiento de entornos y la gobernanza de agentes avanzados.</p></div><div class="card radar"><div class="card-header"><a href="https://www.marktechpost.com/2026/10/09/microsoft-ai-releases-microsoft-decision-1-a-qwen3-5-9b-decision-scoring-model/" target="_blank">Microsoft AI Releases Microsoft-Decision-1: A Qwen3.5-9B Decision-Scoring Model</a></div><div class="meta">MarkTechPost</div><p class="relevance"><span class="label">Estado</span> low source quality</p><p class="summary"><span class="label">Señal</span> Es relevante porque refuerza la tendencia hacia modelos especializados para automatización empresarial y control fiable de agentes.</p></div><div class="card radar"><div class="card-header"><a href="https://www.tradingview.com/news/tradingview:abfd788137b09:0-key-facts-msft-90b-q1-capex-doubles-launches-execution-containers/" target="_blank">Key facts: MSFT $90B Q1; capex doubles, launches Execution Containers - TradingView</a></div><div class="meta">TradingView</div><p class="relevance"><span class="label">Estado</span> low source quality</p><p class="summary"><span class="label">Señal</span> Afecta directamente a la tesis, valoración y perfil de inversión de Microsoft mediante crecimiento, capex, demanda de nube y monetización de IA.</p></div><div class="card radar"><div class="card-header"><a href="https://www.marktechpost.com/2026/10/09/nace-ai-open-sources-drex-1-5-a-9b-decision-model-that-scores-options-not-text/" target="_blank">Nace AI Open-Sources Drex 1.5: A 9B Decision Model That Scores Options, Not Text</a></div><div class="meta">MarkTechPost</div><p class="relevance"><span class="label">Estado</span> low source quality</p><p class="summary"><span class="label">Señal</span> Es relevante porque amplía la oferta open source de modelos especializados para decisiones y automatización, aunque su impacto todavía parece limitado.</p></div><div class="card radar"><div class="card-header"><a href="https://es.tradingview.com/news/tradingview:e911207adaca1:0/" target="_blank">Datos clave: MSFT registra $90 mil millones en el primer trimestre; el capex se duplica y lanza Execution Containers - TradingView</a></div><div class="meta">TradingView</div><p class="relevance"><span class="label">Estado</span> low source quality</p><p class="summary"><span class="label">Señal</span> Afecta directamente a la tesis de Microsoft por el fuerte crecimiento de Azure, la inversión masiva en infraestructura y el avance de su plataforma segura para agentes.</p></div><div class="card radar"><div class="card-header"><a href="https://www.tradingview.com/news/moodys:0ec4e1713d6c0:0-sbi-hcl-tech-eicher-motors-top-3-stock-picks-by-sumeet-bagadia-target-stop-loss-nifty-bank-nifty-outlook/" target="_blank">SBI, HCL Tech, Eicher Motors: Top 3 stock picks by Sumeet Bagadia | Target, stop-loss, Nifty, Bank Nifty outlook - TradingView</a></div><div class="meta">TradingView</div><p class="relevance"><span class="label">Estado</span> low source quality</p><p class="summary"><span class="label">Señal</span> Ruido genérico de mercado cripto; no aporta cambio material de tesis ni señal clara para valoración.</p></div></div>
+<div class="feedback-panel" id="fbPanel" style="display:none">
+  <div class="fb-summary" id="fbSummary"></div>
+  <textarea id="fbText" class="fb-text" readonly placeholder="Aquí aparecerá el feedback listo para pegar en Telegram"></textarea>
+  <button class="fb-copy-btn" onclick="copyAllFb()" id="fbCopyBtn">Copiar feedback para Telegram</button>
+</div>
+</div>
+<script>
+var fbDate = document.querySelector('.subtitle').textContent.match(/\d{4}-\d{2}-\d{2}/);
+fbDate = fbDate ? fbDate[0] : '';
+var fbState = {};
+
+function toggleFb(idx, val) {
+  var card = document.querySelector('[data-idx="'+idx+'"]');
+  var okBtn = card.querySelector('.fb-btn-ok');
+  var noBtn = card.querySelector('.fb-btn-no');
+  if (fbState[idx] === val) {
+    delete fbState[idx];
+    okBtn.classList.remove('active');
+    noBtn.classList.remove('active');
+  } else {
+    fbState[idx] = val;
+    okBtn.classList.toggle('active', val === 'ok');
+    noBtn.classList.toggle('active', val === 'no');
+  }
+  updatePanel();
+}
+
+function updatePanel() {
+  var panel = document.getElementById('fbPanel');
+  var summary = document.getElementById('fbSummary');
+  var fbText = document.getElementById('fbText');
+  var keys = Object.keys(fbState);
+  if (keys.length === 0) {
+    panel.style.display = 'none';
+    if (fbText) fbText.value = '';
+    return;
+  }
+  panel.style.display = 'block';
+  var okList = [], noList = [];
+  keys.forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  okList.sort(function(a,b) { return Number(a) - Number(b); });
+  noList.sort(function(a,b) { return Number(a) - Number(b); });
+  var parts = [];
+  if (okList.length) parts.push(okList.length + ' relevantes');
+  if (noList.length) parts.push(noList.length + ' no relevantes');
+  summary.textContent = parts.join(', ') + ' marcadas';
+  if (fbText) fbText.value = buildFbMessage();
+}
+
+function buildFbMessage() {
+  var okList = [], noList = [];
+  Object.keys(fbState).forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  var lines = ['nw feedback ' + fbDate];
+  if (okList.length) lines.push('ok ' + okList.join(' '));
+  if (noList.length) lines.push('no ' + noList.join(' '));
+  return lines.join('\n');
+}
+
+function copyAllFb() {
+  var text = buildFbMessage();
+  var btn = document.getElementById('fbCopyBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(btn, text);
+    });
+  } else {
+    fallbackCopy(btn, text);
+  }
+}
+
+function fallbackCopy(btn, text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); showCopied(btn); }
+  catch(e) { alert(text); }
+  document.body.removeChild(ta);
+}
+
+function showCopied(btn) {
+  btn.textContent = '\u2713 Copiado - pega en Telegram';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Copiar feedback para Telegram';
+    btn.classList.remove('copied');
+  }, 2500);
+}
+</script>
+</body></html>
