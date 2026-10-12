@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing 2026-10-11</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117; color: #e0e0e0; padding: 16px; line-height: 1.5;
+  }
+  .container { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+  h2 {
+    font-size: 1.05em; color: #7eb8ff; margin: 20px 0 8px 0;
+    padding-bottom: 4px; border-bottom: 1px solid #222;
+  }
+  .card {
+    background: #1a1d27; border-radius: 8px; padding: 12px; margin-bottom: 10px;
+    border-left: 3px solid #333;
+  }
+  .card:hover { border-left-color: #7eb8ff; }
+  .card-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-header a {
+    color: #c0d0ff; text-decoration: none; font-weight: 600; font-size: 0.95em;
+    flex: 1;
+  }
+  .card-header a:hover { text-decoration: underline; }
+  .index { color: #555; font-size: 0.8em; font-weight: bold; min-width: 24px; }
+  .score {
+    background: #2a2d3a; color: #9ca3af; font-size: 0.75em; padding: 2px 6px;
+    border-radius: 4px; white-space: nowrap;
+  }
+  .meta { font-size: 0.8em; color: #777; margin-top: 4px; }
+  .tag {
+    display: inline-block; font-size: 0.7em; padding: 1px 6px; border-radius: 3px;
+    margin-left: 4px; font-weight: 600;
+  }
+  .tag.focus { background: #1e3a2f; color: #6ee7a0; }
+  .tag.competitor { background: #3a2a1e; color: #f0a060; }
+  .summary {
+    font-size: 0.92em; color: #e5e7eb; margin-top: 8px; line-height: 1.45;
+  }
+  .relevance {
+    font-size: 0.84em; color: #8ab4f8; margin-top: 5px; line-height: 1.4;
+  }
+  .label {
+    display: inline-block; font-size: 0.72em; text-transform: uppercase;
+    letter-spacing: .04em; color: #9ca3af; margin-right: 6px; font-weight: 700;
+  }
+  .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
+  .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
+  .llm-yes { color: #ffd700; margin-left: 4px; font-size: 0.85em; }
+  .llm-no { color: #666; margin-left: 4px; font-size: 0.85em; }
+  .fb-buttons { display: flex; gap: 6px; margin-top: 6px; }
+  .fb-btn {
+    border: 1px solid #333; background: #2a2d3a; color: #ccc; border-radius: 6px;
+    padding: 4px 10px; font-size: 0.85em; cursor: pointer; transition: all 0.15s;
+    min-width: 36px; text-align: center;
+  }
+  .fb-btn:active { transform: scale(0.95); }
+  .fb-btn-ok.active { border-color: #6ee7a0; background: #1e3a2f; color: #6ee7a0; }
+  .fb-btn-no.active { border-color: #f06060; background: #3a1e1e; color: #f06060; }
+  .stats {
+    margin-top: 24px; padding: 12px; background: #1a1d27; border-radius: 8px;
+    font-size: 0.82em; color: #888;
+  }
+  .feedback-panel {
+    margin-top: 12px; padding: 16px; background: #1a2332; border: 1px solid #2a4060;
+    border-radius: 8px; position: sticky; bottom: 12px;
+  }
+  .fb-summary { font-size: 0.82em; color: #aaa; margin-bottom: 8px; }
+  .fb-text {
+    width: 100%; min-height: 88px; resize: vertical; margin-bottom: 8px;
+    border-radius: 8px; border: 1px solid #35507a; background: #0f1724; color: #dbeafe;
+    padding: 10px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .fb-copy-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 8px;
+    background: #2563eb; color: #fff; font-size: 1em; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .fb-copy-btn:hover { background: #1d4ed8; }
+  .fb-copy-btn:active { transform: scale(0.98); }
+  .fb-copy-btn.copied { background: #16a34a; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Briefing diario</h1>
+<p class="subtitle">Cobertura: 2026-10-11 &middot; generado 12/10/2026 08:43</p>
+<h2>IA</h2>
+<div class="card" data-idx="1">
+  <div class="card-header">
+    <span class="index">#1</span>
+    <a href="https://www.vietnam.vn/es/ai-mua-sam-thay-con-nguoi-chan-lai-hay-mo-cua" target="_blank">La IA compra para humanos: ¿Bloquearla o abrir las puertas? - Vietnam.vn</a>
+    <span class="score">27.24</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Vietnam.vn </div>
+  <p class="summary"><span class="label">Resumen</span> Las plataformas de comercio electrónico están adoptando estrategias opuestas frente a agentes de IA que buscan productos y ejecutan pagos por los usuarios, incluyendo el bloqueo de agentes externos por parte de Amazon. Esto puede desplazar la relación con el cliente desde las plataformas hacia los agentes.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Afecta estructuralmente a la distribución digital, el control del canal, la intermediación y la competencia en ecommerce.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="2">
+  <div class="card-header">
+    <span class="index">#2</span>
+    <a href="https://www.elconfidencialdigital.com/articulo/dinero/microsoft-compromete-175000-millones-dolares-carrera-ia/202610112302451492632.html" target="_blank">Microsoft compromete 175.000 millones de dólares con la carrera de la IA - Confidencial Digital</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Confidencial Digital </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft prevé destinar 175.000 millones de dólares a centros de datos, chips y capacidad de computación para impulsar Azure y Copilot. La magnitud del gasto refleja la intensidad de la carrera por la infraestructura de IA y el reto de rentabilizarla.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es un movimiento significativo de un actor clave que afecta a la capacidad tecnológica, la competencia y la economía de la IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="3">
+  <div class="card-header">
+    <span class="index">#3</span>
+    <a href="https://www.expansion.com/tecnologia/2026/10/11/empresas-ponen-topes-ia-explosion-gasto.html" target="_blank">Las empresas ponen topes a la IA ante la explosión del gasto - Expansión</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Expansión </div>
+  <p class="summary"><span class="label">Resumen</span> Empresas como Uber están imponiendo límites al gasto en IA ante el rápido crecimiento de los agentes y la dificultad de controlar sus costes. La noticia apunta a una adopción más selectiva y orientada al retorno de la inversión.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Evidencia un riesgo estructural para la expansión empresarial de la IA y una posible transición desde la experimentación hacia la disciplina presupuestaria.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="4">
+  <div class="card-header">
+    <span class="index">#4</span>
+    <a href="https://francis.naukas.com/2026/10/11/la-marabunta-de-demostraciones-matematicas-de-openai/" target="_blank">La marabunta de demostraciones matemáticas de OpenAI - La Ciencia de la Mula Francis</a>
+    <span class="score">26.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">La Ciencia de la Mula Francis </div>
+  <p class="summary"><span class="label">Resumen</span> OpenAI ha publicado un catálogo de 722 artículos con demostraciones matemáticas agrupadas en 372 familias de problemas, tras resolver aproximadamente el 18% de unos 4.000 intentos. El resultado muestra avances experimentales, pero también límites importantes en razonamiento matemático autónomo.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para el estado del arte de IA porque aporta evidencia cuantitativa sobre capacidades y límites en razonamiento matemático.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="5">
+  <div class="card-header">
+    <span class="index">#5</span>
+    <a href="https://gananzia.com/cuando-tendremos-robots-humanoides-que-hagan-las-tareas-de-casa/" target="_blank">¿Cuándo tendremos robots humanoides que hagan las tareas de casa? - Gananzia</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Gananzia </div>
+  <p class="summary"><span class="label">Resumen</span> Figure AI ha probado robots humanoides en viviendas desconocidas, con capacidad para realizar tareas domésticas pero solo un 56% de éxito. El avance muestra progreso técnico, aunque la fiabilidad y el coste siguen siendo barreras para la adopción masiva.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la IA por tratarse de un avance significativo en robótica embodied y por evidenciar los retos de comercialización y fiabilidad.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="6">
+  <div class="card-header">
+    <span class="index">#6</span>
+    <a href="https://www.diariobitcoin.com/tecnologia/agentes-de-ia-exageran-sus-hallazgos-y-siguen-lejos-de-investigar-por-cuenta-propia/" target="_blank">Agentes de IA exageran sus hallazgos y siguen lejos de investigar por cuenta propia - DiarioBitcoin</a>
+    <span class="score">16.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">DiarioBitcoin </div>
+  <p class="summary"><span class="label">Resumen</span> Una evaluación de agentes de IA concluye que todavía presentan fallos al innovar, verificar resultados y comunicar sus limitaciones en tareas de investigación científica. Esto cuestiona las capacidades actuales de investigación autónoma pese a los avances de los laboratorios.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta evidencia sobre las limitaciones estructurales y la madurez real de los agentes de IA, relevante para la adopción empresarial y las expectativas del sector.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — compañías</h2>
+<div class="card" data-idx="7">
+  <div class="card-header">
+    <span class="index">#7</span>
+    <a href="https://mexicobusiness.news/es/tech/news/microsoft-y-openai-finalizan-acuerdo-de-exclusividad" target="_blank">Microsoft y OpenAI finalizan acuerdo de exclusividad - Mexico Business News</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Mexico Business News </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft y OpenAI habrían modificado su acuerdo para eliminar la exclusividad de licencias y permitir el uso de modelos en nubes rivales. El cambio podría facilitar la expansión de OpenAI y reducir riesgos regulatorios, aunque también diluye parte de la ventaja exclusiva de Microsoft.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es material para la tesis de Microsoft por su impacto potencial en Azure, la alianza estratégica con OpenAI, la competencia en IA y el riesgo antimonopolio.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="8">
+  <div class="card-header">
+    <span class="index">#8</span>
+    <a href="https://elcongresista.mx/politica/nacional/estados-unidos-suspende-empresas-visas-h1b" target="_blank">Microsoft y otras ocho empresas quedan fuera del programa de visas H-1B tras suspensiones en EE.UU. - El Congresista</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Congresista </div>
+  <p class="summary"><span class="label">Resumen</span> Estados Unidos habría suspendido a Microsoft y otras empresas del programa PERM por presuntos abusos relacionados con la contratación de trabajadores extranjeros. La medida podría restringir nuevas solicitudes y elevar la presión regulatoria sobre su contratación tecnológica.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para Microsoft porque puede afectar al acceso a talento especializado, los costes laborales y la capacidad de ejecutar su estrategia tecnológica.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="9">
+  <div class="card-header">
+    <span class="index">#9</span>
+    <a href="https://es.investing.com/news/company-news/el-director-ejecutivo-de-renault-califica-el-acuerdo-uechina-sobre-hibridos-como-un-hito-3868861" target="_blank">El director ejecutivo de Renault califica el acuerdo UE-China sobre híbridos como un &quot;hito&quot; - Investing.com España</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Investing.com España </div>
+  <p class="summary"><span class="label">Resumen</span> Renault considera un hito el acuerdo preliminar de la UE para limitar las importaciones de vehículos híbridos fabricados en China. El pacto podría reducir la presión competitiva sobre los fabricantes europeos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La medida afecta directamente al entorno competitivo, los precios y las perspectivas de Renault y del sector automovilístico europeo.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(9,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(9,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="10">
+  <div class="card-header">
+    <span class="index">#10</span>
+    <a href="https://www.elconfidencialdigital.com/articulo/dinero/ia-separa-tecnologicas-mas-potencial-bolsa/202610112312391492596.html" target="_blank">La IA separa a las tecnológicas con más potencial en Bolsa - Confidencial Digital</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Confidencial Digital </div>
+  <p class="summary"><span class="label">Resumen</span> Los inversores están pasando de premiar las promesas de IA a exigir beneficios, generación de caja y ejecución demostrable. Nvidia, Amazon y Microsoft aparecen entre las compañías mejor posicionadas, aunque las valoraciones dependen más de resultados tangibles.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Afecta directamente a la tesis de valoración y al potencial bursátil de varias grandes tecnológicas en cartera.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(10,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(10,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="11">
+  <div class="card-header">
+    <span class="index">#11</span>
+    <a href="https://www.xataka.com/robotica-e-ia/satya-nadella-ceo-microsoft-debemos-asumir-que-todos-modelos-ia-estan-comprometidos-contenerlos-principio" target="_blank">Satya Nadella, CEO de Microsoft: &quot;Debemos asumir que todos los modelos de IA están comprometidos y contenerlos desde el principio&quot; - Xataka</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Xataka </div>
+  <p class="summary"><span class="label">Resumen</span> Satya Nadella sostiene que los modelos de IA deben tratarse como potencialmente comprometidos y operar bajo reglas, permisos y supervisión independiente. La postura refuerza el enfoque de Microsoft en seguridad y gobernanza de agentes de IA.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la tesis de Microsoft porque la seguridad y el control de la IA pueden influir en la adopción empresarial, los costes operativos y la regulación.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(11,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(11,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="12">
+  <div class="card-header">
+    <span class="index">#12</span>
+    <a href="https://www.byd.com/es-es/news-list/byd-salon-automovil-paris-2026" target="_blank">BYD en el Salón del Automóvil París Octubre 2026 | Noticias | BYD España - BYD</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">BYD </div>
+  <p class="summary"><span class="label">Resumen</span> BYD anuncia su participación en el Salón del Automóvil de París 2026, donde presentará nuevos modelos, la segunda generación de Blade Battery y soluciones de almacenamiento energético.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la visibilidad comercial y tecnológica de BYD, aunque no aporta todavía impacto financiero cuantificable.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(12,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(12,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="13">
+  <div class="card-header">
+    <span class="index">#13</span>
+    <a href="https://www.notebookcheck.org/Windows-Update-Los-PC-obsoletos-dejaran-de-recibir-actualizaciones-en-junio-de-2027.1421443.0.html" target="_blank">Windows Update: Los PC obsoletos dejarán de recibir actualizaciones en junio de 2027 - Notebookcheck.org</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Notebookcheck.org </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft sustituirá certificados de Windows Update en 2027, lo que podría dejar sin parches a equipos obsoletos o que lleven meses sin actualizarse. La mayoría de dispositivos recibirá los certificados mediante actualizaciones ordinarias.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Tiene impacto operativo y de seguridad sobre el ecosistema de Microsoft, aunque es un asunto técnico acotado y de efecto financiero limitado.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(13,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(13,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="14">
+  <div class="card-header">
+    <span class="index">#14</span>
+    <a href="https://qna.org.qa/es-ES/news/news-details?id=el-mcit-reconoce-la-excelencia-de-las-entidades-en-la-adopcion-de-la-transformacion-digital&amp;date=11%2F10%2F2026" target="_blank">El MCIT reconoce la excelencia de las entidades en la adopción de la transformación digital - Qatar news agency</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Qatar news agency </div>
+  <p class="summary"><span class="label">Resumen</span> El Ministerio de Comunicaciones de Qatar, junto con Microsoft, presentó los resultados de un programa de adopción de Microsoft 365 Copilot. La noticia apunta a avances de implantación empresarial, aunque aporta pocos datos concretos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Puede respaldar la tesis de crecimiento de Microsoft en software empresarial y adopción de IA, pero su impacto financiero es limitado.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(14,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(14,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="stats">
+  <p>59 noticias procesadas (59 brutas)</p>
+  <p>Selección editorial: 14 items en 2 secciones</p>
+  <p>Fetch: 59 intentados · 54 verificados · 5 excluidos por no verificación</p>
+  <p>Duplicados filtrados: 18 por storyline, 0 cross-topic</p>
+  <p>Radar: 10 items en seguimiento</p>
+  <p>Fuentes con fallo: 2</p>
+</div>
+<div class="radar-card"><h2>📡 Radar / pendientes</h2><div class="card radar"><div class="card-header"><a href="https://www.pasionmovil.com/inteligencia-artificial/google-lanza-detector-synthid-ia/amp/" target="_blank">Detector SynthID de Google lanza su versión global y gratuita - PasionMóvil</a></div><div class="meta">PasionMóvil</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es relevante para la seguridad y adopción responsable de la IA, aunque su impacto competitivo directo parece limitado.</p></div><div class="card radar"><div class="card-header"><a href="chrome-error://chromewebdata/" target="_blank">Microsoft retirará Themes by Copilot de Outlook en octubre de 2026: qué pasará con tus temas - Softonic</a></div><div class="meta">Softonic</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un cambio menor de funcionalidad sin impacto apreciable en la valoración, la tesis corporativa o la posición competitiva de Microsoft.</p></div><div class="card radar"><div class="card-header"><a href="https://consent.google.com/save" target="_blank">Wall Street fija el precio de las acciones de Google para los próximos 12 meses - Bitfinanzas</a></div><div class="meta">Bitfinanzas</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una pieza especulativa sobre precio objetivo sin información corporativa nueva ni impacto claro en la tesis de inversión.</p></div><div class="card radar"><div class="card-header"><a href="https://es.finance.yahoo.com/quote/%5E990100-USD-STRD/" target="_blank">Gráficos, datos y noticias de MSCI WORLD (^990100-USD-STRD) - Yahoo</a></div><div class="meta">Yahoo</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> No aporta un catalizador, riesgo o cambio relevante para la tesis de un ETF o índice de cartera.</p></div><div class="card radar"><div class="card-header"><a href="https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_06be0366-b2f7-4a31-828b-3d4cad75c703" target="_blank">JD Vance warns Microsoft over green card program allegations - Yahoo</a></div><div class="meta">Yahoo</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Podría implicar riesgo reputacional o regulatorio para Microsoft, pero la falta de contexto impide valorar un impacto material.</p></div><div class="card radar"><div class="card-header"><a href="https://www.marktechpost.com/2026/10/10/sakana-ais-llm-peer-review-system-catches-73-of-core-claim-errors/" target="_blank">Sakana AI’s LLM Peer Review System Catches 73% of Core-Claim Errors</a></div><div class="meta">MarkTechPost</div><p class="relevance"><span class="label">Estado</span> low source quality</p><p class="summary"><span class="label">Señal</span> Es relevante para la IA general porque aborda de forma práctica la verificación y reducción de errores de los modelos.</p></div><div class="card radar"><div class="card-header"><a href="https://www.marktechpost.com/2026/10/11/what-is-decision-3-0-vllm-semantic-routers-new-open-decision-models/" target="_blank">What is Decision 3.0? vLLM Semantic Router’s New Open Decision Models</a></div><div class="meta">MarkTechPost</div><p class="relevance"><span class="label">Estado</span> low source quality</p><p class="summary"><span class="label">Señal</span> Refuerza la disponibilidad de modelos abiertos y eficientes para arquitecturas empresariales de agentes y sistemas multimodales.</p></div><div class="card radar"><div class="card-header"><a href="https://www.marktechpost.com/2026/10/10/orcarouter-releases-orcacyber-zero-1-5-cybersecurity-model-with-1m-context/" target="_blank">OrcaRouter Releases OrcaCyber Zero 1.5 Cybersecurity Model With 1M Context</a></div><div class="meta">MarkTechPost</div><p class="relevance"><span class="label">Estado</span> low source quality</p><p class="summary"><span class="label">Señal</span> Tiene relevancia para la IA por la especialización de modelos en seguridad, aunque la evidencia independiente y el acceso limitado reducen su impacto.</p></div><div class="card radar"><div class="card-header"><a href="https://www.diariobitcoin.com/tecnologia/microsoft-aporta-a-linux-un-controlador-iommu-para-proteger-dispositivos-en-hyper-v/" target="_blank">Microsoft aporta a Linux un controlador IOMMU para proteger dispositivos en Hyper-V - DiarioBitcoin</a></div><div class="meta">DiarioBitcoin</div><p class="relevance"><span class="label">Estado</span> low source quality</p><p class="summary"><span class="label">Señal</span> Refuerza la estrategia de interoperabilidad y seguridad cloud de Microsoft, aunque el impacto financiero inmediato es limitado.</p></div><div class="card radar"><div class="card-header"><a href="https://www.tradingview.com/news/moodys:0a729c1fcdf1e:0-market-strategy-where-are-nifty-50-sensex-bank-nifty-headed-this-week-top-things-investors-should-watch/" target="_blank">Market strategy: Where are Nifty 50, Sensex, Bank Nifty headed this week? Top things investors should watch? - TradingView</a></div><div class="meta">TradingView</div><p class="relevance"><span class="label">Estado</span> low source quality</p><p class="summary"><span class="label">Señal</span> Ruido genérico de mercado cripto; no aporta cambio material de tesis ni señal clara para valoración.</p></div></div>
+<div class="feedback-panel" id="fbPanel" style="display:none">
+  <div class="fb-summary" id="fbSummary"></div>
+  <textarea id="fbText" class="fb-text" readonly placeholder="Aquí aparecerá el feedback listo para pegar en Telegram"></textarea>
+  <button class="fb-copy-btn" onclick="copyAllFb()" id="fbCopyBtn">Copiar feedback para Telegram</button>
+</div>
+</div>
+<script>
+var fbDate = document.querySelector('.subtitle').textContent.match(/\d{4}-\d{2}-\d{2}/);
+fbDate = fbDate ? fbDate[0] : '';
+var fbState = {};
+
+function toggleFb(idx, val) {
+  var card = document.querySelector('[data-idx="'+idx+'"]');
+  var okBtn = card.querySelector('.fb-btn-ok');
+  var noBtn = card.querySelector('.fb-btn-no');
+  if (fbState[idx] === val) {
+    delete fbState[idx];
+    okBtn.classList.remove('active');
+    noBtn.classList.remove('active');
+  } else {
+    fbState[idx] = val;
+    okBtn.classList.toggle('active', val === 'ok');
+    noBtn.classList.toggle('active', val === 'no');
+  }
+  updatePanel();
+}
+
+function updatePanel() {
+  var panel = document.getElementById('fbPanel');
+  var summary = document.getElementById('fbSummary');
+  var fbText = document.getElementById('fbText');
+  var keys = Object.keys(fbState);
+  if (keys.length === 0) {
+    panel.style.display = 'none';
+    if (fbText) fbText.value = '';
+    return;
+  }
+  panel.style.display = 'block';
+  var okList = [], noList = [];
+  keys.forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  okList.sort(function(a,b) { return Number(a) - Number(b); });
+  noList.sort(function(a,b) { return Number(a) - Number(b); });
+  var parts = [];
+  if (okList.length) parts.push(okList.length + ' relevantes');
+  if (noList.length) parts.push(noList.length + ' no relevantes');
+  summary.textContent = parts.join(', ') + ' marcadas';
+  if (fbText) fbText.value = buildFbMessage();
+}
+
+function buildFbMessage() {
+  var okList = [], noList = [];
+  Object.keys(fbState).forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  var lines = ['nw feedback ' + fbDate];
+  if (okList.length) lines.push('ok ' + okList.join(' '));
+  if (noList.length) lines.push('no ' + noList.join(' '));
+  return lines.join('\n');
+}
+
+function copyAllFb() {
+  var text = buildFbMessage();
+  var btn = document.getElementById('fbCopyBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(btn, text);
+    });
+  } else {
+    fallbackCopy(btn, text);
+  }
+}
+
+function fallbackCopy(btn, text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); showCopied(btn); }
+  catch(e) { alert(text); }
+  document.body.removeChild(ta);
+}
+
+function showCopied(btn) {
+  btn.textContent = '\u2713 Copiado - pega en Telegram';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Copiar feedback para Telegram';
+    btn.classList.remove('copied');
+  }, 2500);
+}
+</script>
+</body></html>
