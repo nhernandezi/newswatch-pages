@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing 2026-10-25</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117; color: #e0e0e0; padding: 16px; line-height: 1.5;
+  }
+  .container { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+  h2 {
+    font-size: 1.05em; color: #7eb8ff; margin: 20px 0 8px 0;
+    padding-bottom: 4px; border-bottom: 1px solid #222;
+  }
+  .card {
+    background: #1a1d27; border-radius: 8px; padding: 12px; margin-bottom: 10px;
+    border-left: 3px solid #333;
+  }
+  .card:hover { border-left-color: #7eb8ff; }
+  .card-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-header a {
+    color: #c0d0ff; text-decoration: none; font-weight: 600; font-size: 0.95em;
+    flex: 1;
+  }
+  .card-header a:hover { text-decoration: underline; }
+  .index { color: #555; font-size: 0.8em; font-weight: bold; min-width: 24px; }
+  .score {
+    background: #2a2d3a; color: #9ca3af; font-size: 0.75em; padding: 2px 6px;
+    border-radius: 4px; white-space: nowrap;
+  }
+  .meta { font-size: 0.8em; color: #777; margin-top: 4px; }
+  .tag {
+    display: inline-block; font-size: 0.7em; padding: 1px 6px; border-radius: 3px;
+    margin-left: 4px; font-weight: 600;
+  }
+  .tag.focus { background: #1e3a2f; color: #6ee7a0; }
+  .tag.competitor { background: #3a2a1e; color: #f0a060; }
+  .summary {
+    font-size: 0.92em; color: #e5e7eb; margin-top: 8px; line-height: 1.45;
+  }
+  .relevance {
+    font-size: 0.84em; color: #8ab4f8; margin-top: 5px; line-height: 1.4;
+  }
+  .label {
+    display: inline-block; font-size: 0.72em; text-transform: uppercase;
+    letter-spacing: .04em; color: #9ca3af; margin-right: 6px; font-weight: 700;
+  }
+  .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
+  .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
+  .llm-yes { color: #ffd700; margin-left: 4px; font-size: 0.85em; }
+  .llm-no { color: #666; margin-left: 4px; font-size: 0.85em; }
+  .fb-buttons { display: flex; gap: 6px; margin-top: 6px; }
+  .fb-btn {
+    border: 1px solid #333; background: #2a2d3a; color: #ccc; border-radius: 6px;
+    padding: 4px 10px; font-size: 0.85em; cursor: pointer; transition: all 0.15s;
+    min-width: 36px; text-align: center;
+  }
+  .fb-btn:active { transform: scale(0.95); }
+  .fb-btn-ok.active { border-color: #6ee7a0; background: #1e3a2f; color: #6ee7a0; }
+  .fb-btn-no.active { border-color: #f06060; background: #3a1e1e; color: #f06060; }
+  .stats {
+    margin-top: 24px; padding: 12px; background: #1a1d27; border-radius: 8px;
+    font-size: 0.82em; color: #888;
+  }
+  .feedback-panel {
+    margin-top: 12px; padding: 16px; background: #1a2332; border: 1px solid #2a4060;
+    border-radius: 8px; position: sticky; bottom: 12px;
+  }
+  .fb-summary { font-size: 0.82em; color: #aaa; margin-bottom: 8px; }
+  .fb-text {
+    width: 100%; min-height: 88px; resize: vertical; margin-bottom: 8px;
+    border-radius: 8px; border: 1px solid #35507a; background: #0f1724; color: #dbeafe;
+    padding: 10px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .fb-copy-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 8px;
+    background: #2563eb; color: #fff; font-size: 1em; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .fb-copy-btn:hover { background: #1d4ed8; }
+  .fb-copy-btn:active { transform: scale(0.98); }
+  .fb-copy-btn.copied { background: #16a34a; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Briefing diario</h1>
+<p class="subtitle">Cobertura: 2026-10-25 &middot; generado 26/10/2026 08:49</p>
+<h2>IA</h2>
+<div class="card" data-idx="1">
+  <div class="card-header">
+    <span class="index">#1</span>
+    <a href="https://www.neoteo.com/es/que-hara-el-laboratorio-britanico-de-bioseguridad-con-ia" target="_blank">AI Biosecurity Lab: qué hará el laboratorio británico - NeoTeo</a>
+    <span class="score">31.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">NeoTeo </div>
+  <p class="summary"><span class="label">Resumen</span> Reino Unido planea invertir 100 millones de libras en un laboratorio de bioseguridad basado en IA para detectar amenazas biológicas y acelerar vacunas y tratamientos. OpenAI y Anthropic aportarían hasta 200 millones de libras en créditos, modelos y asistencia técnica.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es un movimiento significativo de política pública, seguridad y aplicación estratégica de IA, con implicaciones para la gobernanza y la investigación biológica.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="2">
+  <div class="card-header">
+    <span class="index">#2</span>
+    <a href="https://tecnologiageek.com/agente-de-lyrie-cybergym/" target="_blank">Agente de Lyrie en CyberGym: 99,2 % de aciertos reales - Tecnología Geek</a>
+    <span class="score">31.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Tecnología Geek </div>
+  <p class="summary"><span class="label">Resumen</span> El agente de Lyrie alcanzó un 99,2 % de aciertos reproduciendo vulnerabilidades reales en CyberGym, por encima de varios actores líderes. El resultado apunta a avances relevantes en agentes autónomos para ciberseguridad ofensiva.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es un avance significativo en capacidades agenticas y seguridad de IA, con potencial impacto en la automatización de pruebas y defensa cibernética.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="3">
+  <div class="card-header">
+    <span class="index">#3</span>
+    <a href="https://www.mundiario.com/articulo/gente/alexandr-wang-joven-que-podria-heredar-imperio-tecnologico-zuckerberg/20261025145403448898.html" target="_blank">Alexandr Wang: quién es el posible sucesor de Zuckerberg en Meta - MUNDIARIO</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">MUNDIARIO </div>
+  <p class="summary"><span class="label">Resumen</span> Alexandr Wang, fundador de Scale AI, se consolida como una figura influyente en la estrategia de inteligencia artificial de Meta y potencial sucesor de Zuckerberg.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El ascenso de Wang refleja un movimiento relevante de liderazgo y posicionamiento corporativo de Meta en la carrera por la IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="4">
+  <div class="card-header">
+    <span class="index">#4</span>
+    <a href="https://es.ara.cat/economia/empresas/seny-ia-catalana-vigila-agentes_1_5890112.html" target="_blank">Seny, la IA catalana que vigila a los agentes - Diari ARA</a>
+    <span class="score">26.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Diari ARA </div>
+  <p class="summary"><span class="label">Resumen</span> Seny es una iniciativa catalana orientada a supervisar y controlar el comportamiento de agentes de IA. La información disponible no detalla suficientemente su tecnología, adopción, financiación ni resultados.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La supervisión de agentes es un área relevante para la seguridad y la adopción empresarial, pero faltan datos para valorar su impacto real.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="5">
+  <div class="card-header">
+    <span class="index">#5</span>
+    <a href="https://occidente.co/secciones/tecnologia/ai-glasses-accesibilidad-museos/" target="_blank">AI glasses para accesibilidad en museos - Diario Occidente</a>
+    <span class="score">26.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Diario Occidente </div>
+  <p class="summary"><span class="label">Resumen</span> Meta y EssilorLuxottica probarán gafas con IA para describir obras de arte a personas ciegas o con baja visión en la Pinacoteca di Brera. Es un piloto concreto de adopción de IA multimodal en servicios culturales.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Muestra una aplicación empresarial y de accesibilidad relevante, aunque todavía limitada a un piloto específico.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="6">
+  <div class="card-header">
+    <span class="index">#6</span>
+    <a href="https://es.gizmodo.com/la-inteligencia-artificial-logro-predecir-la-trayectoria-de-un-huracan-mejor-que-los-modelos-tradicionales-asi-esta-cambiando-la-meteorologia-2000267125" target="_blank">La inteligencia artificial logró predecir la trayectoria de un huracán mejor que los modelos tradicionales: así está cambiando la meteorología - Gizmodo en Español</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Gizmodo en Español </div>
+  <p class="summary"><span class="label">Resumen</span> Un modelo de Google DeepMind habría predicho la trayectoria del huracán Isaías con mayor precisión que modelos meteorológicos tradicionales. El caso ilustra el potencial de la IA para complementar la predicción meteorológica, aunque persisten limitaciones.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es una demostración relevante de IA aplicada a ciencia y servicios críticos, pero basada en un caso concreto todavía no generalizable.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="7">
+  <div class="card-header">
+    <span class="index">#7</span>
+    <a href="https://www.tradingview.com/news/benzinga:d8fc3e0c2094b:0-a-1-trillion-depreciation-bomb-is-ticking-beneath-the-ai-market/" target="_blank">A $1 Trillion Depreciation Bomb Is Ticking Beneath the AI Market - TradingView</a>
+    <span class="score">31.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TradingView </div>
+  <p class="summary"><span class="label">Resumen</span> El auge de la inversión en infraestructura de IA podría estar elevando los beneficios contables antes de reflejar plenamente los costes de depreciación de los centros de datos y GPU. La situación introduce riesgos para la sostenibilidad de los beneficios y las valoraciones del sector.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Afecta directamente a la tesis de inversión en IA, al perfil de beneficios y al riesgo de sobreinversión en infraestructura.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — compañías</h2>
+<div class="card" data-idx="8">
+  <div class="card-header">
+    <span class="index">#8</span>
+    <a href="https://www.bloomberglinea.com/mundo/la-expansion-de-byd-en-corea-desafia-el-dominio-de-hyundai-en-su-propio-terreno/" target="_blank">La expansión de BYD en Corea desafía el dominio de Hyundai en su propio terreno - Bloomberg Línea</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Bloomberg Línea </div>
+  <p class="summary"><span class="label">Resumen</span> BYD está ganando presencia en Corea con vehículos eléctricos competitivos en precio y prestaciones, presionando a Hyundai en su mercado doméstico. La expansión puede intensificar la competencia en precios y acelerar la transición hacia el vehículo eléctrico.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la valoración y la posición competitiva de BYD y Hyundai dentro de la cartera.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="9">
+  <div class="card-header">
+    <span class="index">#9</span>
+    <a href="https://ecosistemastartup.com/agensh-microsoft-coordina-1-024-agentes-de-ia-sin-jefe/" target="_blank">Agensh: Microsoft coordina 1.024 agentes de IA sin jefe - El Ecosistema Startup</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft Research ha publicado Agensh, un sistema open source capaz de coordinar hasta 1.024 agentes de IA sin un orquestador central.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El avance puede fortalecer la posición tecnológica de Microsoft en arquitecturas multiagente y acelerar la adopción empresarial de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(9,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(9,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="10">
+  <div class="card-header">
+    <span class="index">#10</span>
+    <a href="https://observatorioblockchain.com/inteligencia-artificial/teams-deteccion-phishing-ia-contexto/" target="_blank">Teams estrena detección de phishing con IA y contexto - Observatorio Blockchain</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Observatorio Blockchain </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft Teams incorpora detección de phishing con IA y análisis contextual para identificar amenazas con mayor precisión.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la propuesta de seguridad de Microsoft y puede impulsar la adopción y monetización de Teams y sus servicios empresariales.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(10,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(10,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="11">
+  <div class="card-header">
+    <span class="index">#11</span>
+    <a href="https://gagadget.es/731580-xbox-pierde-a-su-primera-directora-de-operaciones-tras-solo-tres-meses/" target="_blank">Xbox pierde a su primera directora de operaciones tras solo tres meses - gagadget.com</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">gagadget.com </div>
+  <p class="summary"><span class="label">Resumen</span> Helen Chiang deja el puesto de directora de operaciones de Xbox apenas tres meses después de asumirlo, en plena reestructuración y tras miles de despidos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La salida introduce incertidumbre sobre la estrategia, la rentabilidad de Game Pass y la coordinación entre hardware, contenidos y servicios de Microsoft.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(11,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(11,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="12">
+  <div class="card-header">
+    <span class="index">#12</span>
+    <a href="https://www.cordobabn.com/salud/nueva-ia-abre-puerta-ayudar-medicos-diagnosticos-mas-dificiles/20261025181329272381.html" target="_blank">Una IA abre nuevas vías para resolver diagnósticos difíciles - Córdoba Buenas Noticias</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Córdoba Buenas Noticias </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft presenta MAI-DxO, un sistema de IA que obtuvo resultados prometedores al resolver casos clínicos simulados, aunque aún debe validarse en atención real.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La investigación puede reforzar la posición de Microsoft en IA aplicada y abrir oportunidades en salud, pero su impacto comercial sigue siendo incierto y temprano.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(12,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(12,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="13">
+  <div class="card-header">
+    <span class="index">#13</span>
+    <a href="https://www.hardwarepremium.com/noticias/75543/project-helix-windows-11-xbox-cancelar-portatil/" target="_blank">Xbox prefería cancelar una portátil antes que usar Windows 11, según un informe - Hardware Premium</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Hardware Premium </div>
+  <p class="summary"><span class="label">Resumen</span> Un informe apunta a tensiones internas en Microsoft entre Xbox y Windows sobre el sistema operativo de futuras consolas portátiles.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La posible disputa puede afectar la estrategia de hardware, la experiencia de usuario y la posición competitiva de Microsoft en gaming.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(13,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(13,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="14">
+  <div class="card-header">
+    <span class="index">#14</span>
+    <a href="https://www.neoteo.com/es/surface-laptop-ultra-potencia-ia-local-y-bateria" target="_blank">Surface Laptop Ultra: análisis, batería y límites - NeoTeo</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">NeoTeo </div>
+  <p class="summary"><span class="label">Resumen</span> El análisis del Surface Laptop Ultra destaca su rendimiento en IA local, juegos y creación, aunque con autonomía inferior a la de algunos competidores y sin compatibilidad con Surface Pen.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta señales sobre la competitividad del hardware premium y las capacidades de IA local de Microsoft, aunque no constituye un cambio estructural.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(14,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(14,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="stats">
+  <p>81 noticias procesadas (81 brutas)</p>
+  <p>Selección editorial: 14 items en 2 secciones</p>
+  <p>Fetch: 81 intentados · 63 verificados · 18 excluidos por no verificación</p>
+  <p>Duplicados filtrados: 18 por storyline, 0 cross-topic</p>
+  <p>Radar: 12 items en seguimiento</p>
+  <p>Fuentes con fallo: 2</p>
+</div>
+<div class="radar-card"><h2>📡 Radar / pendientes</h2><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/27140/nanbeige-4-3-33b-open-source-es" target="_blank">Nanbeige4.3-33B llega open source y reta a Qwen3.8-27B en programación - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La aparición de modelos abiertos competitivos puede presionar costes, acelerar la adopción y modificar la competencia en modelos de código.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/27008/openai-agentes-ia-aislados-cache-cpu" target="_blank">OpenAI revela agentes de IA aislados que hablan por la caché de la CPU - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> El posible uso de canales laterales entre agentes tendría interés para la seguridad y el aislamiento de sistemas, aunque la información disponible es insuficiente.</p></div><div class="card radar"><div class="card-header"><a href="https://financefeeds.com/es/nasdaq-microsoft-alphabet-fed-amazon-octubre/" target="_blank">Nasdaq: Microsoft y Alphabet reportan horas después de la Fed, Amazon el 29 de octubre tras perder un 0,7% - FinanceFeeds</a></div><div class="meta">FinanceFeeds</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Los resultados pueden afectar a valoración, expectativas de crecimiento y guidance de compañías en cartera, aunque la pieza no aporta cifras ni previsiones.</p></div><div class="card radar"><div class="card-header"><a href="https://financefeeds.com/es/acciones-microsoft-resultados-guia-azure-capex/" target="_blank">Acciones de Microsoft 28 oct: Guía Azure 45% y capex de 50 mil - FinanceFeeds</a></div><div class="meta">FinanceFeeds</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> El crecimiento de Azure y el capex son variables materiales para la valoración de Microsoft, pero la información está incompleta y debe verificarse.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/27042/thariq-deja-anthropic-salida-aparecio-en-x-antes-anuncio" target="_blank">Thariq deja Anthropic y su salida apareció en X antes del anuncio - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La salida de personal de una compañía líder en modelos de IA puede afectar al talento y a la ejecución estratégica, aunque faltan detalles sobre su impacto.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/27134/llega-gpu-unlock-desbloquea-fp16-bf16-rtx-30-ia-local" target="_blank">Llega GPU-Unlock, el módulo que desbloquea FP16 y BF16 en las RTX 30 - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Podría ampliar el uso de hardware existente para cargas de IA, aunque su alcance técnico y adopción todavía parecen limitados.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/27104/hugging-face-veta-modelos-uncensored-kimi-k27-code" target="_blank">Hugging Face veta los primeros modelos uncensored, desaparece Kimi K2.7 Code - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Podría relacionarse con gobernanza y seguridad de modelos, pero la falta de información impide evaluar un impacto real.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/27124/claude-code-jailbreak-kindle-bloatware-amazon-es" target="_blank">Claude Code hace jailbreak a un Kindle y el bloatware de Amazon desaparece - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una demostración técnica aislada y de alcance limitado, sin implicaciones relevantes para la evolución estructural de la IA.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/27052/nvidia-corea-rtx-spark-no-sustituye-pc-gaming-x86" target="_blank">NVIDIA Corea confirma que RTX Spark no sustituye a los PC gaming x86 - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Tiene relevancia limitada para la IA al tratarse de una aclaración de producto sin evidencia de un cambio significativo en plataformas o adopción.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/27022/claude-opus-5-5-rechaza-ingenieria-inversa-smart-tv" target="_blank">¿Claude Opus 5.5 rechaza la ingeniería inversa de las smart TV? - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una pieza superficial sobre el comportamiento de un modelo y no demuestra un cambio relevante en capacidades, seguridad o adopción de IA.</p></div><div class="card radar"><div class="card-header"><a href="https://www.facebook.com/reel/1437298854402629/" target="_blank">La Patria Manizales. BillionRecords · Moving Forward. El estand que TODOS están visitando en la AutoFeria 👀🔋 BYD la está rompiendo con estos modelos. Lujo, tecnología y 100% eléctrico. ¿Ya los viste en vivo? Hoy es el último día para conocerlos en Exp - Facebook</a></div><div class="meta">Facebook</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es contenido publicitario de redes sociales, sin datos corporativos, comerciales o financieros verificables que afecten a la tesis de inversión.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/27032/x-money-like-pulsacion-larga-1-dolar" target="_blank">X Money llega al like, con una pulsación larga se envía 1 dólar - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una novedad de producto de una red social, pero no presenta un impacto estructural relevante para la inteligencia artificial.</p></div></div>
+<div class="feedback-panel" id="fbPanel" style="display:none">
+  <div class="fb-summary" id="fbSummary"></div>
+  <textarea id="fbText" class="fb-text" readonly placeholder="Aquí aparecerá el feedback listo para pegar en Telegram"></textarea>
+  <button class="fb-copy-btn" onclick="copyAllFb()" id="fbCopyBtn">Copiar feedback para Telegram</button>
+</div>
+</div>
+<script>
+var fbDate = document.querySelector('.subtitle').textContent.match(/\d{4}-\d{2}-\d{2}/);
+fbDate = fbDate ? fbDate[0] : '';
+var fbState = {};
+
+function toggleFb(idx, val) {
+  var card = document.querySelector('[data-idx="'+idx+'"]');
+  var okBtn = card.querySelector('.fb-btn-ok');
+  var noBtn = card.querySelector('.fb-btn-no');
+  if (fbState[idx] === val) {
+    delete fbState[idx];
+    okBtn.classList.remove('active');
+    noBtn.classList.remove('active');
+  } else {
+    fbState[idx] = val;
+    okBtn.classList.toggle('active', val === 'ok');
+    noBtn.classList.toggle('active', val === 'no');
+  }
+  updatePanel();
+}
+
+function updatePanel() {
+  var panel = document.getElementById('fbPanel');
+  var summary = document.getElementById('fbSummary');
+  var fbText = document.getElementById('fbText');
+  var keys = Object.keys(fbState);
+  if (keys.length === 0) {
+    panel.style.display = 'none';
+    if (fbText) fbText.value = '';
+    return;
+  }
+  panel.style.display = 'block';
+  var okList = [], noList = [];
+  keys.forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  okList.sort(function(a,b) { return Number(a) - Number(b); });
+  noList.sort(function(a,b) { return Number(a) - Number(b); });
+  var parts = [];
+  if (okList.length) parts.push(okList.length + ' relevantes');
+  if (noList.length) parts.push(noList.length + ' no relevantes');
+  summary.textContent = parts.join(', ') + ' marcadas';
+  if (fbText) fbText.value = buildFbMessage();
+}
+
+function buildFbMessage() {
+  var okList = [], noList = [];
+  Object.keys(fbState).forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  var lines = ['nw feedback ' + fbDate];
+  if (okList.length) lines.push('ok ' + okList.join(' '));
+  if (noList.length) lines.push('no ' + noList.join(' '));
+  return lines.join('\n');
+}
+
+function copyAllFb() {
+  var text = buildFbMessage();
+  var btn = document.getElementById('fbCopyBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(btn, text);
+    });
+  } else {
+    fallbackCopy(btn, text);
+  }
+}
+
+function fallbackCopy(btn, text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); showCopied(btn); }
+  catch(e) { alert(text); }
+  document.body.removeChild(ta);
+}
+
+function showCopied(btn) {
+  btn.textContent = '\u2713 Copiado - pega en Telegram';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Copiar feedback para Telegram';
+    btn.classList.remove('copied');
+  }, 2500);
+}
+</script>
+</body></html>
