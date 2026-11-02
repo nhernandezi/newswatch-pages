@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing 2026-11-01</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117; color: #e0e0e0; padding: 16px; line-height: 1.5;
+  }
+  .container { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+  h2 {
+    font-size: 1.05em; color: #7eb8ff; margin: 20px 0 8px 0;
+    padding-bottom: 4px; border-bottom: 1px solid #222;
+  }
+  .card {
+    background: #1a1d27; border-radius: 8px; padding: 12px; margin-bottom: 10px;
+    border-left: 3px solid #333;
+  }
+  .card:hover { border-left-color: #7eb8ff; }
+  .card-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-header a {
+    color: #c0d0ff; text-decoration: none; font-weight: 600; font-size: 0.95em;
+    flex: 1;
+  }
+  .card-header a:hover { text-decoration: underline; }
+  .index { color: #555; font-size: 0.8em; font-weight: bold; min-width: 24px; }
+  .score {
+    background: #2a2d3a; color: #9ca3af; font-size: 0.75em; padding: 2px 6px;
+    border-radius: 4px; white-space: nowrap;
+  }
+  .meta { font-size: 0.8em; color: #777; margin-top: 4px; }
+  .tag {
+    display: inline-block; font-size: 0.7em; padding: 1px 6px; border-radius: 3px;
+    margin-left: 4px; font-weight: 600;
+  }
+  .tag.focus { background: #1e3a2f; color: #6ee7a0; }
+  .tag.competitor { background: #3a2a1e; color: #f0a060; }
+  .summary {
+    font-size: 0.92em; color: #e5e7eb; margin-top: 8px; line-height: 1.45;
+  }
+  .relevance {
+    font-size: 0.84em; color: #8ab4f8; margin-top: 5px; line-height: 1.4;
+  }
+  .label {
+    display: inline-block; font-size: 0.72em; text-transform: uppercase;
+    letter-spacing: .04em; color: #9ca3af; margin-right: 6px; font-weight: 700;
+  }
+  .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
+  .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
+  .llm-yes { color: #ffd700; margin-left: 4px; font-size: 0.85em; }
+  .llm-no { color: #666; margin-left: 4px; font-size: 0.85em; }
+  .fb-buttons { display: flex; gap: 6px; margin-top: 6px; }
+  .fb-btn {
+    border: 1px solid #333; background: #2a2d3a; color: #ccc; border-radius: 6px;
+    padding: 4px 10px; font-size: 0.85em; cursor: pointer; transition: all 0.15s;
+    min-width: 36px; text-align: center;
+  }
+  .fb-btn:active { transform: scale(0.95); }
+  .fb-btn-ok.active { border-color: #6ee7a0; background: #1e3a2f; color: #6ee7a0; }
+  .fb-btn-no.active { border-color: #f06060; background: #3a1e1e; color: #f06060; }
+  .stats {
+    margin-top: 24px; padding: 12px; background: #1a1d27; border-radius: 8px;
+    font-size: 0.82em; color: #888;
+  }
+  .feedback-panel {
+    margin-top: 12px; padding: 16px; background: #1a2332; border: 1px solid #2a4060;
+    border-radius: 8px; position: sticky; bottom: 12px;
+  }
+  .fb-summary { font-size: 0.82em; color: #aaa; margin-bottom: 8px; }
+  .fb-text {
+    width: 100%; min-height: 88px; resize: vertical; margin-bottom: 8px;
+    border-radius: 8px; border: 1px solid #35507a; background: #0f1724; color: #dbeafe;
+    padding: 10px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .fb-copy-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 8px;
+    background: #2563eb; color: #fff; font-size: 1em; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .fb-copy-btn:hover { background: #1d4ed8; }
+  .fb-copy-btn:active { transform: scale(0.98); }
+  .fb-copy-btn.copied { background: #16a34a; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Briefing diario</h1>
+<p class="subtitle">Cobertura: 2026-11-01 &middot; generado 02/11/2026 08:50</p>
+<h2>IA</h2>
+<div class="card" data-idx="1">
+  <div class="card-header">
+    <span class="index">#1</span>
+    <a href="https://pasqualepillitteri.it/es/news/29031/deepseek-super-agent-prototipo-codigo-abierto" target="_blank">DeepSeek lanza el prototipo de código abierto de su Super-agent - Pasquale Pillitteri</a>
+    <span class="score">31.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Pasquale Pillitteri </div>
+  <p class="summary"><span class="label">Resumen</span> DeepSeek ha publicado con licencia MIT un prototipo de superagente capaz de operar sobre repositorios y conectarse con GitHub y Feishu bajo reglas y autorización humana.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la competencia en agentes de código abiertos y puede acelerar su adopción empresarial y el desarrollo de plataformas alternativas.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="2">
+  <div class="card-header">
+    <span class="index">#2</span>
+    <a href="https://www.technocio.com/red-hat-y-nvidia-refuerzan-la-seguridad-de-la-ia-agentica-en-entornos-de-nube-hibrida-abierta/" target="_blank">Red Hat y NVIDIA refuerzan la seguridad de la IA agéntica en entornos de nube híbrida abierta - Technocio</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Technocio </div>
+  <p class="summary"><span class="label">Resumen</span> Red Hat y NVIDIA amplían su colaboración para desplegar agentes de IA seguros en nubes híbridas, con nuevas funciones de protección, arquitecturas de inferencia y soporte para infraestructura Vera Rubin. La iniciativa busca facilitar la adopción empresarial de agentes autónomos con controles de seguridad.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante por su impacto en la seguridad, estandarización y adopción empresarial de la IA agéntica.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="3">
+  <div class="card-header">
+    <span class="index">#3</span>
+    <a href="https://www.naiz.eus/eu/iritzia/editorial/ia-y-sistemas-de-vigilancia-un-binomio-peligroso" target="_blank">IA y sistemas de vigilancia, un binomio peligroso - naiz:</a>
+    <span class="score">26.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">naiz: </div>
+  <p class="summary"><span class="label">Resumen</span> Entidades europeas han denunciado las prácticas de vigilancia y clasificación laboral de Scale AI en su plataforma Outlier, utilizada para entrenar modelos de grandes empresas tecnológicas.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Puede impulsar litigios y regulación sobre privacidad, condiciones laborales y responsabilidad en las cadenas de suministro de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="4">
+  <div class="card-header">
+    <span class="index">#4</span>
+    <a href="https://www.elperiodico.digital/tecnologia/chatgpt-alcanza-mil-millones-de-usuarios-y-supera-a-tiktok-522640.html" target="_blank">ChatGPT Alcanza Mil Millones De Usuarios Y Supera A TikTok - ElPeriodico.digital</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">ElPeriodico.digital </div>
+  <p class="summary"><span class="label">Resumen</span> El artículo afirma que ChatGPT ha superado los 1.000 millones de usuarios semanales y que su crecimiento supera al de grandes plataformas sociales. La comparación debe tomarse con cautela por las diferencias en las métricas de usuarios.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La adopción masiva de ChatGPT sería un indicador relevante del avance y la penetración empresarial y social de la IA, aunque la cifra requiere verificación.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="5">
+  <div class="card-header">
+    <span class="index">#5</span>
+    <a href="https://ecosistemastartup.com/editoriales-usan-ia-en-secreto-mientras-demandan-a-google/" target="_blank">Editoriales usan IA en secreto mientras demandan a Google - El Ecosistema Startup</a>
+    <span class="score">24.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> HarperCollins, Simon &amp; Schuster y Hachette estarían utilizando modelos como Claude y ChatGPT en tareas editoriales internas sin divulgarlo ampliamente ni contar con el consentimiento de los autores. La práctica contrasta con sus demandas contra tecnológicas por el uso de libros para entrenar IA.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Evidencia una adopción empresarial significativa de IA y plantea riesgos regulatorios, legales y reputacionales sobre derechos de autor.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="6">
+  <div class="card-header">
+    <span class="index">#6</span>
+    <a href="https://ecosistemastartup.com/kyle-kingsbury-jepsen-los-llm-erosionan-la-confianza/" target="_blank">Kyle Kingsbury (Jepsen): los LLM erosionan la confianza - El Ecosistema Startup</a>
+    <span class="score">23.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> Kyle Kingsbury advierte de que los LLM pueden deteriorar la confianza en el software y la documentación, mientras estudios apuntan a un aumento de contribuciones de baja calidad generadas por IA.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aborda un riesgo estructural para la adopción empresarial de la IA: la necesidad de verificación, gobernanza y controles de calidad del software.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="7">
+  <div class="card-header">
+    <span class="index">#7</span>
+    <a href="https://www.larazon.es/tecnologia-consumo/inteligencia-artificial/startup-fundada-exmiembros-doge-musk-asegura-sus-agentes-ia-entraron-sistemas-internos-anthropic-menos-12-horas_202611016ae4864b6973466c29e33211.html" target="_blank">Una startup fundada por exmiembros del DOGE de Musk asegura que sus agentes de IA entraron en los sistemas internos de Anthropic en menos de 12 horas - La Razón</a>
+    <span class="score">21.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">La Razón </div>
+  <p class="summary"><span class="label">Resumen</span> La startup Cathedral afirma que sus agentes de IA lograron infiltrarse en sistemas internos de Anthropic en menos de 12 horas, aunque el relato requiere verificación independiente.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El caso apunta a riesgos relevantes de seguridad en agentes autónomos, pero la naturaleza no verificada reduce su valor informativo.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="8">
+  <div class="card-header">
+    <span class="index">#8</span>
+    <a href="https://www.tradingview.com/news/benzinga:9b66f835c094b:0-apple-ceo-john-ternus-says-i-really-like-where-we-re-at-in-ai-race-won-t-ship-ai-for-ai-s-sake/" target="_blank">Apple CEO John Ternus Says ‘I Really Like Where We&#x27;re At’ in AI Race: Won&#x27;t ‘Ship AI for AI&#x27;s Sake’ - TradingView</a>
+    <span class="score">26.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TradingView </div>
+  <p class="summary"><span class="label">Resumen</span> El CEO de Apple, John Ternus, defiende una estrategia de IA centrada en integrar funciones útiles en sus productos en lugar de lanzar IA por motivos de marketing. La postura confirma que Apple prioriza la calidad de la experiencia y la integración de plataforma frente a una carrera de anuncios.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La estrategia de un actor clave puede influir en la competencia de plataformas, la adopción de IA en dispositivos y la posición competitiva de Apple.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — compañías</h2>
+<div class="card" data-idx="9">
+  <div class="card-header">
+    <span class="index">#9</span>
+    <a href="https://foro3d.com/2026/noviembre/microsoft-emite-bonos-por-25000-millones-para-financiar-su-infraestruc.html" target="_blank">Microsoft emite bonos por 25.000 millones para financiar su infraestructura de IA - Foro3D</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Foro3D </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft prepara una emisión de deuda de al menos 25.000 millones de dólares para financiar centros de datos, aceleradores y capacidad de cómputo destinada a IA.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La operación evidencia el elevado compromiso de capital con la infraestructura de IA y puede afectar al apalancamiento, el capex y la rentabilidad futura de Microsoft.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(9,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(9,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="10">
+  <div class="card-header">
+    <span class="index">#10</span>
+    <a href="https://www.breakingthenews.net/news/details/67452144" target="_blank">Las ventas de BYD se disparan en octubre - Howl.Link</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Howl.Link </div>
+  <p class="summary"><span class="label">Resumen</span> BYD vendió 490.200 vehículos en octubre, un 11% más interanual, con un crecimiento del 37,4% en eléctricos de batería. Las exportaciones de vehículos de nueva energía aumentaron un 102,8% interanual, mientras los híbridos enchufables retrocedieron un 17,2%.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El fuerte crecimiento de ventas, eléctricos y exportaciones puede mejorar la tesis de inversión y reforzar la posición competitiva internacional de BYD.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(10,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(10,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="11">
+  <div class="card-header">
+    <span class="index">#11</span>
+    <a href="https://www.portafolio.co/negocios/vehiculo/colombia-acelera-la-compra-de-carros-electricos-tesla-lidera-un-mercado-que-ya-supera-las-44-000-unidades-505519" target="_blank">Colombia acelera la compra de carros eléctricos: Tesla lidera un mercado que ya supera las 44.000 unidades - Portafolio.co</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Portafolio.co </div>
+  <p class="summary"><span class="label">Resumen</span> El mercado colombiano de vehículos eléctricos superó las 44.000 unidades en 2026 y creció un 120,2 % interanual en octubre, con Tesla y BYD como principales referencias.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la tesis de crecimiento de Tesla y la competencia de BYD en movilidad eléctrica, aunque se trata de un mercado geográfico secundario.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(11,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(11,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="12">
+  <div class="card-header">
+    <span class="index">#12</span>
+    <a href="https://www.larepublica.co/empresas/se-registraron-15-231-vehiculos-hibridos-y-electricos-en-octubre-69-3-mas-que-en-2025-4516046" target="_blank">Se registraron 15.231 vehículos híbridos y eléctricos en octubre, 69,3% más que en 2025 - LaRepublica.co</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">LaRepublica.co </div>
+  <p class="summary"><span class="label">Resumen</span> Las matriculaciones de vehículos híbridos y eléctricos en Colombia crecieron un 91,3% interanual entre enero y octubre de 2026, con un avance especialmente fuerte de los eléctricos. Tesla, Toyota y Suzuki figuran entre las marcas líderes.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El fuerte crecimiento de la electrificación puede impulsar las ventas y la posición competitiva de compañías automovilísticas de la cartera.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(12,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(12,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="13">
+  <div class="card-header">
+    <span class="index">#13</span>
+    <a href="https://prensamercosur.org/2026/11/01/openai-google-microsoft-y-anthropic-acuerdan-mecanismo-para-bloquear-el-uso-de-contenidos-en-el-entrenamiento-de-ia/" target="_blank">OpenAI, Google, Microsoft y Anthropic acuerdan mecanismo para bloquear el uso de contenidos en el entrenamiento de IA - Prensa Mercosur</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Prensa Mercosur </div>
+  <p class="summary"><span class="label">Resumen</span> OpenAI, Google, Microsoft y Anthropic acuerdan apoyar un mecanismo estandarizado para que los editores bloqueen el uso de sus contenidos en el entrenamiento de IA. Su implantación será gradual y podría modificar el acceso a datos de entrenamiento y las relaciones con medios.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Afecta a empresas clave de la cartera mediante posibles cambios regulatorios, operativos y de costes en el suministro de datos para modelos de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(13,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(13,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="14">
+  <div class="card-header">
+    <span class="index">#14</span>
+    <a href="https://news.jkn.co.kr/editions/spanish/post/1063762" target="_blank">Mantener la visibilidad en búsquedas y rechazar el entrenamiento de IA: OpenAI, Google y Microsoft introducen un token de política común - 재경일보</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">재경일보 </div>
+  <p class="summary"><span class="label">Resumen</span> OpenAI, Google y Microsoft respaldarán una señal común para que las webs puedan permitir la indexación en buscadores y rechazar el uso de sus contenidos para entrenar IA. El acuerdo puede influir en las reglas de acceso a datos para modelos generativos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Afecta a la estrategia de IA, la disponibilidad de datos y el posible marco regulatorio y operativo de Microsoft.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(14,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(14,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="15">
+  <div class="card-header">
+    <span class="index">#15</span>
+    <a href="https://www.vietnam.vn/es/bon-hang-cong-nghe-lon-thong-nhat-co-che-kiem-soat-du-lieu-huan-luyen-ai" target="_blank">Cuatro importantes empresas tecnológicas se ponen de acuerdo sobre un mecanismo para controlar los datos de entrenamiento de la IA. - Vietnam.vn</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Vietnam.vn </div>
+  <p class="summary"><span class="label">Resumen</span> OpenAI, Google, Microsoft y Anthropic respaldan una señal común en robots.txt para que los sitios web puedan rechazar el uso de sus contenidos en el entrenamiento de IA. La iniciativa aborda derechos de autor y estandariza el control de rastreadores.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para las compañías de IA por su posible impacto en el acceso a datos de entrenamiento, los costes de contenido y el riesgo regulatorio y legal.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(15,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(15,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="16">
+  <div class="card-header">
+    <span class="index">#16</span>
+    <a href="https://ecosistemastartup.com/robots-txt-una-linea-para-bloquear-el-entrenamiento-ia/" target="_blank">Robots.txt: una línea para bloquear el entrenamiento IA - El Ecosistema Startup</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> Google, Microsoft, OpenAI y Anthropic apoyarán una señal común en robots.txt para impedir que sus rastreadores utilicen contenidos web en el entrenamiento de IA. El estándar simplificaría la gestión de permisos para webs y productos SaaS.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Afecta estratégicamente a grandes plataformas de IA al introducir un mecanismo común sobre disponibilidad de datos, derechos de autor y posibles costes de entrenamiento.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(16,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(16,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="stats">
+  <p>80 noticias procesadas (82 brutas)</p>
+  <p>Selección editorial: 16 items en 2 secciones</p>
+  <p>Fetch: 80 intentados · 62 verificados · 18 excluidos por no verificación</p>
+  <p>Duplicados filtrados: 6 por storyline, 0 cross-topic</p>
+  <p>Radar: 12 items en seguimiento</p>
+  <p>Fuentes con fallo: 2</p>
+</div>
+<div class="radar-card"><h2>📡 Radar / pendientes</h2><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/29110/google-agentes-ia-adn-aptameros-laboratorio" target="_blank">Google presenta agentes de IA que diseñan ADN y aprenden del laboratorio - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Representa un avance relevante en agentes científicos y en la aplicación de la IA a investigación biotecnológica.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/29144/openai-recauda-11000-millones-de-30000-recorta-la-ronda" target="_blank">OpenAI recauda 11.000 millones de dólares de 30.000 y recorta la ronda - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La financiación refuerza la capacidad de OpenAI para invertir en modelos, infraestructura y expansión competitiva, aunque el recorte de la ronda merece seguimiento.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/29090/agente-claude-code-red-pentagono-accenture" target="_blank">Un agente de Claude Code pasó dos meses en una red del Pentágono, Accenture rechaza las acusaciones - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La posible exposición de infraestructura de defensa afecta directamente a la seguridad y gobernanza de agentes de IA.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/29130/grok-watermark-marca-de-agua-api-xai-7-noviembre" target="_blank">Grok watermark llega el 7 de noviembre a los textos de la API de xAI - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Aporta una medida de trazabilidad y gobernanza del contenido generado, aunque su impacto estructural parece limitado.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/29055/gemini-avatares-compartidos-amigos-videos-imagenes-ia" target="_blank">Gemini lanza los avatares compartidos, tus amigos salen en tus vídeos con IA - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una novedad de producto de un actor relevante que puede impulsar la adopción de IA generativa para creación de contenidos.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/29167/nueva-york-prohibe-ia-escuela-un-ano" target="_blank">Nueva York prohíbe la IA en la escuela durante un año, qué dicen los estudios - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Las restricciones públicas al uso educativo de la IA pueden afectar a su adopción y regulación, aunque la información disponible es insuficiente.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/28981/falsas-invitaciones-anthropic-phishing-cofense" target="_blank">Falsas invitaciones de Anthropic, un ataque de phishing roba contraseñas de Google y Microsoft - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La información apunta a un riesgo de ciberseguridad, pero carece de detalles suficientes sobre alcance, impacto o respuesta corporativa.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/29231/como-funciona-keeper-ai-recompensa-matrimonio" target="_blank">Cómo funciona Keeper AI, la app que cobra hasta 50.000 dólares si te casas - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una pieza superficial sobre una aplicación concreta sin impacto relevante en el desarrollo general de la IA.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/29300/como-escribir-prompts-lovable-guia" target="_blank">Cómo escribir prompts para Lovable, guía en cinco fases con ejemplos - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un tutorial de uso sin implicaciones estructurales ni novedades relevantes para el mercado de la IA.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/28996/amd-radeon-subida-precios-noviembre-gddr6-informe" target="_blank">Nvidia retira la RTX 5080 y AMD subiría los precios de las Radeon - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un rumor especulativo sobre precios de hardware, sin impacto demostrado en la evolución estructural de la IA.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/28993/subvocal-gafas-escribir-sin-hablar" target="_blank">Subvocal lanza gafas para escribir sin hablar, 499 dólares en reserva - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un lanzamiento de hardware de una startup pequeña, sin relevancia demostrada para el estado general ni la adopción estructural de la IA.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/29005/balmuda-good-morning-radio-radio-ia-the-clock" target="_blank">Balmuda lanza Good Morning Radio, una radio con IA para The Clock - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La noticia no refleja un avance estructural, regulatorio ni empresarial significativo en IA.</p></div></div>
+<div class="feedback-panel" id="fbPanel" style="display:none">
+  <div class="fb-summary" id="fbSummary"></div>
+  <textarea id="fbText" class="fb-text" readonly placeholder="Aquí aparecerá el feedback listo para pegar en Telegram"></textarea>
+  <button class="fb-copy-btn" onclick="copyAllFb()" id="fbCopyBtn">Copiar feedback para Telegram</button>
+</div>
+</div>
+<script>
+var fbDate = document.querySelector('.subtitle').textContent.match(/\d{4}-\d{2}-\d{2}/);
+fbDate = fbDate ? fbDate[0] : '';
+var fbState = {};
+
+function toggleFb(idx, val) {
+  var card = document.querySelector('[data-idx="'+idx+'"]');
+  var okBtn = card.querySelector('.fb-btn-ok');
+  var noBtn = card.querySelector('.fb-btn-no');
+  if (fbState[idx] === val) {
+    delete fbState[idx];
+    okBtn.classList.remove('active');
+    noBtn.classList.remove('active');
+  } else {
+    fbState[idx] = val;
+    okBtn.classList.toggle('active', val === 'ok');
+    noBtn.classList.toggle('active', val === 'no');
+  }
+  updatePanel();
+}
+
+function updatePanel() {
+  var panel = document.getElementById('fbPanel');
+  var summary = document.getElementById('fbSummary');
+  var fbText = document.getElementById('fbText');
+  var keys = Object.keys(fbState);
+  if (keys.length === 0) {
+    panel.style.display = 'none';
+    if (fbText) fbText.value = '';
+    return;
+  }
+  panel.style.display = 'block';
+  var okList = [], noList = [];
+  keys.forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  okList.sort(function(a,b) { return Number(a) - Number(b); });
+  noList.sort(function(a,b) { return Number(a) - Number(b); });
+  var parts = [];
+  if (okList.length) parts.push(okList.length + ' relevantes');
+  if (noList.length) parts.push(noList.length + ' no relevantes');
+  summary.textContent = parts.join(', ') + ' marcadas';
+  if (fbText) fbText.value = buildFbMessage();
+}
+
+function buildFbMessage() {
+  var okList = [], noList = [];
+  Object.keys(fbState).forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  var lines = ['nw feedback ' + fbDate];
+  if (okList.length) lines.push('ok ' + okList.join(' '));
+  if (noList.length) lines.push('no ' + noList.join(' '));
+  return lines.join('\n');
+}
+
+function copyAllFb() {
+  var text = buildFbMessage();
+  var btn = document.getElementById('fbCopyBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(btn, text);
+    });
+  } else {
+    fallbackCopy(btn, text);
+  }
+}
+
+function fallbackCopy(btn, text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); showCopied(btn); }
+  catch(e) { alert(text); }
+  document.body.removeChild(ta);
+}
+
+function showCopied(btn) {
+  btn.textContent = '\u2713 Copiado - pega en Telegram';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Copiar feedback para Telegram';
+    btn.classList.remove('copied');
+  }, 2500);
+}
+</script>
+</body></html>
