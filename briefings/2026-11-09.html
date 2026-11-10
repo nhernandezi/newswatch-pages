@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing 2026-11-09</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117; color: #e0e0e0; padding: 16px; line-height: 1.5;
+  }
+  .container { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+  h2 {
+    font-size: 1.05em; color: #7eb8ff; margin: 20px 0 8px 0;
+    padding-bottom: 4px; border-bottom: 1px solid #222;
+  }
+  .card {
+    background: #1a1d27; border-radius: 8px; padding: 12px; margin-bottom: 10px;
+    border-left: 3px solid #333;
+  }
+  .card:hover { border-left-color: #7eb8ff; }
+  .card-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-header a {
+    color: #c0d0ff; text-decoration: none; font-weight: 600; font-size: 0.95em;
+    flex: 1;
+  }
+  .card-header a:hover { text-decoration: underline; }
+  .index { color: #555; font-size: 0.8em; font-weight: bold; min-width: 24px; }
+  .score {
+    background: #2a2d3a; color: #9ca3af; font-size: 0.75em; padding: 2px 6px;
+    border-radius: 4px; white-space: nowrap;
+  }
+  .meta { font-size: 0.8em; color: #777; margin-top: 4px; }
+  .tag {
+    display: inline-block; font-size: 0.7em; padding: 1px 6px; border-radius: 3px;
+    margin-left: 4px; font-weight: 600;
+  }
+  .tag.focus { background: #1e3a2f; color: #6ee7a0; }
+  .tag.competitor { background: #3a2a1e; color: #f0a060; }
+  .summary {
+    font-size: 0.92em; color: #e5e7eb; margin-top: 8px; line-height: 1.45;
+  }
+  .relevance {
+    font-size: 0.84em; color: #8ab4f8; margin-top: 5px; line-height: 1.4;
+  }
+  .label {
+    display: inline-block; font-size: 0.72em; text-transform: uppercase;
+    letter-spacing: .04em; color: #9ca3af; margin-right: 6px; font-weight: 700;
+  }
+  .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
+  .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
+  .llm-yes { color: #ffd700; margin-left: 4px; font-size: 0.85em; }
+  .llm-no { color: #666; margin-left: 4px; font-size: 0.85em; }
+  .fb-buttons { display: flex; gap: 6px; margin-top: 6px; }
+  .fb-btn {
+    border: 1px solid #333; background: #2a2d3a; color: #ccc; border-radius: 6px;
+    padding: 4px 10px; font-size: 0.85em; cursor: pointer; transition: all 0.15s;
+    min-width: 36px; text-align: center;
+  }
+  .fb-btn:active { transform: scale(0.95); }
+  .fb-btn-ok.active { border-color: #6ee7a0; background: #1e3a2f; color: #6ee7a0; }
+  .fb-btn-no.active { border-color: #f06060; background: #3a1e1e; color: #f06060; }
+  .stats {
+    margin-top: 24px; padding: 12px; background: #1a1d27; border-radius: 8px;
+    font-size: 0.82em; color: #888;
+  }
+  .feedback-panel {
+    margin-top: 12px; padding: 16px; background: #1a2332; border: 1px solid #2a4060;
+    border-radius: 8px; position: sticky; bottom: 12px;
+  }
+  .fb-summary { font-size: 0.82em; color: #aaa; margin-bottom: 8px; }
+  .fb-text {
+    width: 100%; min-height: 88px; resize: vertical; margin-bottom: 8px;
+    border-radius: 8px; border: 1px solid #35507a; background: #0f1724; color: #dbeafe;
+    padding: 10px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .fb-copy-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 8px;
+    background: #2563eb; color: #fff; font-size: 1em; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .fb-copy-btn:hover { background: #1d4ed8; }
+  .fb-copy-btn:active { transform: scale(0.98); }
+  .fb-copy-btn.copied { background: #16a34a; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Briefing diario</h1>
+<p class="subtitle">Cobertura: 2026-11-09 &middot; generado 10/11/2026 09:09</p>
+<h2>Distribución de materiales de construcción</h2>
+<div class="card" data-idx="1">
+  <div class="card-header">
+    <span class="index">#1</span>
+    <a href="https://www.elperiodicodelazulejo.es/colocacion/cuantas-viviendas-se-reformaran-en-espana-durante-el-ano-2026-ED2234251" target="_blank">¿Cuántas viviendas se reformarán en España durante el año 2026? - elperiodicodelazulejo.es</a>
+    <span class="score">26.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">elperiodicodelazulejo.es </div>
+  <p class="summary"><span class="label">Resumen</span> Andimac prevé 1.868.723 viviendas reformadas en España en 2026, un 2,33% menos que en 2025, por la menor compraventa de vivienda usada, la inflación y la falta de mano de obra.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La moderación prevista de la reforma afecta directamente a la demanda, ventas y planificación comercial de los distribuidores de materiales de construcción.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="2">
+  <div class="card-header">
+    <span class="index">#2</span>
+    <a href="https://www.interempresas.net/Almacenes-materiales-construccion/669033-Grupo-Ibricks-completa-dos-primeras-semanas-Brickness-reforzando-su-cercania-asociados.html" target="_blank">Grupo Ibricks completa las dos primeras semanas de Brickness reforzando su cercanía con los asociados - Interempresas Media</a>
+    <span class="score">17.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Interempresas Media </div>
+  <p class="summary"><span class="label">Resumen</span> Grupo Ibricks ha celebrado encuentros con asociados para presentar servicios de compras, logística, marcas propias y herramientas comerciales, además de recoger sus necesidades.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la cohesión y la propuesta de valor de una central competidora en distribución de materiales, con posibles efectos comerciales y operativos.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="3">
+  <div class="card-header">
+    <span class="index">#3</span>
+    <a href="https://www.elperiodicodelazulejo.es/distribucion/bdb-macoalge-amplia-sus-instalaciones-en-algemesi-YD2234346" target="_blank">BdB Macoalge amplía sus instalaciones en Algemesí - elperiodicodelazulejo.es</a>
+    <span class="score">14.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">elperiodicodelazulejo.es </div>
+  <p class="summary"><span class="label">Resumen</span> BdB Macoalge ha ampliado sus instalaciones en Algemesí con una nueva ferretería de más de 400 metros cuadrados, complementaria a su almacén de materiales, cerámica y baño.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La expansión incrementa la oferta y presencia local de un distribuidor competidor en el canal profesional y de reforma.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="4">
+  <div class="card-header">
+    <span class="index">#4</span>
+    <a href="https://www.cicconstruccion.com/texto-diario/mostrar/6084305/espana-cerrara-2026-187-millones-viviendas-reformadas-233-menos-2025" target="_blank">España cerrará 2026 con 1,87 millones de viviendas reformadas, un 2,33% menos que en 2025 - CIC Construcción y Arquitectura</a>
+    <span class="score">30.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">CIC Construcción y Arquitectura </div>
+  <p class="summary"><span class="label">Resumen</span> Andimac prevé que en 2026 se reformen 1,87 millones de viviendas en España, un 2,33% menos que en 2025. La inflación, la menor compraventa de vivienda usada y la falta de mano de obra frenan la actividad, aunque el gasto medio por hogar se mantiene en unos 1.300 euros.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Afecta directamente a la demanda potencial de materiales, al canal profesional y a las perspectivas comerciales de los distribuidores.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="5">
+  <div class="card-header">
+    <span class="index">#5</span>
+    <a href="https://www.cadenadesuministro.es/monograficos/costes-construccion-inmologistica-sin-respiro_1519448_102.html" target="_blank">Costes de construcción inmologística: sin respiro - Cadena de Suministro</a>
+    <span class="score">27.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Cadena de Suministro </div>
+  <p class="summary"><span class="label">Resumen</span> Los costes de construcción inmologística seguirán aumentando en 2026 por la presión de la mano de obra, los materiales y el suelo, mientras la demanda todavía sostiene las rentas. El encarecimiento energético y de suministros mantiene la presión sobre nuevos proyectos y operaciones logísticas.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Incide en los costes de suministro, la demanda de materiales y la rentabilidad de proyectos inmobiliarios y logísticos relevantes para la distribución.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="6">
+  <div class="card-header">
+    <span class="index">#6</span>
+    <a href="https://construccion.cdecomunicacion.es/noticias/139967/perte-industrializacion-vivienda-almacenes-construccion-raul-molina" target="_blank">45 millones de PERTE, 60.000 € de ahorro en obra y un aviso al almacén: &quot;el material ya no te lo va a comprar el constructor&quot; - CdeComunicacion.es</a>
+    <span class="score">27.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">CdeComunicacion.es </div>
+  <p class="summary"><span class="label">Resumen</span> España impulsa la construcción industrializada con 45 millones de euros en ayudas y hasta 280 millones en avales ICO. El avance de los prefabricados podría desplazar parte de las compras del constructor desde los almacenes hacia las fábricas.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la distribución porque puede alterar la demanda, el canal profesional y el papel estratégico de los almacenes de materiales.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="7">
+  <div class="card-header">
+    <span class="index">#7</span>
+    <a href="https://construccion.cdecomunicacion.es/almacenes/los-mejores-almacenes-de-espana/139971/ranking-de-los-mejores-almacenes-de-zamora-en-2026" target="_blank">Ranking de los mejores almacenes de Zamora en 2026 - CdeComunicacion.es</a>
+    <span class="score">14.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">CdeComunicacion.es </div>
+  <p class="summary"><span class="label">Resumen</span> Un ranking sitúa a Almacenes del Valle 92, asociado a Ibricks, como el mejor almacén de materiales de construcción de Zamora, seguido por GAMMA Hnos. Galende.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta visibilidad sobre competidores, centrales de compras y posicionamiento local en un mercado provincial de distribución.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>IA</h2>
+<div class="card" data-idx="8">
+  <div class="card-header">
+    <span class="index">#8</span>
+    <a href="https://openai.com/index/control-room/" target="_blank">Control Room: A central system to track and stop model workloads across our research infrastructure</a>
+    <span class="score">38.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">OpenAI News </div>
+  <p class="summary"><span class="label">Resumen</span> OpenAI ha desplegado Control Room, un sistema centralizado para supervisar y detener rápidamente cargas de trabajo de modelos en su infraestructura de investigación. El sistema puede interrumpir la generación en hasta 35 segundos y mantiene funciones de seguridad incluso ante fallos propios.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es un desarrollo significativo de seguridad y control operativo para modelos avanzados y agentes de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="9">
+  <div class="card-header">
+    <span class="index">#9</span>
+    <a href="https://openai.com/index/chatgpt-enterprise-aws-marketplace/" target="_blank">ChatGPT Enterprise now available in AWS Marketplace</a>
+    <span class="score">38.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">OpenAI News </div>
+  <p class="summary"><span class="label">Resumen</span> ChatGPT Enterprise ya puede adquirirse a través de AWS Marketplace, integrándose con la contratación, facturación y compromisos de gasto existentes de los clientes de AWS. La oferta complementa el acceso a modelos de OpenAI mediante Amazon Bedrock.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Amplía el canal de distribución empresarial de OpenAI y reduce las barreras de compra e integración para grandes clientes de AWS.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(9,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(9,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="10">
+  <div class="card-header">
+    <span class="index">#10</span>
+    <a href="https://openai.com/index/coderabbit-codex-daybreak/" target="_blank">CodeRabbit scales agentic software development and ships 20x more</a>
+    <span class="score">38.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">OpenAI News </div>
+  <p class="summary"><span class="label">Resumen</span> CodeRabbit amplía el uso de agentes de programación mediante una plataforma de revisión, gobernanza y seguridad del código generado por IA, con más de 20.000 organizaciones usuarias. La mejora de precio-rendimiento de OpenAI permite incorporar más agentes al proceso.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Evidencia adopción empresarial y desarrollo de controles para escalar agentes de IA con mayor fiabilidad.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(10,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(10,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="11">
+  <div class="card-header">
+    <span class="index">#11</span>
+    <a href="https://openai.com/index/kuken/" target="_blank">Kuken Industries searches 70 years of drawings in minutes</a>
+    <span class="score">29.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">OpenAI News </div>
+  <p class="summary"><span class="label">Resumen</span> Kuken Industries utiliza una herramienta basada en la API de OpenAI para localizar planos técnicos de repuestos en 4,5 minutos, frente a casi una hora. El caso muestra una aplicación concreta de IA para recuperar conocimiento industrial histórico.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es evidencia de adopción empresarial con mejoras operativas medibles, aunque su impacto es principalmente sectorial y limitado a un caso individual.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(11,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(11,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="12">
+  <div class="card-header">
+    <span class="index">#12</span>
+    <a href="https://www.unite.ai/es/meta-releases-muse-ember-for-lower-cost-agent-and-coding-work/" target="_blank">Meta lanza Muse Ember para reducir los costos de las tareas de agentes y programación - Unite.AI</a>
+    <span class="score">36.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Unite.AI </div>
+  <p class="summary"><span class="label">Resumen</span> Meta lanza Muse Ember, un modelo compacto y de bajo coste para tareas repetitivas de agentes, programación, llamadas a herramientas y análisis documental. Su precio busca reducir significativamente el coste de los flujos empresariales agénticos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La reducción de costes y la especialización de modelos pueden acelerar la adopción empresarial de agentes y aumentar la presión competitiva en plataformas de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(12,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(12,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="13">
+  <div class="card-header">
+    <span class="index">#13</span>
+    <a href="https://www.unite.ai/es/google-adds-tpu-8tx-and-tpu-8i-max-to-eighth-generation-lineup/" target="_blank">Google añade TPU 8Tx y TPU 8I Max a su línea de octava generación - Unite.AI</a>
+    <span class="score">31.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Unite.AI </div>
+  <p class="summary"><span class="label">Resumen</span> Google amplía su octava generación de TPU con aceleradores orientados a inferencia confidencial, entrenamiento y grandes ventanas de contexto. La compañía afirma que su base de clientes de TPU se acerca a 100 organizaciones.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la competencia de Google frente a NVIDIA y amplía la oferta de infraestructura necesaria para modelos y agentes de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(13,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(13,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="14">
+  <div class="card-header">
+    <span class="index">#14</span>
+    <a href="https://www.merca20.com/employees-will-have-new-digital-colleagues-48-of-companies-use-ai-agents-as-workplace-assistants/" target="_blank">Employees will have new digital colleagues: 48% of companies use AI agents as workplace assistants - Revista Merca2.0</a>
+    <span class="score">30.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Revista Merca2.0 </div>
+  <p class="summary"><span class="label">Resumen</span> Un estudio indica que el 48% de las organizaciones ya utiliza agentes de IA como asistentes laborales, especialmente en operaciones internas y atención al cliente. La falta de personal cualificado y los costes energéticos siguen siendo obstáculos relevantes.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta una señal de adopción empresarial de agentes, aunque el contenido es principalmente divulgativo y carece de detalles metodológicos.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(14,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(14,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="15">
+  <div class="card-header">
+    <span class="index">#15</span>
+    <a href="https://root-nation.com/es/news-es/it-news-es/es-apple-ceo-advanced-ai-beyond-siri-upgrades/" target="_blank">Apple trabaja en un agente de IA autónomo - Root-Nation.com</a>
+    <span class="score">26.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Root-Nation.com </div>
+  <p class="summary"><span class="label">Resumen</span> Apple acelera el desarrollo de un agente de IA autónomo y prepara mejoras de Siri para controlar aplicaciones con mayor precisión. La iniciativa refleja el intento de la compañía de cerrar su retraso frente a Google y OpenAI.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante por el posible impacto estructural de los agentes de IA en una plataforma con una base masiva de dispositivos y usuarios.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(15,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(15,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — compañías</h2>
+<div class="card" data-idx="16">
+  <div class="card-header">
+    <span class="index">#16</span>
+    <a href="https://prensamercosur.org/2026/11/09/el-bug-de-paint-que-deja-windows-11-expuesto-a-ataques-remotos-y-microsoft-lo-sabia/" target="_blank">El bug de Paint que deja Windows 11 expuesto a ataques remotos y Microsoft lo sabía - Prensa Mercosur</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Prensa Mercosur </div>
+  <p class="summary"><span class="label">Resumen</span> Se informa de una vulnerabilidad en Paint para Windows 11 que permitiría ejecutar código mediante archivos de imagen manipulados y que Microsoft conocería desde hace tiempo.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Una vulnerabilidad explotable en un componente de Windows puede elevar riesgos de seguridad, costes de mitigación y presión reputacional para Microsoft.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(16,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(16,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="17">
+  <div class="card-header">
+    <span class="index">#17</span>
+    <a href="https://www.minuto60.com/vida-moderna/china-lanzo-carro-byd-que-quiere-competir-rolls-royce/18619" target="_blank">China sorprendió con el Yangwang Altior, el carro de BYD con el que quiere retar a Rolls-Royce - Minuto60</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Minuto60 </div>
+  <p class="summary"><span class="label">Resumen</span> BYD presentó el Yangwang Altior, un sedán eléctrico de lujo con más de 1.000 kilómetros de autonomía y aspiraciones de competir con Rolls-Royce. El lanzamiento amplía la ofensiva de BYD hacia segmentos premium y de mayor margen.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Puede fortalecer la posición competitiva, el mix de producto y la percepción de marca de BYD en el mercado chino de vehículos eléctricos de lujo.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(17,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(17,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="18">
+  <div class="card-header">
+    <span class="index">#18</span>
+    <a href="https://foro3d.com/2026/noviembre/unity-crece-con-fuerza-y-apunta-al-negocio-publicitario-dentro-del-jue.html" target="_blank">Unity crece con fuerza y apunta al negocio publicitario dentro del juego - Foro3D</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Foro3D </div>
+  <p class="summary"><span class="label">Resumen</span> Unity habría superado las previsiones en el tercer trimestre y anticipa crecimiento sólido en el cuarto, apoyada por creadores y publicidad integrada en juegos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Puede afectar positivamente a la tesis de Unity mediante mayores ingresos, monetización y posición competitiva de su motor.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(18,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(18,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="19">
+  <div class="card-header">
+    <span class="index">#19</span>
+    <a href="https://www.tikr.com/es/blog/trump-urges-senate-to-make-data-centers-pay-for-their-own-electricity-power-builders-stand-to-gain" target="_blank">Trump Urges Senate to Make Data Centers “Pay for Their Own Electricity.” Power Builders Stand to Gain - TIKR.com</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TIKR.com </div>
+  <p class="summary"><span class="label">Resumen</span> Trump pide que los centros de datos asuman el coste de la electricidad asociada a la nueva capacidad energética, dentro de un proyecto de ley para acelerar permisos. La medida podría beneficiar a GE Vernova, Vistra y Constellation Energy.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La política puede alterar costes de operación de Microsoft y generar demanda adicional para compañías energéticas vinculadas a la expansión de centros de datos.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(19,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(19,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="20">
+  <div class="card-header">
+    <span class="index">#20</span>
+    <a href="https://www.vivilecanarie.com/noticias/i/98644574/google,-microsoft,-openai-y-anthropic-aceptan-una-senal-comun-para-vetar-el-entrenamiento-de-ia" target="_blank">Google, Microsoft, OpenAI y Anthropic aceptan una señal común para vetar el entrenamiento de IA - Vivi le Canarie</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Vivi le Canarie </div>
+  <p class="summary"><span class="label">Resumen</span> Google, Microsoft, OpenAI y Anthropic respaldan una señal común en robots.txt para indicar si los contenidos pueden utilizarse en el entrenamiento de IA.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La iniciativa puede influir en el acceso a datos de entrenamiento, las relaciones con editores y la posición competitiva de las grandes plataformas de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(20,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(20,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="21">
+  <div class="card-header">
+    <span class="index">#21</span>
+    <a href="https://www.madboxpc.com/amd-ryzen-ai-halo-project-zenith-windows-11-ia-local-192gb/" target="_blank">AMD y Microsoft lanzan Project Zenith para Ryzen AI Halo: Windows 11 listo para desarrollar IA local con hasta 192 GB de memoria - madboxpc</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">madboxpc </div>
+  <p class="summary"><span class="label">Resumen</span> AMD y Microsoft lanzan Project Zenith con Windows 11 y herramientas preinstaladas para desarrollar y ejecutar IA local en Ryzen AI Halo. La propuesta busca simplificar la configuración de entornos de desarrollo con grandes capacidades de memoria.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La alianza puede fortalecer la posición competitiva de AMD y Microsoft en computación de IA en el dispositivo, aunque el impacto financiero inmediato parece limitado.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(21,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(21,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="22">
+  <div class="card-header">
+    <span class="index">#22</span>
+    <a href="https://autotest.com.ar/noticias/yangwang-altior-la-berlina-china-de-u-s-312-000-que-quiere-destronar-al-rolls-royce-ghost/" target="_blank">Yangwang Altior: la berlina china de u$s 312.000 que quiere destronar al Rolls-Royce Ghost - Auto Test</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Auto Test </div>
+  <p class="summary"><span class="label">Resumen</span> BYD prepara la preventa del Yangwang Altior, una berlina eléctrica de ultra lujo valorada en más de 300.000 dólares y basada en la plataforma e4.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la expansión de BYD hacia segmentos premium y podría mejorar su posicionamiento competitivo y potencial de márgenes.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(22,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(22,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="23">
+  <div class="card-header">
+    <span class="index">#23</span>
+    <a href="https://www.tikr.com/es/blog/bd-white-capital-sold-microsoft-meta-platforms-stock" target="_blank">A $1 Billion Fund Dumps These 2 Stocks - TIKR.com</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TIKR.com </div>
+  <p class="summary"><span class="label">Resumen</span> El fondo B&amp;D White Capital vendió en el tercer trimestre todas sus posiciones en Microsoft y Meta, mientras aumentó su exposición a Kratos y L3Harris.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El movimiento aporta una señal de flujos y posicionamiento institucional sobre Microsoft y Meta, aunque procede de un único fondo y no cambia por sí mismo la tesis fundamental.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(23,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(23,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — ETFs e índices</h2>
+<div class="card" data-idx="24">
+  <div class="card-header">
+    <span class="index">#24</span>
+    <a href="https://es.marketscreener.com/noticias/el-sector-tecnol-gico-seguir-marcando-el-rumbo-de-wall-street-a-pesar-del-tropiezo-de-la-ia-ce785fd3da8af222" target="_blank">El sector tecnológico seguirá marcando el rumbo de Wall Street a pesar del tropiezo de la IA - MarketScreener España</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">MarketScreener España </div>
+  <p class="summary"><span class="label">Resumen</span> La tecnología seguiría liderando Wall Street pese a la corrección de los valores ligados a la IA, aunque aumenta el riesgo por una posible moderación del gasto en centros de datos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Afecta directamente a la tesis, valoración y riesgo de los ETFs con exposición a tecnología, semiconductores e inteligencia artificial.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(24,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(24,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — temáticas</h2>
+<div class="card" data-idx="25">
+  <div class="card-header">
+    <span class="index">#25</span>
+    <a href="https://www.almendron.com/tribuna/yes-the-cop-climate-talks-are-far-from-perfect-but-they-still-hold-the-power-for-change/" target="_blank">Yes, the COP climate talks are far from perfect. But they still hold the power for change - Asociación Almendrón</a>
+    <span class="score">9.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Asociación Almendrón </div>
+  <p class="summary"><span class="label">Resumen</span> El artículo destaca la relevancia de la COP31 y de la cooperación internacional frente al cambio climático, con posibles implicaciones para las políticas energéticas y la transición global.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Puede afectar a largo plazo a la regulación climática y a las temáticas de energía de la cartera, aunque el contenido es principalmente de opinión.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(25,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(25,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="stats">
+  <p>145 noticias procesadas (151 brutas)</p>
+  <p>Selección editorial: 25 items en 5 secciones</p>
+  <p>Fetch: 145 intentados · 106 verificados · 39 excluidos por no verificación</p>
+  <p>Duplicados filtrados: 21 por storyline, 0 cross-topic</p>
+  <p>Radar: 12 items en seguimiento</p>
+  <p>Fuentes con fallo: 2</p>
+</div>
+<div class="radar-card"><h2>📡 Radar / pendientes</h2><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/fluor-epc-contract-kentucky-data-center-terawulf/874097/" target="_blank">Fluor wins EPC contract on $4B Kentucky data center campus</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Un proyecto de esta escala puede impulsar de forma significativa la demanda de materiales, equipamiento eléctrico y soluciones técnicas en la cadena de suministro de construcción.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/schneider-electric-nonprofit-trades-scholarships/874099/" target="_blank">Schneider Electric teams with nonprofit on $100K in trades scholarships</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La disponibilidad de mano de obra cualificada influye en el ritmo de obra y en la demanda futura del canal profesional, aunque el impacto es indirecto.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/commercial-pullback-lower-construction-planning-october/874146/" target="_blank">Commercial pullback led to lower construction planning in October</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Aporta una señal macro negativa sobre la demanda futura de materiales, aunque procede del mercado estadounidense y no refleja directamente España o Europa.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/spons/if-every-contractor-has-the-same-ai-what-are-they-actually-competing-on/873547/" target="_blank">If every contractor has the same AI, what are they actually competing on?</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Tiene relevancia estructural limitada para el canal profesional, pero no muestra un impacto directo en distribuidores de construcción.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/spons/guidelines-for-identifying-key-data-center-risk/873533/" target="_blank">Guidelines for identifying key data center risk</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> El riesgo de centros de datos puede afectar a la demanda de materiales, pero el contenido es demasiado genérico para justificar impacto.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/spons/how-streamlining-basic-processes-like-bill-pay-can-drive-construction-busin/872833/" target="_blank">How streamlining basic processes like bill pay can drive construction business growth</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Afecta potencialmente a la eficiencia de clientes profesionales, pero no ofrece una implicación estratégica específica para la distribución de materiales.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/hitt-breaks-ground-nasa-fabrication-center-texas/874134/" target="_blank">HITT breaks ground on NASA fabrication center in Texas</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una adjudicación relevante para la construcción estadounidense, pero tiene conexión limitada con la distribución de materiales y el canal profesional en España y Europa.</p></div><div class="card radar"><div class="card-header"><a href="https://es.gizmodo.com/durante-dos-anos-microsoft-insistio-en-que-hacian-falta-16-gb-de-ram-ahora-que-la-ia-disparo-el-precio-de-la-memoria-dice-que-8-gb-son-ideales-para-windows-11-2000270682" target="_blank">Durante dos años Microsoft insistió en que hacían falta 16 GB de RAM; ahora que la IA disparó el precio de la memoria, dice que 8 GB son ideales para Windows 11 - Gizmodo en Español</a></div><div class="meta">Gizmodo en Español</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Podría afectar a la percepción de requisitos de hardware y a la demanda de equipos, aunque el impacto financiero directo parece limitado.</p></div><div class="card radar"><div class="card-header"><a href="https://es.investing.com/news/technology-news/nadella-microsoft-advierte-sobre-riesgos-de-la-ia-y-pide-mecanismos-de-apagado-3868784" target="_blank">Nadella (Microsoft) advierte sobre riesgos de IA y pide mecanismos de apagado - Investing.com España</a></div><div class="meta">Investing.com España</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La declaración aporta señales sobre la postura de Microsoft en seguridad y gobernanza de IA, aunque sin cambios regulatorios u operativos concretos.</p></div><div class="card radar"><div class="card-header"><a href="https://es.investing.com/news/company-news/northern-trust-y-microsoft-despliegan-un-agente-de-ia-para-agilizar-la-incorporacion-de-clientes-93CH-3919636" target="_blank">Northern Trust y Microsoft despliegan un agente de IA para agilizar la incorporación de clientes - Investing.com España</a></div><div class="meta">Investing.com España</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Refuerza la adopción empresarial de IA y la posición de Microsoft en soluciones corporativas, aunque el impacto económico directo todavía es limitado.</p></div><div class="card radar"><div class="card-header"><a href="https://mx.investing.com/news/company-news/northern-trust-y-microsoft-usan-ia-para-reducir-tiempo-de-incorporacion-93CH-3840871" target="_blank">Northern Trust y Microsoft usan IA para reducir tiempo de incorporación - Investing.com México - Finanzas, Bolsa y Forex</a></div><div class="meta">Investing.com México - Finanzas, Bolsa y Forex</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Sugiere adopción empresarial de soluciones de IA de Microsoft, aunque la evidencia es demasiado escasa para evaluar un impacto material.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/31401/longcat-2-5-meituan-pesos-mit-1-6-billones-es" target="_blank">Meituan lanza LongCat 2.5, un modelo de 1,6 billones de parámetros con pesos MIT - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Puede afectar al estado del arte y a la competencia entre proveedores de modelos, aunque el contenido disponible no aporta detalles técnicos suficientes.</p></div></div>
+<div class="feedback-panel" id="fbPanel" style="display:none">
+  <div class="fb-summary" id="fbSummary"></div>
+  <textarea id="fbText" class="fb-text" readonly placeholder="Aquí aparecerá el feedback listo para pegar en Telegram"></textarea>
+  <button class="fb-copy-btn" onclick="copyAllFb()" id="fbCopyBtn">Copiar feedback para Telegram</button>
+</div>
+</div>
+<script>
+var fbDate = document.querySelector('.subtitle').textContent.match(/\d{4}-\d{2}-\d{2}/);
+fbDate = fbDate ? fbDate[0] : '';
+var fbState = {};
+
+function toggleFb(idx, val) {
+  var card = document.querySelector('[data-idx="'+idx+'"]');
+  var okBtn = card.querySelector('.fb-btn-ok');
+  var noBtn = card.querySelector('.fb-btn-no');
+  if (fbState[idx] === val) {
+    delete fbState[idx];
+    okBtn.classList.remove('active');
+    noBtn.classList.remove('active');
+  } else {
+    fbState[idx] = val;
+    okBtn.classList.toggle('active', val === 'ok');
+    noBtn.classList.toggle('active', val === 'no');
+  }
+  updatePanel();
+}
+
+function updatePanel() {
+  var panel = document.getElementById('fbPanel');
+  var summary = document.getElementById('fbSummary');
+  var fbText = document.getElementById('fbText');
+  var keys = Object.keys(fbState);
+  if (keys.length === 0) {
+    panel.style.display = 'none';
+    if (fbText) fbText.value = '';
+    return;
+  }
+  panel.style.display = 'block';
+  var okList = [], noList = [];
+  keys.forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  okList.sort(function(a,b) { return Number(a) - Number(b); });
+  noList.sort(function(a,b) { return Number(a) - Number(b); });
+  var parts = [];
+  if (okList.length) parts.push(okList.length + ' relevantes');
+  if (noList.length) parts.push(noList.length + ' no relevantes');
+  summary.textContent = parts.join(', ') + ' marcadas';
+  if (fbText) fbText.value = buildFbMessage();
+}
+
+function buildFbMessage() {
+  var okList = [], noList = [];
+  Object.keys(fbState).forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  var lines = ['nw feedback ' + fbDate];
+  if (okList.length) lines.push('ok ' + okList.join(' '));
+  if (noList.length) lines.push('no ' + noList.join(' '));
+  return lines.join('\n');
+}
+
+function copyAllFb() {
+  var text = buildFbMessage();
+  var btn = document.getElementById('fbCopyBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(btn, text);
+    });
+  } else {
+    fallbackCopy(btn, text);
+  }
+}
+
+function fallbackCopy(btn, text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); showCopied(btn); }
+  catch(e) { alert(text); }
+  document.body.removeChild(ta);
+}
+
+function showCopied(btn) {
+  btn.textContent = '\u2713 Copiado - pega en Telegram';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Copiar feedback para Telegram';
+    btn.classList.remove('copied');
+  }, 2500);
+}
+</script>
+</body></html>
