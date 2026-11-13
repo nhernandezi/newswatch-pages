@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing 2026-11-12</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117; color: #e0e0e0; padding: 16px; line-height: 1.5;
+  }
+  .container { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+  h2 {
+    font-size: 1.05em; color: #7eb8ff; margin: 20px 0 8px 0;
+    padding-bottom: 4px; border-bottom: 1px solid #222;
+  }
+  .card {
+    background: #1a1d27; border-radius: 8px; padding: 12px; margin-bottom: 10px;
+    border-left: 3px solid #333;
+  }
+  .card:hover { border-left-color: #7eb8ff; }
+  .card-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-header a {
+    color: #c0d0ff; text-decoration: none; font-weight: 600; font-size: 0.95em;
+    flex: 1;
+  }
+  .card-header a:hover { text-decoration: underline; }
+  .index { color: #555; font-size: 0.8em; font-weight: bold; min-width: 24px; }
+  .score {
+    background: #2a2d3a; color: #9ca3af; font-size: 0.75em; padding: 2px 6px;
+    border-radius: 4px; white-space: nowrap;
+  }
+  .meta { font-size: 0.8em; color: #777; margin-top: 4px; }
+  .tag {
+    display: inline-block; font-size: 0.7em; padding: 1px 6px; border-radius: 3px;
+    margin-left: 4px; font-weight: 600;
+  }
+  .tag.focus { background: #1e3a2f; color: #6ee7a0; }
+  .tag.competitor { background: #3a2a1e; color: #f0a060; }
+  .summary {
+    font-size: 0.92em; color: #e5e7eb; margin-top: 8px; line-height: 1.45;
+  }
+  .relevance {
+    font-size: 0.84em; color: #8ab4f8; margin-top: 5px; line-height: 1.4;
+  }
+  .label {
+    display: inline-block; font-size: 0.72em; text-transform: uppercase;
+    letter-spacing: .04em; color: #9ca3af; margin-right: 6px; font-weight: 700;
+  }
+  .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
+  .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
+  .llm-yes { color: #ffd700; margin-left: 4px; font-size: 0.85em; }
+  .llm-no { color: #666; margin-left: 4px; font-size: 0.85em; }
+  .fb-buttons { display: flex; gap: 6px; margin-top: 6px; }
+  .fb-btn {
+    border: 1px solid #333; background: #2a2d3a; color: #ccc; border-radius: 6px;
+    padding: 4px 10px; font-size: 0.85em; cursor: pointer; transition: all 0.15s;
+    min-width: 36px; text-align: center;
+  }
+  .fb-btn:active { transform: scale(0.95); }
+  .fb-btn-ok.active { border-color: #6ee7a0; background: #1e3a2f; color: #6ee7a0; }
+  .fb-btn-no.active { border-color: #f06060; background: #3a1e1e; color: #f06060; }
+  .stats {
+    margin-top: 24px; padding: 12px; background: #1a1d27; border-radius: 8px;
+    font-size: 0.82em; color: #888;
+  }
+  .feedback-panel {
+    margin-top: 12px; padding: 16px; background: #1a2332; border: 1px solid #2a4060;
+    border-radius: 8px; position: sticky; bottom: 12px;
+  }
+  .fb-summary { font-size: 0.82em; color: #aaa; margin-bottom: 8px; }
+  .fb-text {
+    width: 100%; min-height: 88px; resize: vertical; margin-bottom: 8px;
+    border-radius: 8px; border: 1px solid #35507a; background: #0f1724; color: #dbeafe;
+    padding: 10px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .fb-copy-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 8px;
+    background: #2563eb; color: #fff; font-size: 1em; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .fb-copy-btn:hover { background: #1d4ed8; }
+  .fb-copy-btn:active { transform: scale(0.98); }
+  .fb-copy-btn.copied { background: #16a34a; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Briefing diario</h1>
+<p class="subtitle">Cobertura: 2026-11-12 &middot; generado 13/11/2026 09:08</p>
+<h2>Distribución de materiales de construcción</h2>
+<div class="card" data-idx="1">
+  <div class="card-header">
+    <span class="index">#1</span>
+    <a href="https://www.multifamilydive.com/news/baaja-permitting-bill-speed-apartment-construction-advances-in/874433/" target="_blank">Federal permitting bill that could speed apartment construction advances in Senate</a>
+    <span class="score">21.51</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Construction Dive - Latest News </div>
+  <p class="summary"><span class="label">Resumen</span> El Senado estadounidense avanza un proyecto bipartidista que podría agilizar los permisos y los programas de desarrollo de vivienda multifamiliar. Las asociaciones del sector consideran que las medidas podrían acelerar la construcción de apartamentos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Una mayor actividad residencial en Estados Unidos podría impulsar la demanda de materiales y servicios de distribución, aunque el impacto es indirecto y depende de la aprobación...</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Ecommerce B2B</h2>
+<div class="card" data-idx="2">
+  <div class="card-header">
+    <span class="index">#2</span>
+    <a href="https://ecommerce-news.es/de-la-inteligencia-artificial-a-la-accion-como-los-agentes-de-ia-estan-transformando-el-ecommerce-y-las-empresas/" target="_blank">De la inteligencia artificial a la acción: cómo los agentes de IA están transformando el ecommerce y las empresas</a>
+    <span class="score">27.6</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="summary"><span class="label">Resumen</span> Los agentes de IA están evolucionando desde la generación de respuestas hacia la ejecución de tareas dentro de los procesos empresariales. Salesforce presenta esta tendencia como base de las llamadas empresas agénticas.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La automatización de procesos mediante agentes puede transformar el ecommerce B2B, la atención comercial, el procurement y las operaciones empresariales.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="3">
+  <div class="card-header">
+    <span class="index">#3</span>
+    <a href="https://ecommerce-news.es/allegro-e-inpost-sellan-una-alianza-logistica-hasta-2031-por-al-menos-1-700-millones-de-euros/" target="_blank">Allegro e InPost sellan una alianza logística hasta 2031 por al menos 1.700 millones de euros</a>
+    <span class="score">23.6</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="summary"><span class="label">Resumen</span> Allegro e InPost han ampliado su alianza logística hasta 2031 por al menos 8.000 millones de zlotys, garantizando capacidad, tarifas revisadas y entregas para más de 15 millones de compradores. El acuerdo refuerza la integración entre marketplace y red de taquillas.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante por su impacto directo en costes, capacidad logística, calidad de servicio y consolidación competitiva del ecommerce europeo.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="4">
+  <div class="card-header">
+    <span class="index">#4</span>
+    <a href="https://ecommerce-news.es/black-friday-2026-la-tecnologica-vass-avanza-que-en-esta-campana-la-ia-realizara-mas-del-30-de-las-compras-en-espana/" target="_blank">Black Friday 2026: la tecnológica VASS avanza que en esta campaña la IA realizará más del 30% de las compras en España</a>
+    <span class="score">21.84</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="summary"><span class="label">Resumen</span> VASS anticipa que más del 30% de las compras del Black Friday en España podrían realizarse mediante experiencias de comercio agéntico basadas en IA. La tecnología permitiría interpretar preferencias, presupuesto y entrega para ejecutar compras.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La adopción de agentes de IA puede transformar la captación de demanda, la experiencia digital y la competencia en ecommerce, aunque la cifra es una previsión empresarial.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="5">
+  <div class="card-header">
+    <span class="index">#5</span>
+    <a href="https://www.digitalcommerce360.com/2026/11/12/j-crew-claude-style-advisor/" target="_blank">J. Crew turns to Claude to create new Style Advisor tool</a>
+    <span class="score">21.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Digital Commerce 360 </div>
+  <p class="summary"><span class="label">Resumen</span> J.Crew ha lanzado Style Advisor, un asistente de recomendaciones personalizadas integrado en su web y basado en Claude de Anthropic. La herramienta busca sustituir la búsqueda aislada de productos por una experiencia de compra más guiada.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es un caso concreto de integración de IA generativa en retail que puede acelerar nuevas expectativas de personalización y modificar la competencia digital.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="6">
+  <div class="card-header">
+    <span class="index">#6</span>
+    <a href="https://ecommerce-news.es/del-volumen-a-la-competitividad-el-comercio-electronico-espanol-entra-en-su-etapa-de-madurez/" target="_blank">Del volumen a la competitividad: el comercio electrónico español entra en su etapa de madurez</a>
+    <span class="score">18.6</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="summary"><span class="label">Resumen</span> El ecommerce español entra en una fase centrada en rentabilidad, eficiencia y competitividad, tras superar el 6% del PIB y alcanzar una amplia adopción entre consumidores. La regulación, las plataformas asiáticas, la IA y la confianza serán factores determinantes.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta contexto estratégico sobre la madurez del ecommerce y las presiones competitivas que afectan a las plataformas y distribuidores digitales.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>IA</h2>
+<div class="card" data-idx="7">
+  <div class="card-header">
+    <span class="index">#7</span>
+    <a href="https://openai.com/business/customer-stories/amplitude/" target="_blank">How Amplitude ships product improvements in 1–2 days with OpenAI</a>
+    <span class="score">47.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">OpenAI News </div>
+  <p class="summary"><span class="label">Resumen</span> Amplitude utiliza agentes de OpenAI para identificar oportunidades, generar planes de producto, acelerar la implementación y medir resultados. La compañía afirma que puede reducir el ciclo de mejora a uno o dos días.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Muestra una aplicación empresarial relevante de agentes que automatiza de extremo a extremo el ciclo de desarrollo y optimización de productos.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="8">
+  <div class="card-header">
+    <span class="index">#8</span>
+    <a href="https://openai.com/business/customer-stories/gondola/" target="_blank">Gondola doubles revenue as its team builds more with Codex</a>
+    <span class="score">33.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">OpenAI News </div>
+  <p class="summary"><span class="label">Resumen</span> Gondola afirma haber duplicado ingresos mientras Codex elevó un 50% la producción de su ingeniero principal sin aumentar plantilla. ChatGPT también se utiliza para simplificar tareas operativas diarias.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta evidencia empresarial sobre mejoras de productividad y crecimiento con IA generativa, aunque se basa principalmente en un caso individual.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="9">
+  <div class="card-header">
+    <span class="index">#9</span>
+    <a href="https://openai.com/index/children-first-declaration/" target="_blank">Supporting research on AI and children’s safety</a>
+    <span class="score">29.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">OpenAI News </div>
+  <p class="summary"><span class="label">Resumen</span> OpenAI compromete 2 millones de dólares para investigar el impacto de la IA en menores y apoyar estándares y herramientas de medición de riesgos. La iniciativa se vincula a una carta internacional sobre seguridad infantil.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La seguridad de menores es un frente relevante de gobernanza y regulación que puede influir en el diseño y las obligaciones de los productos de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(9,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(9,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="10">
+  <div class="card-header">
+    <span class="index">#10</span>
+    <a href="https://openai.com/index/gilbert-tobin-sam-nickless/" target="_blank">Gilbert + Tobin rethinks the business of law with AI</a>
+    <span class="score">14.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">OpenAI News </div>
+  <p class="summary"><span class="label">Resumen</span> El bufete Gilbert + Tobin está integrando ChatGPT Enterprise, ChatGPT Work y Codex en flujos de trabajo jurídicos agentic con supervisión humana.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Ilustra una adopción empresarial avanzada de IA en una actividad intensiva en conocimiento y con requisitos elevados de seguridad y revisión.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(10,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(10,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="11">
+  <div class="card-header">
+    <span class="index">#11</span>
+    <a href="https://es.martincid.com/tecnologia/zuckerberg-lanza-muse-ember-el-modelo-de-ia-mas-pequeno-de-meta-al-mismo-precio-por-token-que-haiku/" target="_blank">Zuckerberg lanza Muse Ember, el modelo de IA más pequeño de Meta, al mismo precio por token que Haiku - Martin Cid Magazine</a>
+    <span class="score">39.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Martin Cid Magazine </div>
+  <p class="summary"><span class="label">Resumen</span> Meta presenta Muse Ember, un modelo pequeño que compite con alternativas de Anthropic y OpenAI al mismo precio por token, pero con una supuesta mayor eficiencia de generación. El movimiento intensifica la competencia en modelos económicos para agentes.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La entrada de Meta con un modelo eficiente puede presionar la diferenciación, los precios y la adopción de plataformas de IA para desarrolladores.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(11,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(11,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="12">
+  <div class="card-header">
+    <span class="index">#12</span>
+    <a href="https://blog.google/intl/es-419/noticias-de-la-empresa/tecnologia/introducing-gemini-4-hydrogen/" target="_blank">Presentamos Gemini 4 Hydrogen para flujos de trabajo agentes. - blog.google</a>
+    <span class="score">38.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">blog.google </div>
+  <p class="summary"><span class="label">Resumen</span> Google presenta Gemini 4 Hydrogen, orientado a codificación rápida y flujos de trabajo basados en agentes, junto con nuevos modelos de mayor razonamiento. Su disponibilidad se extiende a APIs, productos de consumo y soluciones empresariales.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Un lanzamiento transversal de modelos y agentes por parte de Google puede alterar la competencia de plataformas, la adopción empresarial y el acceso a capacidades avanzadas.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(12,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(12,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="13">
+  <div class="card-header">
+    <span class="index">#13</span>
+    <a href="https://www.lanacion.com.ar/usa/advocacy-groups-sue-ai-giants-to-freeze-new-models-warning-of-catastrophic-risks-nid12112026/" target="_blank">Advocacy groups sue AI giants to freeze new models, warning of &#x27;catastrophic&#x27; risks - La Nación</a>
+    <span class="score">35.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">La Nación </div>
+  <p class="summary"><span class="label">Resumen</span> Grupos de defensa del consumidor y seguridad han demandado a cinco grandes empresas de IA para intentar frenar el desarrollo de nuevos modelos por riesgos catastróficos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La acción judicial puede aumentar la presión regulatoria, los costes de cumplimiento y las restricciones sobre el desarrollo de modelos avanzados.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(13,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(13,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="14">
+  <div class="card-header">
+    <span class="index">#14</span>
+    <a href="https://www.unite.ai/es/frontier-ai-security-controls/" target="_blank">La industria de la IA quiere nuestra confianza, pero primero necesita mejores controles - Unite.AI</a>
+    <span class="score">31.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Unite.AI </div>
+  <p class="summary"><span class="label">Resumen</span> Un análisis sobre Anthropic, Google, Meta, OpenAI y xAI señala que las capacidades de sus sistemas avanzan más rápido que sus controles de seguridad. El artículo reclama evaluaciones y salvaguardas más rigurosas para sistemas autónomos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La seguridad y la gobernanza son factores estructurales clave a medida que la IA obtiene más autonomía y acceso a sistemas reales.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(14,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(14,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — compañías</h2>
+<div class="card" data-idx="15">
+  <div class="card-header">
+    <span class="index">#15</span>
+    <a href="https://elpais.com/tecnologia/2026-11-12/una-caida-de-microsoft-365-tumba-el-correo-corporativo-a-usuarios-de-todo-el-mundo.html" target="_blank">Una caída de Microsoft 365 tumba el correo corporativo a usuarios de todo el mundo - EL PAÍS</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">EL PAÍS </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft 365 sufrió una caída global que afectó a Exchange Online, Outlook y Copilot, dejando a usuarios sin acceso a servicios corporativos. La compañía investiga una sobrecarga en varias regiones.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La incidencia evidencia riesgo operativo y de disponibilidad en una plataforma crítica de Microsoft, con posible impacto reputacional y comercial.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(15,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(15,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="16">
+  <div class="card-header">
+    <span class="index">#16</span>
+    <a href="https://www.hibridosyelectricos.com/coches/byd-rompe-con-fisica-su-bateria-puede-descargarse-en-2-minutos-entregar-1800-kw-incluso-20-su-capacidad_90502_102.html" target="_blank">BYD ‘rompe con la física’: su batería puede descargarse en 2 minutos y entregar 1.800 kW incluso al 20% de su capacidad - Híbridos y Eléctricos</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Híbridos y Eléctricos </div>
+  <p class="summary"><span class="label">Resumen</span> BYD presenta una batería de alta potencia con arquitectura de 1.200 voltios y tasas de descarga de hasta 30C, capaz de entregar hasta 1.800 kW incluso con baja carga. La tecnología podría reforzar la diferenciación de BYD en vehículos eléctricos de altas prestaciones.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Puede afectar la tesis competitiva de BYD al mejorar prestaciones, velocidad de carga y tecnología propia, aunque las cifras deben validarse en producción y uso real.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(16,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(16,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="17">
+  <div class="card-header">
+    <span class="index">#17</span>
+    <a href="https://www.vietnam.vn/es/con-gai-chu-tich-pnj-bi-ban-giai-chap-co-phieu-doanh-nghiep-bao-lo-nang-quy-3" target="_blank">Las acciones de la hija del presidente de PNJ se vendieron debido a la ejecución hipotecaria; la compañía reporta fuertes pérdidas en el tercer trimestre. - Vietnam.vn</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Vietnam.vn </div>
+  <p class="summary"><span class="label">Resumen</span> MBS anunció la venta forzosa de 2,815 millones de acciones de PNJ pertenecientes a la hija de su presidente, en un contexto de fuertes pérdidas durante el tercer trimestre. La operación puede añadir presión vendedora a la cotización y agrava la señal negativa sobre la compañía.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es un hecho corporativo y financiero con impacto directo potencial en valoración, resultados y riesgo de la posición.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(17,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(17,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="18">
+  <div class="card-header">
+    <span class="index">#18</span>
+    <a href="https://autotest.com.ar/noticias/descubre-la-byd-shark-4x4-pick-up-hibrida-potencia-y-tecnologia-en-movimiento/" target="_blank">Tres motores, 4×4 y amplio equipamiento: cuánto cuesta la pick up de 436 CV que apunta a Toyota Hilux - Auto Test</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Auto Test </div>
+  <p class="summary"><span class="label">Resumen</span> BYD comercializa en Argentina la pick-up híbrida enchufable Shark GS, con 436 CV, tracción 4x4 y 840 km de autonomía declarada. El lanzamiento amplía su oferta en un segmento dominado por modelos como Toyota Hilux.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la posición competitiva y la diversificación comercial de BYD en vehículos electrificados.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(18,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(18,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="19">
+  <div class="card-header">
+    <span class="index">#19</span>
+    <a href="https://autosdeprimera.com/cifras-del-mercado/nacional/la-venta-de-vehiculos-electricos-e-hibridos-en-colombia-supero-lo-registrado-en-todo-2025/" target="_blank">La venta de vehículos eléctricos e híbridos en Colombia superó lo registrado en todo 2025 - Autos de Primera</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Autos de Primera </div>
+  <p class="summary"><span class="label">Resumen</span> Las matriculaciones de vehículos eléctricos e híbridos en Colombia crecieron un 47,8% entre enero y octubre, superando en diez meses el total del año anterior. Los eléctricos puros duplicaron sus registros frente a todo 2025.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La aceleración de la electrificación mejora las perspectivas de demanda para fabricantes y distribuidores expuestos a este segmento.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(19,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(19,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="20">
+  <div class="card-header">
+    <span class="index">#20</span>
+    <a href="https://autosdeprimera.com/noticias/noticias-nacionales/xpeng-una-compania-de-tecnologia-con-el-respaldo-de-inchcape-en-colombia/" target="_blank">XPENG: una compañía de tecnología con el respaldo de Inchcape en Colombia - Autos de Primera</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Autos de Primera </div>
+  <p class="summary"><span class="label">Resumen</span> XPENG se presenta en Colombia como una compañía centrada en software, conducción asistida, electrónica propia y actualizaciones OTA, con Inchcape como socio local. La noticia destaca su modelo tecnológico y estrategia de entrada, pero no aporta cifras financieras.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La expansión comercial y la diferenciación tecnológica pueden afectar la posición competitiva de XPENG en el mercado de vehículos eléctricos.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(20,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(20,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="21">
+  <div class="card-header">
+    <span class="index">#21</span>
+    <a href="https://www.semana.com/confidenciales/articulo/nace-el-primer-gremio-de-electromovilidad-en-colombia-asi-buscara-influir-en-las-reglas-del-sector/202608/" target="_blank">Nace el primer gremio de electromovilidad en Colombia: así buscará influir en las reglas del sector - Revista Semana</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Revista Semana </div>
+  <p class="summary"><span class="label">Resumen</span> Colombia crea el Gremio de Electromovilidad (GEM), que agrupará a empresas de vehículos, energía, infraestructura de carga y transporte. La asociación busca influir en las reglas y coordinar al sector.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La capacidad de influencia regulatoria del nuevo gremio puede afectar las condiciones competitivas y de crecimiento de las compañías de electromovilidad.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(21,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(21,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — ETFs e índices</h2>
+<div class="card" data-idx="22">
+  <div class="card-header">
+    <span class="index">#22</span>
+    <a href="https://incrypted.com/es/msci-eliminara-a-strategy-de-sus-indices-tras-cambiar-las-reglas/" target="_blank">MSCI eliminará a Strategy de sus índices tras cambiar las reglas - Incrypted</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Incrypted </div>
+  <p class="summary"><span class="label">Resumen</span> MSCI eliminará a Strategy del índice MSCI USA tras modificar su metodología para limitar empresas predominantemente vinculadas a inversiones. El cambio entrará en vigor tras el cierre del mercado el 30 de noviembre de 2026 y puede provocar salidas de capital.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La exclusión tiene un impacto directo sobre los flujos indexados, la liquidez y la valoración de Strategy y de los ETFs afectados.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(22,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(22,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="23">
+  <div class="card-header">
+    <span class="index">#23</span>
+    <a href="https://es.marketscreener.com/noticias/el-s-p-500-y-el-nasdaq-caen-tras-salida-del-ceo-de-nvidia-que-sacude-al-sector-de-la-ia-ce785ed8de81f227" target="_blank">Wall St cierra en baja ya que caída de Nvidia contrarresta alza de firmas de energía - MarketScreener España</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">MarketScreener España </div>
+  <p class="summary"><span class="label">Resumen</span> Wall Street cerró a la baja tras la fuerte caída de Nvidia después de la salida de Jensen Huang, aunque las compras minoristas limitaron la recuperación. El sector energético avanzó por cuarta sesión consecutiva.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El movimiento de Nvidia tiene impacto directo en índices y ETFs estadounidenses por su peso, mientras que la rotación hacia energía afecta a la composición sectorial de la cartera.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(23,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(23,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="24">
+  <div class="card-header">
+    <span class="index">#24</span>
+    <a href="https://es.marketscreener.com/noticias/wall-street-apunta-a-una-apertura-a-la-baja-tras-la-salida-del-consejero-delegado-de-nvidia-ce785ed8df81f126" target="_blank">Wall Street apunta a una apertura a la baja tras la dimisión del consejero delegado de Nvidia - MarketScreener España</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">MarketScreener España </div>
+  <p class="summary"><span class="label">Resumen</span> La dimisión del consejero delegado de Nvidia provoca presión inicial sobre los futuros estadounidenses, especialmente en el Nasdaq 100, con una caída prevista del 1,24%.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Puede afectar a ETFs e índices tecnológicos por el elevado peso de Nvidia y aumentar la volatilidad del mercado.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(24,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(24,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="stats">
+  <p>141 noticias procesadas (142 brutas)</p>
+  <p>Selección editorial: 24 items en 5 secciones</p>
+  <p>Fetch: 141 intentados · 107 verificados · 34 excluidos por no verificación</p>
+  <p>Duplicados filtrados: 38 por storyline, 1 cross-topic</p>
+  <p>Radar: 12 items en seguimiento</p>
+  <p>Fuentes con fallo: 2</p>
+</div>
+<div class="radar-card"><h2>📡 Radar / pendientes</h2><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/tiktok-prueba-una-app-independiente-para-competir-con-amazon-y-temu/" target="_blank">TikTok prueba una app independiente para competir con Amazon y Temu</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La separación de TikTok Shop puede acelerar la expansión del social commerce y aumentar la presión competitiva sobre marketplaces y distribuidores digitales.</p></div><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/la-excelencia-operativa-empieza-antes-de-la-expedicion-empieza-en-la-calidad-de-los-datos-y-en-la-claridad-de-los-procesos/" target="_blank">“La excelencia operativa empieza antes de la expedición: empieza en la calidad de los datos y en la claridad de los procesos”</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Aporta un caso concreto sobre digitalización operativa y gestión de datos aplicable a plataformas B2B y distribuidores especializados.</p></div><div class="card radar"><div class="card-header"><a href="https://www.reuters.com/sustainability/cop/venezuela-tells-cop31-it-has-sovereign-right-pump-more-oil-2026-11-12/" target="_blank">World leaders set out clashing priorities as COP31 turns to negotiations - Reuters</a></div><div class="meta">Reuters</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La evolución de las negociaciones climáticas puede influir en regulación, inversión energética y costes de transición para compañías en cartera, aunque el contenido es muy escaso.</p></div><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/linkedin-prueba-una-funcion-que-identifica-a-quienes-visitan-repetidamente-un-perfil/" target="_blank">LinkedIn prueba una función que identifica a quienes visitan repetidamente un perfil</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una función de red social con impacto limitado en ecommerce B2B, procurement o plataformas comerciales.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/brooklyn-building-collapses-adjacent-construction-site-fatalities/874484/" target="_blank">Brooklyn building collapses into adjacent construction site, leading to multiple deaths</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un incidente local de seguridad en Estados Unidos sin impacto estratégico claro sobre la distribución de materiales en España o Europa.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/project-fatal-brooklyn-collapse-stop-work-order/874545/" target="_blank">Construction site next to fatal Brooklyn collapse previously violated stop-work order: DOB</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La noticia se limita a un caso regulatorio y de seguridad local, sin consecuencias relevantes para el canal profesional europeo.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/32511/united-airlines-prohibe-agentes-ia-reservar-vuelos" target="_blank">United Airlines prohíbe a los agentes de IA reservar sus vuelos - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La restricción evidencia fricciones relevantes en la adopción de agentes autónomos y puede influir en futuras políticas de plataformas y comercio digital.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/32634/databricks-genie-agente-ia-segundo-plano" target="_blank">Databricks lanza el nuevo Genie, el agente de IA que trabaja aunque tú no estés - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Supone un movimiento relevante en agentes empresariales y en la automatización de flujos de trabajo mediante IA.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/32752/gemini-4-hydrogen-llega-para-todos-precio" target="_blank">Llega Gemini 4 Hydrogen para todos, cuánto cuesta y dónde se usa - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Un lanzamiento relevante de un actor líder puede afectar la adopción y la competencia en plataformas de IA, aunque faltan detalles para valorar su alcance real.</p></div><div class="card radar"><div class="card-header"><a href="https://financefeeds.com/es/msci-eliminara-strategy-metaplanet-indices-salidas-mstr/" target="_blank">MSCI eliminará a Strategy y Metaplanet de sus índices ante posibles salidas de MSTR de hasta 8.800 millones - FinanceFeeds</a></div><div class="meta">FinanceFeeds</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Los cambios de composición de índices pueden generar flujos forzados y afectar directamente a ETFs y vehículos que replican esos índices.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/32646/microsoft-compra-acciones-anthropic-salida-bolsa" target="_blank">Microsoft compra 1.000 millones de dólares en acciones de Anthropic - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un movimiento corporativo relevante que puede alterar la competencia, las alianzas de plataforma y la distribución de capacidades de IA generativa.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/32563/gafas-gemini-google-reserva-395-dolares" target="_blank">Llegan las gafas Gemini de Google el 10 de diciembre, desde 395 dólares - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La entrada de Google en gafas inteligentes puede afectar la competencia, la adopción y las estrategias de distribución de la IA en hardware.</p></div></div>
+<div class="feedback-panel" id="fbPanel" style="display:none">
+  <div class="fb-summary" id="fbSummary"></div>
+  <textarea id="fbText" class="fb-text" readonly placeholder="Aquí aparecerá el feedback listo para pegar en Telegram"></textarea>
+  <button class="fb-copy-btn" onclick="copyAllFb()" id="fbCopyBtn">Copiar feedback para Telegram</button>
+</div>
+</div>
+<script>
+var fbDate = document.querySelector('.subtitle').textContent.match(/\d{4}-\d{2}-\d{2}/);
+fbDate = fbDate ? fbDate[0] : '';
+var fbState = {};
+
+function toggleFb(idx, val) {
+  var card = document.querySelector('[data-idx="'+idx+'"]');
+  var okBtn = card.querySelector('.fb-btn-ok');
+  var noBtn = card.querySelector('.fb-btn-no');
+  if (fbState[idx] === val) {
+    delete fbState[idx];
+    okBtn.classList.remove('active');
+    noBtn.classList.remove('active');
+  } else {
+    fbState[idx] = val;
+    okBtn.classList.toggle('active', val === 'ok');
+    noBtn.classList.toggle('active', val === 'no');
+  }
+  updatePanel();
+}
+
+function updatePanel() {
+  var panel = document.getElementById('fbPanel');
+  var summary = document.getElementById('fbSummary');
+  var fbText = document.getElementById('fbText');
+  var keys = Object.keys(fbState);
+  if (keys.length === 0) {
+    panel.style.display = 'none';
+    if (fbText) fbText.value = '';
+    return;
+  }
+  panel.style.display = 'block';
+  var okList = [], noList = [];
+  keys.forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  okList.sort(function(a,b) { return Number(a) - Number(b); });
+  noList.sort(function(a,b) { return Number(a) - Number(b); });
+  var parts = [];
+  if (okList.length) parts.push(okList.length + ' relevantes');
+  if (noList.length) parts.push(noList.length + ' no relevantes');
+  summary.textContent = parts.join(', ') + ' marcadas';
+  if (fbText) fbText.value = buildFbMessage();
+}
+
+function buildFbMessage() {
+  var okList = [], noList = [];
+  Object.keys(fbState).forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  var lines = ['nw feedback ' + fbDate];
+  if (okList.length) lines.push('ok ' + okList.join(' '));
+  if (noList.length) lines.push('no ' + noList.join(' '));
+  return lines.join('\n');
+}
+
+function copyAllFb() {
+  var text = buildFbMessage();
+  var btn = document.getElementById('fbCopyBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(btn, text);
+    });
+  } else {
+    fallbackCopy(btn, text);
+  }
+}
+
+function fallbackCopy(btn, text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); showCopied(btn); }
+  catch(e) { alert(text); }
+  document.body.removeChild(ta);
+}
+
+function showCopied(btn) {
+  btn.textContent = '\u2713 Copiado - pega en Telegram';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Copiar feedback para Telegram';
+    btn.classList.remove('copied');
+  }, 2500);
+}
+</script>
+</body></html>
