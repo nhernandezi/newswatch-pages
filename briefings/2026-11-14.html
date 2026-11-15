@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing 2026-11-14</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117; color: #e0e0e0; padding: 16px; line-height: 1.5;
+  }
+  .container { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+  h2 {
+    font-size: 1.05em; color: #7eb8ff; margin: 20px 0 8px 0;
+    padding-bottom: 4px; border-bottom: 1px solid #222;
+  }
+  .card {
+    background: #1a1d27; border-radius: 8px; padding: 12px; margin-bottom: 10px;
+    border-left: 3px solid #333;
+  }
+  .card:hover { border-left-color: #7eb8ff; }
+  .card-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-header a {
+    color: #c0d0ff; text-decoration: none; font-weight: 600; font-size: 0.95em;
+    flex: 1;
+  }
+  .card-header a:hover { text-decoration: underline; }
+  .index { color: #555; font-size: 0.8em; font-weight: bold; min-width: 24px; }
+  .score {
+    background: #2a2d3a; color: #9ca3af; font-size: 0.75em; padding: 2px 6px;
+    border-radius: 4px; white-space: nowrap;
+  }
+  .meta { font-size: 0.8em; color: #777; margin-top: 4px; }
+  .tag {
+    display: inline-block; font-size: 0.7em; padding: 1px 6px; border-radius: 3px;
+    margin-left: 4px; font-weight: 600;
+  }
+  .tag.focus { background: #1e3a2f; color: #6ee7a0; }
+  .tag.competitor { background: #3a2a1e; color: #f0a060; }
+  .summary {
+    font-size: 0.92em; color: #e5e7eb; margin-top: 8px; line-height: 1.45;
+  }
+  .relevance {
+    font-size: 0.84em; color: #8ab4f8; margin-top: 5px; line-height: 1.4;
+  }
+  .label {
+    display: inline-block; font-size: 0.72em; text-transform: uppercase;
+    letter-spacing: .04em; color: #9ca3af; margin-right: 6px; font-weight: 700;
+  }
+  .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
+  .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
+  .llm-yes { color: #ffd700; margin-left: 4px; font-size: 0.85em; }
+  .llm-no { color: #666; margin-left: 4px; font-size: 0.85em; }
+  .fb-buttons { display: flex; gap: 6px; margin-top: 6px; }
+  .fb-btn {
+    border: 1px solid #333; background: #2a2d3a; color: #ccc; border-radius: 6px;
+    padding: 4px 10px; font-size: 0.85em; cursor: pointer; transition: all 0.15s;
+    min-width: 36px; text-align: center;
+  }
+  .fb-btn:active { transform: scale(0.95); }
+  .fb-btn-ok.active { border-color: #6ee7a0; background: #1e3a2f; color: #6ee7a0; }
+  .fb-btn-no.active { border-color: #f06060; background: #3a1e1e; color: #f06060; }
+  .stats {
+    margin-top: 24px; padding: 12px; background: #1a1d27; border-radius: 8px;
+    font-size: 0.82em; color: #888;
+  }
+  .feedback-panel {
+    margin-top: 12px; padding: 16px; background: #1a2332; border: 1px solid #2a4060;
+    border-radius: 8px; position: sticky; bottom: 12px;
+  }
+  .fb-summary { font-size: 0.82em; color: #aaa; margin-bottom: 8px; }
+  .fb-text {
+    width: 100%; min-height: 88px; resize: vertical; margin-bottom: 8px;
+    border-radius: 8px; border: 1px solid #35507a; background: #0f1724; color: #dbeafe;
+    padding: 10px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .fb-copy-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 8px;
+    background: #2563eb; color: #fff; font-size: 1em; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .fb-copy-btn:hover { background: #1d4ed8; }
+  .fb-copy-btn:active { transform: scale(0.98); }
+  .fb-copy-btn.copied { background: #16a34a; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Briefing diario</h1>
+<p class="subtitle">Cobertura: 2026-11-14 &middot; generado 15/11/2026 08:58</p>
+<h2>IA</h2>
+<div class="card" data-idx="1">
+  <div class="card-header">
+    <span class="index">#1</span>
+    <a href="https://bravenewcoin.com/es/interconexi%C3%B3n/Google-lanza-Gemini-4-Hydrogen-con-un-rendimiento-2-5-veces-m%C3%A1s-r%C3%A1pido-que-desaf%C3%ADa-a-GPT-6.1-y-Claude." target="_blank">Google lanza Gemini 4 Hydrogen con un rendimiento 2.5 veces más rápido, desafiando a GPT-6.1 y Claude - Brave New Coin</a>
+    <span class="score">39.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Brave New Coin </div>
+  <p class="summary"><span class="label">Resumen</span> Google presenta Gemini 4 Hydrogen, un modelo orientado a reducir costes y acelerar tareas de búsqueda, programación y agentes frente a otros modelos avanzados. La afirmación de rendimiento procede de una fuente secundaria y requiere verificación.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la competencia entre plataformas de IA y puede afectar a la adopción empresarial y a los costes de inferencia.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="2">
+  <div class="card-header">
+    <span class="index">#2</span>
+    <a href="https://blogthinkbig.com/ia-open-source-codigo-abierto-open-weight" target="_blank">El auge de la IA ‘open source’: por qué Microsoft, Nvidia y otros gigantes defienden los modelos abiertos más allá de ChatGPT, Gemini o Claude - Blogthinkbig.com</a>
+    <span class="score">38.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Blogthinkbig.com </div>
+  <p class="summary"><span class="label">Resumen</span> Grandes empresas tecnológicas y organizaciones sectoriales defienden los modelos abiertos ante posibles cambios regulatorios, destacando su importancia estratégica para la innovación en IA. La pieza ofrece principalmente contexto y opinión, sin anunciar medidas concretas.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La defensa coordinada de la IA open weight puede influir en la regulación y en la competencia entre plataformas, aunque el contenido es superficial.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="3">
+  <div class="card-header">
+    <span class="index">#3</span>
+    <a href="https://ecosistemastartup.com/muse-de-meta-ya-llama-a-negocios-de-ee-uu-por-us20-mes/" target="_blank">Muse de Meta ya llama a negocios de EE. UU. por US$20/mes - El Ecosistema Startup</a>
+    <span class="score">28.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> Meta ha empezado a ofrecer a suscriptores estadounidenses de Muse un agente capaz de llamar por teléfono a negocios en nombre del usuario por 20 dólares mensuales. El movimiento convierte las capacidades de agente en una propuesta de monetización directa.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La función evidencia un avance relevante en agentes de IA y en la estrategia de suscripción de Meta dentro de la competencia por asistentes accionables.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="4">
+  <div class="card-header">
+    <span class="index">#4</span>
+    <a href="https://foro3d.com/2026/noviembre/project-genie-mundos-interactivos-generados-por-ia-en-google-labs.html" target="_blank">Project Genie: mundos interactivos generados por IA en Google Labs - Foro3D</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Foro3D </div>
+  <p class="summary"><span class="label">Resumen</span> Google DeepMind presentó Project Genie, un prototipo que genera mundos interactivos a partir de texto o imágenes mediante Genie 3 y otros modelos de Google.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Supone un avance relevante en modelos generativos multimodales y experiencias interactivas de una plataforma tecnológica clave.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="5">
+  <div class="card-header">
+    <span class="index">#5</span>
+    <a href="https://ecosistemastartup.com/google-flow-lanza-5-herramientas-con-artistas-visuales/" target="_blank">Google Flow lanza 5 herramientas con artistas visuales - El Ecosistema Startup</a>
+    <span class="score">19.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> Google ha añadido cinco herramientas creativas a Flow, su estudio de IA, diseñadas junto con artistas visuales para mejorar la consistencia de personajes y narrativas. El anuncio no detalla modelos, precios ni despliegue geográfico.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es una actualización de producto de un actor clave que evidencia avances en adopción y capacidades de IA generativa, aunque con impacto comercial todavía incierto.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — compañías</h2>
+<div class="card" data-idx="6">
+  <div class="card-header">
+    <span class="index">#6</span>
+    <a href="https://www.publico.es/ciencias/tecnologia/caida-global-microsoft-revela-fragilidad-mundo-dependiente-grandes-tecnologicas.html" target="_blank">La caída global de Microsoft revela la fragilidad de un mundo dependiente de las grandes tecnológicas - Diario Público</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Diario Público </div>
+  <p class="summary"><span class="label">Resumen</span> Una caída global de Microsoft interrumpió durante horas servicios esenciales como Outlook, Teams y Copilot en numerosos países. El incidente expone riesgos de disponibilidad y concentración en la nube empresarial.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Afecta directamente a la continuidad operativa, reputación y potencialmente a la valoración de Microsoft.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="7">
+  <div class="card-header">
+    <span class="index">#7</span>
+    <a href="https://ecosistemastartup.com/ibm-y-microsoft-lanzan-plataforma-de-agentes-de-ia-empresarial/" target="_blank">IBM y Microsoft lanzan plataforma de agentes de IA empresarial - El Ecosistema Startup</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> IBM y Microsoft anunciaron Imagine Enterprise, una plataforma de agentes de IA orientada a empresas y sectores regulados. La propuesta combina agentes preconstruidos de IBM con la nube, la inteligencia artificial y la ciberseguridad de Microsoft.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La alianza puede reforzar la posición competitiva de Microsoft en IA empresarial y abrir nuevas oportunidades de crecimiento en cloud y servicios de alto valor.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="8">
+  <div class="card-header">
+    <span class="index">#8</span>
+    <a href="https://news.jkn.co.kr/editions/spanish/post/1094314" target="_blank">BYD busca disipar temores sobre los vehículos eléctricos chinos: expande sus centros de servicio en Corea a 21 y se enfoca en proteger el valor de reventa - 재경일보</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">재경일보 </div>
+  <p class="summary"><span class="label">Resumen</span> BYD ampliará su red de servicio posventa en Corea de 21 a 26 centros para respaldar el crecimiento de ventas y mejorar el valor de reventa de sus vehículos eléctricos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La expansión refuerza la capacidad comercial y competitiva de BYD, reduciendo una barrera clave para la adopción de sus vehículos en un mercado extranjero.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="stats">
+  <p>108 noticias procesadas (108 brutas)</p>
+  <p>Selección editorial: 8 items en 2 secciones</p>
+  <p>Fetch: 108 intentados · 86 verificados · 22 excluidos por no verificación</p>
+  <p>Duplicados filtrados: 51 por storyline, 0 cross-topic</p>
+  <p>Radar: 12 items en seguimiento</p>
+  <p>Fuentes con fallo: 2</p>
+</div>
+<div class="radar-card"><h2>📡 Radar / pendientes</h2><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/33370/llega-gemini-4-hydrogen-google-search-modo-ia" target="_blank">Llega Gemini 4 Hydrogen a Google Search, qué cambia en el Modo IA - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es relevante por el posible impacto estructural de la IA generativa sobre la búsqueda y la distribución de información.</p></div><div class="card radar"><div class="card-header"><a href="https://oem.com.mx/elsoldemexico/finanzas/gigantes-tecnologicos-enfrentan-demanda-por-sus-modelos-mas-avanzados-33099315" target="_blank">Gigantes tecnológicos enfrentan demanda por sus modelos más avanzados - El Sol de México</a></div><div class="meta">El Sol de México</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es relevante por su potencial impacto legal, económico y regulatorio sobre los principales actores de la IA.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/33277/openai-confirma-que-disolvio-su-equipo-de-robotica" target="_blank">OpenAI confirma que disolvió su equipo de robótica - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Podría señalar un cambio estratégico en la apuesta por robótica, aunque la información es demasiado escasa para evaluar su impacto con confianza.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/33437/apple-homeview-resenas-siri-ai-correccion-diciembre" target="_blank">Apple confirma el arreglo de Siri AI tras las reseñas de Apple HomeView - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es relevante porque muestra la presión competitiva y de producto sobre un actor clave de la IA.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/33325/claude-duet-lista-espera-eeuu-reinicios" target="_blank">Claude Duet está disponible para toda la lista de espera de EE. UU., tres reinicios para Pro - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es relevante por reflejar la expansión de un producto de IA empresarial y la competencia entre plataformas.</p></div><div class="card radar"><div class="card-header"><a href="https://www.reporteindigo.com/tecnologia/microsoft-restablece-por-completo-sus-servicios-tras-caida-tecnica-global-20261114-0004.html" target="_blank">Microsoft restablece por completo sus servicios, tras caída técnica global - Reporte Indigo</a></div><div class="meta">Reporte Indigo</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La interrupción confirma un evento operativo relevante, aunque su resolución limita el impacto incremental sobre la tesis de inversión.</p></div><div class="card radar"><div class="card-header"><a href="https://www.nmas.com.mx/internacional/foro-tv-video-microsoft-restablece-sus-servicios-tras-apagon-global-que-afecto-a-mas-de-70-paises/" target="_blank">Microsoft Restablece sus Servicios Tras Apagón Global que Afectó a Más de 70 Países - N+</a></div><div class="meta">N+</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> El alcance internacional del incidente es relevante para la compañía, aunque la información disponible es demasiado escasa.</p></div><div class="card radar"><div class="card-header"><a href="https://root-nation.com/es/news-es/it-news-es/es-microsoft-battling-major-outage/" target="_blank">Microsoft solucionó la causa de la interrupción a gran escala - Root-Nation.com</a></div><div class="meta">Root-Nation.com</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es relevante para la cartera por su posible impacto en la fiabilidad percibida, continuidad operativa y confianza empresarial en Microsoft.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/33400/gen-z-abbonamenti-ia-bank-of-america-es" target="_blank">El gasto de la Generación Z en suscripciones de prensa e IA sube un 61 % - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Aporta una señal de adopción y disposición a pagar por servicios de IA, aunque el titular carece de metodología y detalle.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/33421/fable-5-2-que-han-construido-sinfonia-50-coches" target="_blank">Qué han construido ya con Fable 5.2, de la sinfonía a los 50 coches - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Ilustra capacidades de generación y creación con IA, pero parece una demostración de producto sin implicaciones estructurales claras.</p></div><div class="card radar"><div class="card-header"><a href="https://www.europapress.es/videos/video-microsoft-restablece-completo-servicios-caida-afecto-mas-70-paises-20261114141846.html" target="_blank">Microsoft restablece por completo sus servicios tras una caída que afectó a más de 70 países - Europa Press</a></div><div class="meta">Europa Press</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La noticia confirma un incidente operativo relevante para Microsoft, pero ofrece pocos detalles adicionales frente a las informaciones duplicadas del lote.</p></div><div class="card radar"><div class="card-header"><a href="https://www.nuevaeconomiaforum.org/en/noticias/nef-online-con-paco-salcedo-presidente-de-microsoft-espana" target="_blank">NEF Online con Paco Salcedo, Presidente de Microsoft España - Nueva Economía Fórum</a></div><div class="meta">Nueva Economía Fórum</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> No se identifica ningún impacto concreto sobre valoración, beneficios, estrategia o posición competitiva de Microsoft.</p></div></div>
+<div class="feedback-panel" id="fbPanel" style="display:none">
+  <div class="fb-summary" id="fbSummary"></div>
+  <textarea id="fbText" class="fb-text" readonly placeholder="Aquí aparecerá el feedback listo para pegar en Telegram"></textarea>
+  <button class="fb-copy-btn" onclick="copyAllFb()" id="fbCopyBtn">Copiar feedback para Telegram</button>
+</div>
+</div>
+<script>
+var fbDate = document.querySelector('.subtitle').textContent.match(/\d{4}-\d{2}-\d{2}/);
+fbDate = fbDate ? fbDate[0] : '';
+var fbState = {};
+
+function toggleFb(idx, val) {
+  var card = document.querySelector('[data-idx="'+idx+'"]');
+  var okBtn = card.querySelector('.fb-btn-ok');
+  var noBtn = card.querySelector('.fb-btn-no');
+  if (fbState[idx] === val) {
+    delete fbState[idx];
+    okBtn.classList.remove('active');
+    noBtn.classList.remove('active');
+  } else {
+    fbState[idx] = val;
+    okBtn.classList.toggle('active', val === 'ok');
+    noBtn.classList.toggle('active', val === 'no');
+  }
+  updatePanel();
+}
+
+function updatePanel() {
+  var panel = document.getElementById('fbPanel');
+  var summary = document.getElementById('fbSummary');
+  var fbText = document.getElementById('fbText');
+  var keys = Object.keys(fbState);
+  if (keys.length === 0) {
+    panel.style.display = 'none';
+    if (fbText) fbText.value = '';
+    return;
+  }
+  panel.style.display = 'block';
+  var okList = [], noList = [];
+  keys.forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  okList.sort(function(a,b) { return Number(a) - Number(b); });
+  noList.sort(function(a,b) { return Number(a) - Number(b); });
+  var parts = [];
+  if (okList.length) parts.push(okList.length + ' relevantes');
+  if (noList.length) parts.push(noList.length + ' no relevantes');
+  summary.textContent = parts.join(', ') + ' marcadas';
+  if (fbText) fbText.value = buildFbMessage();
+}
+
+function buildFbMessage() {
+  var okList = [], noList = [];
+  Object.keys(fbState).forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  var lines = ['nw feedback ' + fbDate];
+  if (okList.length) lines.push('ok ' + okList.join(' '));
+  if (noList.length) lines.push('no ' + noList.join(' '));
+  return lines.join('\n');
+}
+
+function copyAllFb() {
+  var text = buildFbMessage();
+  var btn = document.getElementById('fbCopyBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(btn, text);
+    });
+  } else {
+    fallbackCopy(btn, text);
+  }
+}
+
+function fallbackCopy(btn, text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); showCopied(btn); }
+  catch(e) { alert(text); }
+  document.body.removeChild(ta);
+}
+
+function showCopied(btn) {
+  btn.textContent = '\u2713 Copiado - pega en Telegram';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Copiar feedback para Telegram';
+    btn.classList.remove('copied');
+  }, 2500);
+}
+</script>
+</body></html>
