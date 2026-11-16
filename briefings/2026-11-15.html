@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing 2026-11-15</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117; color: #e0e0e0; padding: 16px; line-height: 1.5;
+  }
+  .container { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+  h2 {
+    font-size: 1.05em; color: #7eb8ff; margin: 20px 0 8px 0;
+    padding-bottom: 4px; border-bottom: 1px solid #222;
+  }
+  .card {
+    background: #1a1d27; border-radius: 8px; padding: 12px; margin-bottom: 10px;
+    border-left: 3px solid #333;
+  }
+  .card:hover { border-left-color: #7eb8ff; }
+  .card-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-header a {
+    color: #c0d0ff; text-decoration: none; font-weight: 600; font-size: 0.95em;
+    flex: 1;
+  }
+  .card-header a:hover { text-decoration: underline; }
+  .index { color: #555; font-size: 0.8em; font-weight: bold; min-width: 24px; }
+  .score {
+    background: #2a2d3a; color: #9ca3af; font-size: 0.75em; padding: 2px 6px;
+    border-radius: 4px; white-space: nowrap;
+  }
+  .meta { font-size: 0.8em; color: #777; margin-top: 4px; }
+  .tag {
+    display: inline-block; font-size: 0.7em; padding: 1px 6px; border-radius: 3px;
+    margin-left: 4px; font-weight: 600;
+  }
+  .tag.focus { background: #1e3a2f; color: #6ee7a0; }
+  .tag.competitor { background: #3a2a1e; color: #f0a060; }
+  .summary {
+    font-size: 0.92em; color: #e5e7eb; margin-top: 8px; line-height: 1.45;
+  }
+  .relevance {
+    font-size: 0.84em; color: #8ab4f8; margin-top: 5px; line-height: 1.4;
+  }
+  .label {
+    display: inline-block; font-size: 0.72em; text-transform: uppercase;
+    letter-spacing: .04em; color: #9ca3af; margin-right: 6px; font-weight: 700;
+  }
+  .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
+  .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
+  .llm-yes { color: #ffd700; margin-left: 4px; font-size: 0.85em; }
+  .llm-no { color: #666; margin-left: 4px; font-size: 0.85em; }
+  .fb-buttons { display: flex; gap: 6px; margin-top: 6px; }
+  .fb-btn {
+    border: 1px solid #333; background: #2a2d3a; color: #ccc; border-radius: 6px;
+    padding: 4px 10px; font-size: 0.85em; cursor: pointer; transition: all 0.15s;
+    min-width: 36px; text-align: center;
+  }
+  .fb-btn:active { transform: scale(0.95); }
+  .fb-btn-ok.active { border-color: #6ee7a0; background: #1e3a2f; color: #6ee7a0; }
+  .fb-btn-no.active { border-color: #f06060; background: #3a1e1e; color: #f06060; }
+  .stats {
+    margin-top: 24px; padding: 12px; background: #1a1d27; border-radius: 8px;
+    font-size: 0.82em; color: #888;
+  }
+  .feedback-panel {
+    margin-top: 12px; padding: 16px; background: #1a2332; border: 1px solid #2a4060;
+    border-radius: 8px; position: sticky; bottom: 12px;
+  }
+  .fb-summary { font-size: 0.82em; color: #aaa; margin-bottom: 8px; }
+  .fb-text {
+    width: 100%; min-height: 88px; resize: vertical; margin-bottom: 8px;
+    border-radius: 8px; border: 1px solid #35507a; background: #0f1724; color: #dbeafe;
+    padding: 10px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .fb-copy-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 8px;
+    background: #2563eb; color: #fff; font-size: 1em; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .fb-copy-btn:hover { background: #1d4ed8; }
+  .fb-copy-btn:active { transform: scale(0.98); }
+  .fb-copy-btn.copied { background: #16a34a; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Briefing diario</h1>
+<p class="subtitle">Cobertura: 2026-11-15 &middot; generado 16/11/2026 08:54</p>
+<h2>Distribución de materiales de construcción</h2>
+<div class="card" data-idx="1">
+  <div class="card-header">
+    <span class="index">#1</span>
+    <a href="https://www.ilmattino.it/es/el_alza_de_materiales_amenaza_las_obras_publicas_en_el_sur_de_italia-9891834.html" target="_blank">El alza de materiales amenaza las obras públicas en el sur de Italia - Il Mattino</a>
+    <span class="score">27.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Il Mattino </div>
+  <p class="summary"><span class="label">Resumen</span> El encarecimiento del acero, cemento, betún, energía y otros insumos pone en riesgo 1.052 obras públicas en Campania y afecta a miles de proyectos del sur de Italia. Las administraciones locales afrontan dificultades para compensar el aumento de costes.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La presión sobre precios y presupuestos puede reducir el ritmo de obra pública y alterar la demanda, los márgenes y la planificación de la distribución de materiales de...</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="2">
+  <div class="card-header">
+    <span class="index">#2</span>
+    <a href="https://www.indexbox.io/es/blog/handsaw-market-forecast-to-2035-premiumization-and-pro-demand-drive-value-growth/" target="_blank">Mercado de sierras de mano hasta 2035: la premiumización y la demanda profesional impulsan el crecimiento del valor - Noticias y Estadísticas - IndexBox</a>
+    <span class="score">14.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">IndexBox </div>
+  <p class="summary"><span class="label">Resumen</span> El mercado mundial de sierras de mano podría crecer hasta 2035, impulsado por la premiumización y la demanda profesional.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La evolución de la demanda y del mix hacia productos premium puede influir en surtido, precios y oportunidades comerciales de los distribuidores profesionales.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>IA</h2>
+<div class="card" data-idx="3">
+  <div class="card-header">
+    <span class="index">#3</span>
+    <a href="https://ecosistemastartup.com/google-lanza-gemini-decision-1-la-ia-que-no-escribe/" target="_blank">Google lanza Gemini Decision 1: la IA que no escribe - El Ecosistema Startup</a>
+    <span class="score">28.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> Google presentó una API de modelos de decisión que devuelve probabilidades o clasificaciones en lugar de texto, con baja latencia y coste reducido. El lanzamiento intensifica la competencia entre Google, OpenAI, Microsoft y Amazon en IA especializada para automatización empresarial.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Supone un movimiento relevante de plataforma que puede ampliar la adopción empresarial de IA y modificar la competencia, los costes y los casos de uso del sector.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="4">
+  <div class="card-header">
+    <span class="index">#4</span>
+    <a href="https://www.elmundo.es/economia/empresas/2026/11/15/6af61618e85ecef6528b45a4.html" target="_blank">La &#x27;financiación circular&#x27; de la Inteligencia Artificial, en su hora más difícil - El Mundo</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Mundo </div>
+  <p class="summary"><span class="label">Resumen</span> El artículo cuestiona la sostenibilidad financiera del auge de la IA y el modelo de financiación circular entre grandes tecnológicas, proveedores de infraestructura e inversores. El riesgo de sobreinversión podría afectar al ritmo de despliegue y a la valoración del sector.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La salud financiera del ecosistema de IA puede alterar la inversión en infraestructura, la competencia entre plataformas y las expectativas sobre su adopción.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="5">
+  <div class="card-header">
+    <span class="index">#5</span>
+    <a href="https://mezha.net/es/news/mezha-7da8a1038905f9ee953817b8_pony-ai-afirma-que-las-empresas/" target="_blank">Pony.ai afirma que las empresas chinas de conducción autónoma tienen un plan B para los chips de Nvidia - Mezha.net</a>
+    <span class="score">26.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Mezha.net </div>
+  <p class="summary"><span class="label">Resumen</span> Pony.ai afirma que las empresas chinas de conducción autónoma preparan alternativas a los chips de Nvidia. La noticia apunta a una posible diversificación tecnológica ante restricciones de suministro o exportación.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante por su impacto potencial en la cadena de suministro de IA, la dependencia de Nvidia y la competencia tecnológica entre China y Estados Unidos.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="6">
+  <div class="card-header">
+    <span class="index">#6</span>
+    <a href="https://www.androidsis.com/motorola-qira-el-nuevo-cerebro-de-inteligencia-artificial-ambiental-de-lenovo-y-motorola/" target="_blank">Motorola Qira: Guía Completa del Asistente de IA Ambiental - Androidsis</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Androidsis </div>
+  <p class="summary"><span class="label">Resumen</span> Motorola y Lenovo presentan Qira como un asistente de IA ambiental capaz de mantener contexto entre dispositivos y servicios del ecosistema. La propuesta refuerza la competencia por integrar agentes y asistentes en el hardware de consumo.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La computación contextual entre dispositivos puede influir en la adopción empresarial y en la competencia entre plataformas de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="7">
+  <div class="card-header">
+    <span class="index">#7</span>
+    <a href="https://www.newtral.es/nucleo-nacional-policia/20261115/" target="_blank">La imagen de policías nacionales brindando con personas de Núcleo Nacional está generada con IA - Newtral</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Newtral </div>
+  <p class="summary"><span class="label">Resumen</span> Newtral verifica que una imagen viral de policías y miembros de una organización ultraderechista fue generada con IA. El caso ilustra el uso de contenido sintético para desinformación política y seguridad pública.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La proliferación de imágenes falsas en contextos políticos y policiales tiene implicaciones directas para la seguridad, la confianza y la regulación de la IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="8">
+  <div class="card-header">
+    <span class="index">#8</span>
+    <a href="https://www.portafolio.co/internacional/italia-multa-a-meta-con-805-millones-de-euros-por-uso-de-fotos-sin-consentimiento-506424" target="_blank">Italia multa a Meta con 805 millones de euros por uso de fotos sin consentimiento - Portafolio.co</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Portafolio.co </div>
+  <p class="summary"><span class="label">Resumen</span> El regulador italiano sancionó a Meta con 805 millones de euros por el uso de fotos, vídeos y metadatos sin consentimiento específico en una función de Facebook para Android. La compañía rechazó las conclusiones y anunció un recurso.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La sanción implica un riesgo regulatorio y de acceso a datos relevante para Meta, aunque el caso se centra principalmente en privacidad y no en modelos de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — compañías</h2>
+<div class="card" data-idx="9">
+  <div class="card-header">
+    <span class="index">#9</span>
+    <a href="https://www.proceso.com.mx/opinion/2026/11/15/turbulencia-y-fragilidad-de-la-crisis-en-nvidia-al-apagon-de-microsoft-383691.html" target="_blank">Turbulencia y fragilidad. De la crisis en Nvidia al apagón de Microsoft - Proceso</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Proceso </div>
+  <p class="summary"><span class="label">Resumen</span> Nvidia afrontaría una investigación interna sobre su consejero delegado y demandas colectivas, en un contexto de fuertes caídas bursátiles y dudas sobre su gobierno corporativo.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Los posibles problemas de gobernanza y litigios pueden afectar materialmente a la valoración, al riesgo y a la tesis de inversión sobre Nvidia.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(9,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(9,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="10">
+  <div class="card-header">
+    <span class="index">#10</span>
+    <a href="https://www.tikr.com/es/blog/applovin-is-up-30-since-its-november-4-report-take-profits-or-buy-more" target="_blank">AppLovin Is Up 30% Since Its November 4 Report: Take Profits, or Buy More? - TIKR.com</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TIKR.com </div>
+  <p class="summary"><span class="label">Resumen</span> AppLovin subió un 30% tras comunicar un crecimiento de ingresos del 55% y previsiones trimestrales superiores a las expectativas. El crecimiento de juegos y la competencia con Unity serán focos clave para el próximo trimestre.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Afecta directamente a ingresos, expectativas, valoración y posición competitiva de una compañía en cartera.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(10,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(10,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="11">
+  <div class="card-header">
+    <span class="index">#11</span>
+    <a href="https://news.lavx.hu/es/article/microsoft-se-disculpa-por-la-interrupcion-del-servicio-y-atribuye-la-caida-a-una-actualizacion-de-la-capacidad-de-la-red" target="_blank">Microsoft se disculpa por la interrupción del servicio y atribuye la caída a una actualización de la capacidad de la red. - news.lavx.hu</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">news.lavx.hu </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft atribuyó una interrupción generalizada de sus servicios a un problema durante una actualización de capacidad de red y anunció una revisión técnica completa.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La caída revela un riesgo operativo y de fiabilidad relevante para la confianza de clientes y la continuidad del negocio de Microsoft.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(11,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(11,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="12">
+  <div class="card-header">
+    <span class="index">#12</span>
+    <a href="https://www.cope.es/actualidad/tecnologia/videojuegos/noticias/arabia-saudi-no-queda-satisfecha-comprar-mayores-empresas-videojuegos-quieren-propietarios-principales-motores-graficos-controlar-industria-20261115_3474109.html" target="_blank">Arabia Saudí no queda satisfecha tras comprar una de las mayores empresas de videojuegos: ahora quieren ser propietarios de uno de los principales motores gráficos para controlar más esta industria - COPE</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">COPE </div>
+  <p class="summary"><span class="label">Resumen</span> El fondo soberano saudí PIF estaría negociando la adquisición de Unity tras su compra de Electronic Arts, según la información publicada.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Una posible operación sobre Unity tendría implicaciones relevantes para valoración, consolidación y competencia en la industria del videojuego, aunque la noticia es especulativa.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(12,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(12,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="stats">
+  <p>100 noticias procesadas (101 brutas)</p>
+  <p>Selección editorial: 12 items en 3 secciones</p>
+  <p>Fetch: 100 intentados · 79 verificados · 21 excluidos por no verificación</p>
+  <p>Duplicados filtrados: 28 por storyline, 0 cross-topic</p>
+  <p>Radar: 12 items en seguimiento</p>
+  <p>Fuentes con fallo: 2</p>
+</div>
+<div class="radar-card"><h2>📡 Radar / pendientes</h2><div class="card radar"><div class="card-header"><a href="https://openai.com/index/step-toward-defining-the-standard-model/" target="_blank">A step toward defining the Standard Model on a lattice</a></div><div class="meta">OpenAI News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Su relevancia para el estado de la IA general es baja al centrarse principalmente en física teórica.</p></div><div class="card radar"><div class="card-header"><a href="https://openai.com/index/our-new-blog-for-science/" target="_blank">Our new blog for science</a></div><div class="meta">OpenAI News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un lanzamiento editorial sin resultados técnicos, adopción empresarial, regulación o cambio estructural demostrable.</p></div><div class="card radar"><div class="card-header"><a href="https://tynmagazine.com/sovereign-ai-agents-could-evade-every-kill-switch-and-threaten-national-security-report-warns/" target="_blank">&#x27;Sovereign AI agents&#x27; could evade every kill switch and threaten national security, report warns - TyN Magazine</a></div><div class="meta">TyN Magazine</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Aborda un riesgo estructural de seguridad y gobernanza relacionado con agentes autónomos.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/33668/epoch-ai-revela-el-calculo-del-centro-de-datos" target="_blank">Epoch AI revela el cálculo del centro de datos de Huawei en Horinger, el 7 % de Colossus 2 - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es relevante porque refleja la escala creciente de capacidad computacional china y la competencia global por infraestructura de IA.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/33654/google-presenta-gemini-robotics-2-5-humanoide-mercedes" target="_blank">Google presenta Gemini Robotics 2.5, el humanoide en la línea de Mercedes - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es relevante por el avance de modelos multimodales hacia aplicaciones físicas y por la implicación de actores industriales de primer nivel.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/33513/john-langford-microsoft-ai-frontiers-cierre" target="_blank">John Langford dice adiós a Microsoft y anuncia el fin de AI Frontiers - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La salida de talento sénior y el cierre de una iniciativa pueden afectar la estrategia y la posición competitiva de Microsoft en IA.</p></div><div class="card radar"><div class="card-header"><a href="https://www.wfla.com/tampa-hoy/nacional/podria-estar-todo-roto-aviones-en-tierra-caida-del-servicio-de-microsoft-caos-en-la-ia-hacen-que-algunos-se-pregunten/" target="_blank">¿Podría estar todo roto? Aviones en tierra, caída del servicio de Microsoft, caos en la IA hacen que algunos se pregunten - WFLA</a></div><div class="meta">WFLA</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Una caída relevante de servicios puede afectar temporalmente la continuidad operativa, la reputación y el riesgo tecnológico de Microsoft.</p></div><div class="card radar"><div class="card-header"><a href="https://tecnologiageek.com/llamado-de-paris-seguridad-de-la-inteligencia-artificial/" target="_blank">16 gobiernos y 10 empresas firman poder apagar sus modelos de IA - Tecnología Geek</a></div><div class="meta">Tecnología Geek</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es relevante porque la gobernanza, la seguridad y la capacidad de intervención sobre modelos son elementos estructurales para la adopción de IA.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/33735/italia-multa-a-meta-con-805-millones-por-acceder" target="_blank">Italia multa a Meta con 805 millones por acceder a la galería de Android - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Una sanción de esta magnitud puede afectar las prácticas de datos, el riesgo regulatorio y la estrategia de plataforma de un actor relevante de IA.</p></div><div class="card radar"><div class="card-header"><a href="https://wapa.tv/noticias/internacionales/las-aver-as-de-microsoft-y-administraci-n-federal-de-aviaci-n-estuvieron-relacionadas/article_a9ec836d-a6aa-4815-8b2e-a4952c9e8467.html" target="_blank">¿Las averías de Microsoft y Administración Federal de Aviación estuvieron relacionadas? - wapa.tv</a></div><div class="meta">wapa.tv</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La falta de evidencia limita su utilidad para evaluar el impacto operativo o financiero sobre Microsoft.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/33749/falsos-correos-caida-microsoft-365-borrar-buzon" target="_blank">Falsos correos sobre la caída de Microsoft 365 amenazan con borrar el buzón - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un riesgo de ciberseguridad asociado a Microsoft, pero no aporta información corporativa material sobre la compañía.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/33771/claude-duet-invitaciones-tres-por-usuario" target="_blank">Llegan las invitaciones de Claude Duet, tres por usuario, no hay que buscarlas - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una actualización operativa menor, sin evidencia de un avance significativo en capacidades, adopción empresarial o posición competitiva.</p></div></div>
+<div class="feedback-panel" id="fbPanel" style="display:none">
+  <div class="fb-summary" id="fbSummary"></div>
+  <textarea id="fbText" class="fb-text" readonly placeholder="Aquí aparecerá el feedback listo para pegar en Telegram"></textarea>
+  <button class="fb-copy-btn" onclick="copyAllFb()" id="fbCopyBtn">Copiar feedback para Telegram</button>
+</div>
+</div>
+<script>
+var fbDate = document.querySelector('.subtitle').textContent.match(/\d{4}-\d{2}-\d{2}/);
+fbDate = fbDate ? fbDate[0] : '';
+var fbState = {};
+
+function toggleFb(idx, val) {
+  var card = document.querySelector('[data-idx="'+idx+'"]');
+  var okBtn = card.querySelector('.fb-btn-ok');
+  var noBtn = card.querySelector('.fb-btn-no');
+  if (fbState[idx] === val) {
+    delete fbState[idx];
+    okBtn.classList.remove('active');
+    noBtn.classList.remove('active');
+  } else {
+    fbState[idx] = val;
+    okBtn.classList.toggle('active', val === 'ok');
+    noBtn.classList.toggle('active', val === 'no');
+  }
+  updatePanel();
+}
+
+function updatePanel() {
+  var panel = document.getElementById('fbPanel');
+  var summary = document.getElementById('fbSummary');
+  var fbText = document.getElementById('fbText');
+  var keys = Object.keys(fbState);
+  if (keys.length === 0) {
+    panel.style.display = 'none';
+    if (fbText) fbText.value = '';
+    return;
+  }
+  panel.style.display = 'block';
+  var okList = [], noList = [];
+  keys.forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  okList.sort(function(a,b) { return Number(a) - Number(b); });
+  noList.sort(function(a,b) { return Number(a) - Number(b); });
+  var parts = [];
+  if (okList.length) parts.push(okList.length + ' relevantes');
+  if (noList.length) parts.push(noList.length + ' no relevantes');
+  summary.textContent = parts.join(', ') + ' marcadas';
+  if (fbText) fbText.value = buildFbMessage();
+}
+
+function buildFbMessage() {
+  var okList = [], noList = [];
+  Object.keys(fbState).forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  var lines = ['nw feedback ' + fbDate];
+  if (okList.length) lines.push('ok ' + okList.join(' '));
+  if (noList.length) lines.push('no ' + noList.join(' '));
+  return lines.join('\n');
+}
+
+function copyAllFb() {
+  var text = buildFbMessage();
+  var btn = document.getElementById('fbCopyBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(btn, text);
+    });
+  } else {
+    fallbackCopy(btn, text);
+  }
+}
+
+function fallbackCopy(btn, text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); showCopied(btn); }
+  catch(e) { alert(text); }
+  document.body.removeChild(ta);
+}
+
+function showCopied(btn) {
+  btn.textContent = '\u2713 Copiado - pega en Telegram';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Copiar feedback para Telegram';
+    btn.classList.remove('copied');
+  }, 2500);
+}
+</script>
+</body></html>
