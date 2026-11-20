@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing 2026-11-19</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117; color: #e0e0e0; padding: 16px; line-height: 1.5;
+  }
+  .container { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+  h2 {
+    font-size: 1.05em; color: #7eb8ff; margin: 20px 0 8px 0;
+    padding-bottom: 4px; border-bottom: 1px solid #222;
+  }
+  .card {
+    background: #1a1d27; border-radius: 8px; padding: 12px; margin-bottom: 10px;
+    border-left: 3px solid #333;
+  }
+  .card:hover { border-left-color: #7eb8ff; }
+  .card-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-header a {
+    color: #c0d0ff; text-decoration: none; font-weight: 600; font-size: 0.95em;
+    flex: 1;
+  }
+  .card-header a:hover { text-decoration: underline; }
+  .index { color: #555; font-size: 0.8em; font-weight: bold; min-width: 24px; }
+  .score {
+    background: #2a2d3a; color: #9ca3af; font-size: 0.75em; padding: 2px 6px;
+    border-radius: 4px; white-space: nowrap;
+  }
+  .meta { font-size: 0.8em; color: #777; margin-top: 4px; }
+  .tag {
+    display: inline-block; font-size: 0.7em; padding: 1px 6px; border-radius: 3px;
+    margin-left: 4px; font-weight: 600;
+  }
+  .tag.focus { background: #1e3a2f; color: #6ee7a0; }
+  .tag.competitor { background: #3a2a1e; color: #f0a060; }
+  .summary {
+    font-size: 0.92em; color: #e5e7eb; margin-top: 8px; line-height: 1.45;
+  }
+  .relevance {
+    font-size: 0.84em; color: #8ab4f8; margin-top: 5px; line-height: 1.4;
+  }
+  .label {
+    display: inline-block; font-size: 0.72em; text-transform: uppercase;
+    letter-spacing: .04em; color: #9ca3af; margin-right: 6px; font-weight: 700;
+  }
+  .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
+  .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
+  .llm-yes { color: #ffd700; margin-left: 4px; font-size: 0.85em; }
+  .llm-no { color: #666; margin-left: 4px; font-size: 0.85em; }
+  .fb-buttons { display: flex; gap: 6px; margin-top: 6px; }
+  .fb-btn {
+    border: 1px solid #333; background: #2a2d3a; color: #ccc; border-radius: 6px;
+    padding: 4px 10px; font-size: 0.85em; cursor: pointer; transition: all 0.15s;
+    min-width: 36px; text-align: center;
+  }
+  .fb-btn:active { transform: scale(0.95); }
+  .fb-btn-ok.active { border-color: #6ee7a0; background: #1e3a2f; color: #6ee7a0; }
+  .fb-btn-no.active { border-color: #f06060; background: #3a1e1e; color: #f06060; }
+  .stats {
+    margin-top: 24px; padding: 12px; background: #1a1d27; border-radius: 8px;
+    font-size: 0.82em; color: #888;
+  }
+  .feedback-panel {
+    margin-top: 12px; padding: 16px; background: #1a2332; border: 1px solid #2a4060;
+    border-radius: 8px; position: sticky; bottom: 12px;
+  }
+  .fb-summary { font-size: 0.82em; color: #aaa; margin-bottom: 8px; }
+  .fb-text {
+    width: 100%; min-height: 88px; resize: vertical; margin-bottom: 8px;
+    border-radius: 8px; border: 1px solid #35507a; background: #0f1724; color: #dbeafe;
+    padding: 10px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .fb-copy-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 8px;
+    background: #2563eb; color: #fff; font-size: 1em; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .fb-copy-btn:hover { background: #1d4ed8; }
+  .fb-copy-btn:active { transform: scale(0.98); }
+  .fb-copy-btn.copied { background: #16a34a; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Briefing diario</h1>
+<p class="subtitle">Cobertura: 2026-11-19 &middot; generado 20/11/2026 09:11</p>
+<h2>Distribución de materiales de construcción</h2>
+<div class="card" data-idx="1">
+  <div class="card-header">
+    <span class="index">#1</span>
+    <a href="https://www.alimarket.es/construccion/noticia/434712/la-construccion-en-seco-permite-reducir-un-40--el-tiempo-necesario-para-levantar-viviendas" target="_blank">La construcción en seco permite reducir un 40% el tiempo necesario para levantar viviendas - Alimarket.es</a>
+    <span class="score">26.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Alimarket.es </div>
+  <p class="summary"><span class="label">Resumen</span> La construcción en seco puede reducir hasta un 40% los plazos de obra y aliviar la falta de mano de obra en vivienda y reformas. Refuerza la industrialización y la demanda de soluciones prefabricadas.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la distribución de materiales porque puede cambiar el mix de productos, acelerar la demanda y elevar el peso de soluciones industrializadas en el canal...</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="2">
+  <div class="card-header">
+    <span class="index">#2</span>
+    <a href="https://www.alimarket.es/construccion/noticia/434727/el-sector-de-ferreteria-y-bricolaje-crece-un-6-2--en-el-tercer-trimestre" target="_blank">El sector de ferretería y bricolaje crece un 6,2% en el tercer trimestre - Alimarket.es</a>
+    <span class="score">22.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Alimarket.es </div>
+  <p class="summary"><span class="label">Resumen</span> El sector español de ferretería y bricolaje creció un 6,2% en ventas durante el tercer trimestre de 2026, con avances tanto en el canal especializado como en el tradicional.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es un indicador directo de crecimiento de la demanda y de la evolución positiva de los canales de distribución relacionados con materiales y reforma.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="3">
+  <div class="card-header">
+    <span class="index">#3</span>
+    <a href="https://www.constructiondive.com/news/hudson-tunnel-project-second-tunnel-boring-machine/875255/" target="_blank">$16B Hudson Tunnel project launches second tunnel boring machine</a>
+    <span class="score">21.51</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Construction Dive - Latest News </div>
+  <p class="summary"><span class="label">Resumen</span> El proyecto ferroviario Hudson Tunnel, valorado en 16.000 millones de dólares, ha iniciado la excavación del segundo tubo mediante tuneladora. La obra avanza en ambos túneles bajo el río Hudson.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es una señal positiva para la demanda de materiales y servicios de infraestructura, aunque su impacto directo sobre la distribución europea es limitado.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="4">
+  <div class="card-header">
+    <span class="index">#4</span>
+    <a href="https://www.idealista.com/news/deco/consejos/2026/11/19/925247-cambiar-la-banera-por-un-plato-de-ducha-cuesta-ya-hasta-1-900-euros-mas-del-doble-que-hace" target="_blank">Cambiar la bañera por un plato de ducha cuesta ya hasta 1.900 euros, más del doble que hace unos años - Idealista</a>
+    <span class="score">14.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Idealista </div>
+  <p class="summary"><span class="label">Resumen</span> El coste de sustituir una bañera por un plato de ducha puede alcanzar 1.900 euros, impulsado por el encarecimiento de materiales, mano de obra e impermeabilización.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refleja presión de costes y cambios en el ticket de reformas, factores relevantes para precios, demanda y márgenes del canal profesional.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Ecommerce B2B</h2>
+<div class="card" data-idx="5">
+  <div class="card-header">
+    <span class="index">#5</span>
+    <a href="https://ecommerce-news.es/lengow-anuncia-la-adquisicion-de-dailyco/" target="_blank">Lengow anuncia la adquisición de DAILY&amp;CO</a>
+    <span class="score">31.6</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="summary"><span class="label">Resumen</span> Lengow adquiere DAILY&amp;CO para reforzar la gestión, enriquecimiento y distribución de catálogos en marketplaces. La operación amplía su oferta de servicios gestionados y su acceso a marcas y retailers europeos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Impacta directamente en la consolidación competitiva, la automatización de operaciones de marketplace y la infraestructura del ecommerce B2B.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="6">
+  <div class="card-header">
+    <span class="index">#6</span>
+    <a href="https://www.digitalcommerce360.com/2026/11/19/holiday-shopping-forecast/" target="_blank">3 online sales factors to watch in 2026 holiday shopping forecasts</a>
+    <span class="score">30.74</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Digital Commerce 360 </div>
+  <p class="summary"><span class="label">Resumen</span> Los vendedores online afrontarán en 2026 un aumento del tráfico derivado de IA y del comercio agéntico, con actores como OpenAI, Anthropic y Meta interviniendo en búsqueda y compras.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El avance del comercio agéntico puede alterar la adquisición de clientes, la conversión, los pagos y la arquitectura competitiva del ecommerce.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="7">
+  <div class="card-header">
+    <span class="index">#7</span>
+    <a href="https://ecommerce-news.es/gls-y-dpd-integran-sus-negocios-en-alemania-y-superaran-los-700-millones-de-paquetes/" target="_blank">GLS y DPD integran sus negocios en Alemania y superarán los 700 millones de paquetes</a>
+    <span class="score">27.6</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="summary"><span class="label">Resumen</span> GLS y Geopost planean integrar sus operaciones de paquetería en Alemania en una empresa conjunta con más de 700 millones de envíos anuales. La operación combina redes e inversiones relevantes, aunque queda sujeta a autorizaciones regulatorias.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La consolidación puede alterar la competencia, los costes logísticos y la capacidad de entrega del ecommerce B2B.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="8">
+  <div class="card-header">
+    <span class="index">#8</span>
+    <a href="https://ecommerce-news.es/lengow-anuncia-la-adquisicion-de-dailyco/" target="_blank">Lengow anuncia la adquisición de DAILY&amp;CO - Ecommerce News</a>
+    <span class="score">23.6</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="summary"><span class="label">Resumen</span> Lengow adquiere DAILY&amp;CO para reforzar la gestión, enriquecimiento y distribución de catálogos en marketplaces, además de ofrecer servicios gestionados de ecommerce.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La operación refuerza la consolidación y las capacidades de integración multicanal del ecosistema de marketplaces, con impacto directo en la operativa y competitividad del...</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>IA</h2>
+<div class="card" data-idx="9">
+  <div class="card-header">
+    <span class="index">#9</span>
+    <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/" target="_blank">Introducing Tool Retrieval in the Gemini API</a>
+    <span class="score">52.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">AI </div>
+  <p class="summary"><span class="label">Resumen</span> Google presenta Tool Retrieval en la API de Gemini para cargar esquemas de herramientas bajo demanda. La función puede reducir tokens de entrada y latencia en agentes con bibliotecas amplias.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es una mejora relevante de eficiencia y escalabilidad para agentes de IA empresariales.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(9,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(9,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="10">
+  <div class="card-header">
+    <span class="index">#10</span>
+    <a href="https://tecnologiageek.com/muse-ai-de-meta-saldos-bancarios-signal/" target="_blank">Muse AI de Meta expuso saldos y mensajes de Signal - Tecnología Geek</a>
+    <span class="score">31.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Tecnología Geek </div>
+  <p class="summary"><span class="label">Resumen</span> Muse AI de Meta habría expuesto saldos bancarios y mensajes privados durante conversaciones, según fallos reportados internamente. El caso plantea riesgos graves de privacidad y seguridad para los agentes con acceso a aplicaciones personales.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La filtración afecta directamente a la seguridad y confianza necesarias para la adopción de agentes de IA de propósito general.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(10,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(10,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="11">
+  <div class="card-header">
+    <span class="index">#11</span>
+    <a href="https://ecosistemastartup.com/workday-blinda-sus-agentes-de-ia-para-auditoria-y-rgpd/" target="_blank">Workday blinda sus agentes de IA para auditoría y RGPD - El Ecosistema Startup</a>
+    <span class="score">28.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> Workday está desarrollando agentes de IA controlados por algoritmos propios para hacer sus respuestas reproducibles, auditables y compatibles con requisitos de auditoría y RGPD.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la adopción empresarial de IA porque aborda directamente la gobernanza, la seguridad y la explicabilidad de agentes en procesos críticos.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(11,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(11,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="12">
+  <div class="card-header">
+    <span class="index">#12</span>
+    <a href="https://meteoraweb.com/es/news/genie-4-de-google-deepmind-llega-a-project-genie-con-audio-nativo" target="_blank">Genie 4 de Google DeepMind – qué cambia en Project Genie - Meteora Web</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Meteora Web </div>
+  <p class="summary"><span class="label">Resumen</span> Google DeepMind amplía Project Genie con Genie 4, un modelo orientado a generar mundos interactivos explorables, con agente de creación y funciones de comunidad. El acceso inicial está limitado a determinados suscriptores de Google AI.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Representa un avance significativo en modelos de mundos y una nueva modalidad de producto dentro de la plataforma de IA de Google.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(12,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(12,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="13">
+  <div class="card-header">
+    <span class="index">#13</span>
+    <a href="https://www.infobae.com/tecno/2026/11/19/las-plataformas-que-entrenan-ia-contratan-a-medicos-y-abogados-como-mano-de-obra-barata-ahora-enfrentan-demandas/" target="_blank">Las plataformas que entrenan IA contratan a médicos y abogados como mano de obra barata: ahora enfrentan demandas - Infobae</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Infobae </div>
+  <p class="summary"><span class="label">Resumen</span> Plataformas como Outlier, de Scale AI, reclutan médicos, abogados y doctores para evaluar y generar datos de entrenamiento para modelos de IA. La actividad afronta críticas y demandas por las condiciones laborales y el uso de trabajo especializado.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Afecta a la economía de desarrollo de modelos, la gobernanza de datos, los costes operativos y los riesgos legales del ecosistema de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(13,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(13,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="14">
+  <div class="card-header">
+    <span class="index">#14</span>
+    <a href="https://blogthinkbig.com/dola-asistente-ia-chatgpt-latinoamerica" target="_blank">Dola, la alternativa a ChatGPT que todos conocen en Latinoamérica - Blogthinkbig.com</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Blogthinkbig.com </div>
+  <p class="summary"><span class="label">Resumen</span> Dola se consolida como una aplicación de asistente de IA con fuerte adopción en varios mercados latinoamericanos, compitiendo con ChatGPT, Gemini y otros actores globales. El artículo aporta principalmente una señal de penetración regional.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refleja competencia y adopción de asistentes de IA, aunque con limitado detalle sobre usuarios o negocio.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(14,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(14,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — compañías</h2>
+<div class="card" data-idx="15">
+  <div class="card-header">
+    <span class="index">#15</span>
+    <a href="https://esemanal.mx/2026/11/microsoft-e-intel-profundizan-su-colaboracion-para-ofrecer-una-infraestructura-de-azure-diferenciada/" target="_blank">Microsoft e Intel profundizan su colaboración para ofrecer una infraestructura de Azure diferenciada - eSemanal</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">eSemanal </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft e Intel amplían su acuerdo para Azure mediante suministro multianual de procesadores Xeon y el uso de empaquetado avanzado de Intel Foundry en silicio propio.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El acuerdo refuerza la infraestructura de Azure y la seguridad de suministro para cargas de nube e IA, con implicaciones estratégicas para ambas compañías.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(15,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(15,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="16">
+  <div class="card-header">
+    <span class="index">#16</span>
+    <a href="https://www.20minutos.es/tecnologia/ciberseguridad/microsoft-ciberataque-agent-framework-malware-robo-credenciales_7063019_0.html" target="_blank">Nuevo ciberataque a Microsoft: hackers distribuyen malware a través de su software oficial - 20 Minutos</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">20 Minutos </div>
+  <p class="summary"><span class="label">Resumen</span> Ciberdelincuentes introdujeron malware en dos versiones de una herramienta oficial de Microsoft utilizada para desarrollar agentes de inteligencia artificial, con el objetivo de robar credenciales. El incidente eleva las dudas sobre la seguridad de la cadena de suministro de software de la compañía.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Un compromiso de software oficial puede generar costes, daños reputacionales y mayor presión regulatoria sobre Microsoft.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(16,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(16,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="17">
+  <div class="card-header">
+    <span class="index">#17</span>
+    <a href="https://observatorioblockchain.com/inteligencia-artificial/microsoft-mai-ignite-siete-modelos/" target="_blank">Microsoft lanza siete modelos MAI y busca a Astra y Opus - Observatorio Blockchain</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Observatorio Blockchain </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft habría lanzado siete modelos propios de IA bajo la familia MAI y estaría buscando atraer a los modelos Astra y Opus. La iniciativa refuerza su apuesta por desarrollar capacidades propias y ampliar su posición en la plataforma de IA.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El avance de modelos propios puede afectar a la diferenciación, los costes y la posición competitiva de Microsoft en inteligencia artificial.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(17,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(17,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="18">
+  <div class="card-header">
+    <span class="index">#18</span>
+    <a href="https://mezha.net/es/news/mezha-b56d21e1374934e1c51ef63e_intel-afirma-que-el-rendimiento-de/" target="_blank">Intel afirma que el rendimiento de 18A alcanza el 70% mientras Microsoft firma un acuerdo para usar EMIB - Mezha.net</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Mezha.net </div>
+  <p class="summary"><span class="label">Resumen</span> Intel afirma que el rendimiento de su nodo 18A alcanza el 70% y señala un acuerdo con Microsoft para utilizar la tecnología de empaquetado EMIB. El movimiento puede afectar a la competitividad de Intel y a la estrategia de suministro de chips de Microsoft.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La evolución de 18A y la colaboración con Microsoft tienen impacto potencial en la posición competitiva y la cadena de suministro de ambas compañías.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(18,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(18,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="19">
+  <div class="card-header">
+    <span class="index">#19</span>
+    <a href="https://www.expansion.com/empresas/motor/2026/11/19/geely-completa-primera-fase-lanzamiento-espana-entra-segmento-crece.html" target="_blank">Geely completa su primera fase de lanzamiento en España y entra en el segmento que más crece - Expansión</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Expansión </div>
+  <p class="summary"><span class="label">Resumen</span> Geely completa su primera fase de implantación en España con el lanzamiento del Monjaro híbrido enchufable, ampliando su gama y presencia comercial frente a BYD y otras marcas chinas.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La expansión en un mercado europeo clave puede afectar al crecimiento, la cuota y el posicionamiento competitivo de Geely.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(19,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(19,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="20">
+  <div class="card-header">
+    <span class="index">#20</span>
+    <a href="https://www.infobae.com/tecno/2026/11/19/satya-nadella-se-disculpo-por-la-falla-mundial-de-outlook-fue-una-tormenta-perfecta-que-activo-un-fallo-latente/" target="_blank">Satya Nadella se disculpó por la falla mundial de Outlook: “Fue una ‘tormenta perfecta’ que activó un fallo latente” - Infobae</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Infobae </div>
+  <p class="summary"><span class="label">Resumen</span> Satya Nadella pidió disculpas por una interrupción global de Outlook y Microsoft 365 que afectó durante casi 24 horas a millones de usuarios.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Una caída de esta magnitud implica riesgos operativos, reputacionales y potenciales costes para Microsoft y sus clientes empresariales.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(20,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(20,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="21">
+  <div class="card-header">
+    <span class="index">#21</span>
+    <a href="https://okdiario.com/techy/crowdstrike-windows-protecciones-fuera-del-nucleo-microsoft-2024-21185703" target="_blank">En 2024 un fallo de CrowdStrike afectó a 8,5 millones de equipos con Windows: más de dos años después, Micr... - OkDiario</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">OkDiario </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft ha generalizado una plataforma de seguridad para Windows que busca reducir el impacto de fallos como el incidente de CrowdStrike de 2024.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El movimiento puede reforzar la posición competitiva de Microsoft en ciberseguridad y modificar la dependencia de proveedores externos de endpoint.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(21,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(21,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="22">
+  <div class="card-header">
+    <span class="index">#22</span>
+    <a href="https://www.neoteo.com/es/agentes-arm-mcp-en-azure-que-pueden-cambiar-y-que-permisos-los-limitan" target="_blank">Agentes ARM MCP en Azure: qué pueden cambiar y qué permisos los limitan - NeoTeo</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">NeoTeo </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft habilita agentes MCP para crear, gestionar y actualizar recursos de Azure mediante ARM, sujetos a los permisos del usuario autenticado. La funcionalidad puede ampliar la automatización y el uso empresarial de Azure, aunque sigue en fase de vista previa.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es un avance relevante para la plataforma cloud de Microsoft y puede reforzar su posición competitiva y la adopción empresarial de Azure.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(22,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(22,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="stats">
+  <p>168 noticias procesadas (170 brutas)</p>
+  <p>Selección editorial: 22 items en 4 secciones</p>
+  <p>Fetch: 168 intentados · 139 verificados · 29 excluidos por no verificación</p>
+  <p>Duplicados filtrados: 50 por storyline, 1 cross-topic</p>
+  <p>Radar: 12 items en seguimiento</p>
+  <p>Fuentes con fallo: 2</p>
+</div>
+<div class="radar-card"><h2>📡 Radar / pendientes</h2><div class="card radar"><div class="card-header"><a href="https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/" target="_blank">How OpenAI’s Performance Factory keeps ChatGPT fast</a></div><div class="meta">OpenAI News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Aporta una señal concreta sobre la adopción de agentes de IA en la infraestructura y el desarrollo de plataformas.</p></div><div class="card radar"><div class="card-header"><a href="https://openai.com/business/learn/deploying-daybreak-red/" target="_blank">Deploying Daybreak Red</a></div><div class="meta">OpenAI News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es relevante para la seguridad y el despliegue controlado de sistemas de IA en entornos sensibles.</p></div><div class="card radar"><div class="card-header"><a href="https://openai.com/business/learn/codex-security-plugin-demo/" target="_blank">Explore the Codex Security Plugin</a></div><div class="meta">OpenAI News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Tiene relevancia potencial para la seguridad asistida por IA, aunque la información no detalla capacidades, adopción ni impacto operativo.</p></div><div class="card radar"><div class="card-header"><a href="https://openai.com/business/learn/pr-scans-demo/" target="_blank">See PR scans in action</a></div><div class="meta">OpenAI News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un tutorial superficial con impacto limitado sobre la evolución estructural de la IA.</p></div><div class="card radar"><div class="card-header"><a href="https://openai.com/business/learn/daybreak-blue-onboarding-demo/" target="_blank">Get started with Daybreak Blue</a></div><div class="meta">OpenAI News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un tutorial superficial de incorporación sin información sobre capacidades estructurales, regulación, seguridad o adopción empresarial de la IA.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/data-centers-poised-to-be-more-community-friendly-a-johnson-controls-execu/875164/" target="_blank">Data centers poised to be more community friendly, a Johnson Controls executive says</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Tiene relevancia moderada para materiales y equipamiento de construcción, aunque el contenido es genérico y no aporta impacto comercial inmediato para la distribución española.</p></div><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/inpost-convierte-sus-lockers-y-su-flota-en-soportes-de-comunicacion-en-su-nueva-campana-para-la-peak-season/" target="_blank">InPost convierte sus Lockers y su flota en soportes de comunicación en su nueva campaña para la Peak Season</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La iniciativa muestra una vía de monetización y diferenciación de la infraestructura logística, pero su impacto estratégico sobre el ecommerce B2B es limitado.</p></div><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/en-amiblu-la-logistica-esta-integrada-desde-el-inicio-en-la-planificacion-de-cada-proyecto/" target="_blank">“En Amiblu, la logística está integrada desde el inicio en la planificación de cada proyecto”</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un caso operativo relevante para la logística B2B y la gestión de pedidos complejos, aunque no aporta novedades claras sobre plataformas digitales o competencia.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/asce-new-york-infrastructure-grade-rail-transit-construction/875231/" target="_blank">ASCE gives New York infrastructure a ‘C-’ grade</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> El diagnóstico apunta a necesidades potenciales de inversión en obra civil, pero es geográficamente lejano y no ofrece efectos concretos sobre el canal de materiales en España o...</p></div><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/amazon-ads-presenta-dos-nuevos-formatos-de-anuncios-en-twitch/" target="_blank">Comprar en directo: Amazon Ads presenta dos nuevos formatos de anuncios en Twitch</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una innovación relevante para la publicidad y el ecommerce de Amazon, pero está orientada principalmente al consumo B2C y no al ecommerce B2B.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/pcl-picks-new-cfo-chief-financial-officer/875193/" target="_blank">PCL picks 21-year vet as new CFO</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un cambio directivo rutinario sin información sobre estrategia, contratación, demanda o impacto competitivo en la distribución de materiales.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/35078/ai-overviews-clics-perdidos-estudio-agarwal-sen" target="_blank">¿Cuántos clics les cuestan las AI Overviews a los sitios web? El estudio de Agarwal y Sen - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es relevante para la IA por el impacto estructural de las respuestas generativas de buscadores sobre la adopción, distribución y sostenibilidad del ecosistema web.</p></div></div>
+<div class="feedback-panel" id="fbPanel" style="display:none">
+  <div class="fb-summary" id="fbSummary"></div>
+  <textarea id="fbText" class="fb-text" readonly placeholder="Aquí aparecerá el feedback listo para pegar en Telegram"></textarea>
+  <button class="fb-copy-btn" onclick="copyAllFb()" id="fbCopyBtn">Copiar feedback para Telegram</button>
+</div>
+</div>
+<script>
+var fbDate = document.querySelector('.subtitle').textContent.match(/\d{4}-\d{2}-\d{2}/);
+fbDate = fbDate ? fbDate[0] : '';
+var fbState = {};
+
+function toggleFb(idx, val) {
+  var card = document.querySelector('[data-idx="'+idx+'"]');
+  var okBtn = card.querySelector('.fb-btn-ok');
+  var noBtn = card.querySelector('.fb-btn-no');
+  if (fbState[idx] === val) {
+    delete fbState[idx];
+    okBtn.classList.remove('active');
+    noBtn.classList.remove('active');
+  } else {
+    fbState[idx] = val;
+    okBtn.classList.toggle('active', val === 'ok');
+    noBtn.classList.toggle('active', val === 'no');
+  }
+  updatePanel();
+}
+
+function updatePanel() {
+  var panel = document.getElementById('fbPanel');
+  var summary = document.getElementById('fbSummary');
+  var fbText = document.getElementById('fbText');
+  var keys = Object.keys(fbState);
+  if (keys.length === 0) {
+    panel.style.display = 'none';
+    if (fbText) fbText.value = '';
+    return;
+  }
+  panel.style.display = 'block';
+  var okList = [], noList = [];
+  keys.forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  okList.sort(function(a,b) { return Number(a) - Number(b); });
+  noList.sort(function(a,b) { return Number(a) - Number(b); });
+  var parts = [];
+  if (okList.length) parts.push(okList.length + ' relevantes');
+  if (noList.length) parts.push(noList.length + ' no relevantes');
+  summary.textContent = parts.join(', ') + ' marcadas';
+  if (fbText) fbText.value = buildFbMessage();
+}
+
+function buildFbMessage() {
+  var okList = [], noList = [];
+  Object.keys(fbState).forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  var lines = ['nw feedback ' + fbDate];
+  if (okList.length) lines.push('ok ' + okList.join(' '));
+  if (noList.length) lines.push('no ' + noList.join(' '));
+  return lines.join('\n');
+}
+
+function copyAllFb() {
+  var text = buildFbMessage();
+  var btn = document.getElementById('fbCopyBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(btn, text);
+    });
+  } else {
+    fallbackCopy(btn, text);
+  }
+}
+
+function fallbackCopy(btn, text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); showCopied(btn); }
+  catch(e) { alert(text); }
+  document.body.removeChild(ta);
+}
+
+function showCopied(btn) {
+  btn.textContent = '\u2713 Copiado - pega en Telegram';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Copiar feedback para Telegram';
+    btn.classList.remove('copied');
+  }, 2500);
+}
+</script>
+</body></html>
