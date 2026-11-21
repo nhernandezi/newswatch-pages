@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing 2026-11-20</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117; color: #e0e0e0; padding: 16px; line-height: 1.5;
+  }
+  .container { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+  h2 {
+    font-size: 1.05em; color: #7eb8ff; margin: 20px 0 8px 0;
+    padding-bottom: 4px; border-bottom: 1px solid #222;
+  }
+  .card {
+    background: #1a1d27; border-radius: 8px; padding: 12px; margin-bottom: 10px;
+    border-left: 3px solid #333;
+  }
+  .card:hover { border-left-color: #7eb8ff; }
+  .card-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-header a {
+    color: #c0d0ff; text-decoration: none; font-weight: 600; font-size: 0.95em;
+    flex: 1;
+  }
+  .card-header a:hover { text-decoration: underline; }
+  .index { color: #555; font-size: 0.8em; font-weight: bold; min-width: 24px; }
+  .score {
+    background: #2a2d3a; color: #9ca3af; font-size: 0.75em; padding: 2px 6px;
+    border-radius: 4px; white-space: nowrap;
+  }
+  .meta { font-size: 0.8em; color: #777; margin-top: 4px; }
+  .tag {
+    display: inline-block; font-size: 0.7em; padding: 1px 6px; border-radius: 3px;
+    margin-left: 4px; font-weight: 600;
+  }
+  .tag.focus { background: #1e3a2f; color: #6ee7a0; }
+  .tag.competitor { background: #3a2a1e; color: #f0a060; }
+  .summary {
+    font-size: 0.92em; color: #e5e7eb; margin-top: 8px; line-height: 1.45;
+  }
+  .relevance {
+    font-size: 0.84em; color: #8ab4f8; margin-top: 5px; line-height: 1.4;
+  }
+  .label {
+    display: inline-block; font-size: 0.72em; text-transform: uppercase;
+    letter-spacing: .04em; color: #9ca3af; margin-right: 6px; font-weight: 700;
+  }
+  .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
+  .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
+  .llm-yes { color: #ffd700; margin-left: 4px; font-size: 0.85em; }
+  .llm-no { color: #666; margin-left: 4px; font-size: 0.85em; }
+  .fb-buttons { display: flex; gap: 6px; margin-top: 6px; }
+  .fb-btn {
+    border: 1px solid #333; background: #2a2d3a; color: #ccc; border-radius: 6px;
+    padding: 4px 10px; font-size: 0.85em; cursor: pointer; transition: all 0.15s;
+    min-width: 36px; text-align: center;
+  }
+  .fb-btn:active { transform: scale(0.95); }
+  .fb-btn-ok.active { border-color: #6ee7a0; background: #1e3a2f; color: #6ee7a0; }
+  .fb-btn-no.active { border-color: #f06060; background: #3a1e1e; color: #f06060; }
+  .stats {
+    margin-top: 24px; padding: 12px; background: #1a1d27; border-radius: 8px;
+    font-size: 0.82em; color: #888;
+  }
+  .feedback-panel {
+    margin-top: 12px; padding: 16px; background: #1a2332; border: 1px solid #2a4060;
+    border-radius: 8px; position: sticky; bottom: 12px;
+  }
+  .fb-summary { font-size: 0.82em; color: #aaa; margin-bottom: 8px; }
+  .fb-text {
+    width: 100%; min-height: 88px; resize: vertical; margin-bottom: 8px;
+    border-radius: 8px; border: 1px solid #35507a; background: #0f1724; color: #dbeafe;
+    padding: 10px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .fb-copy-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 8px;
+    background: #2563eb; color: #fff; font-size: 1em; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .fb-copy-btn:hover { background: #1d4ed8; }
+  .fb-copy-btn:active { transform: scale(0.98); }
+  .fb-copy-btn.copied { background: #16a34a; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Briefing diario</h1>
+<p class="subtitle">Cobertura: 2026-11-20 &middot; generado 21/11/2026 09:12</p>
+<h2>Saltoki y competidores</h2>
+<div class="card" data-idx="1">
+  <div class="card-header">
+    <span class="index">#1</span>
+    <a href="https://www.cicconstruccion.com/texto-diario/mostrar/6102023/grupo-saltoki-integra-electro-tarr" target="_blank">El Grupo Saltoki integra a Electro-Tarr - CIC Construcción y Arquitectura</a>
+    <span class="score">43.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">CIC Construcción y Arquitectura <span class="tag focus">Saltoki</span></div>
+  <p class="summary"><span class="label">Resumen</span> Electro-Tarr se incorpora al Grupo Saltoki, manteniendo su identidad y sus dos centros en Lleida. La alianza amplía la oferta de Saltoki con fontanería y climatización.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la consolidación territorial y la propuesta multiespecialista de Saltoki en distribución profesional eléctrica, HVAC y fontanería.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Distribución de materiales de construcción</h2>
+<div class="card" data-idx="2">
+  <div class="card-header">
+    <span class="index">#2</span>
+    <a href="https://www.rrhhdigital.com/secciones/empresa/805535/obramat-celebra-20-anos-en-espana-poniendo-en-valor-su-contribucion-al-desarrollo-economico-y-social-del-pais/" target="_blank">OBRAMAT celebra 20 años en España poniendo en valor su contribución al desarrollo económico y social del país - RRHH Digital</a>
+    <span class="score">34.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">RRHH Digital <span class="tag competitor">Obramat</span></div>
+  <p class="summary"><span class="label">Resumen</span> OBRAMAT destaca que generó 1.120 millones de euros de valor añadido y sostuvo 17.800 empleos en España en 2025, en el marco de sus 20 años de actividad. La compañía refuerza así su posicionamiento como operador relevante del canal profesional de construcción y reforma.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La escala económica y la consolidación de OBRAMAT elevan la presión competitiva sobre distribuidores como Saltoki en cobertura, notoriedad y relación con profesionales.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="3">
+  <div class="card-header">
+    <span class="index">#3</span>
+    <a href="https://construccion.cdecomunicacion.es/almacenes/los-mejores-almacenes-de-espana/140086/ranking-de-los-mejores-almacenes-de-vizcaya-en-2026" target="_blank">Ranking de los mejores almacenes de Vizcaya en 2026 - CdeComunicacion.es</a>
+    <span class="score">14.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">CdeComunicacion.es </div>
+  <p class="summary"><span class="label">Resumen</span> Macober, BigMat Sallende Trápaga y BigMat Adell encabezan el ranking de almacenes de materiales de construcción en Vizcaya, según solvencia, rentabilidad y presencia online.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta inteligencia competitiva local sobre operadores, escala, rentabilidad y posicionamiento comercial en un mercado relevante para la distribución.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="4">
+  <div class="card-header">
+    <span class="index">#4</span>
+    <a href="https://construccion.cdecomunicacion.es/noticias/140092/eduardo-lopez-fundador-terrapilar-medalla-oro-alicante" target="_blank">La Cámara de Alicante distingue con su Medalla de Oro a Eduardo López, fundador de Terrapilar - CdeComunicacion.es</a>
+    <span class="score">9.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">CdeComunicacion.es </div>
+  <p class="summary"><span class="label">Resumen</span> Eduardo López, fundador de Terrapilar, recibió la Medalla de Oro y Brillantes de la Cámara de Comercio de Alicante; el grupo superó los 41 millones de euros de facturación en 2024 y emplea a más de 550 personas.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La dimensión y consolidación de Terrapilar ofrecen contexto sobre la escala de un competidor regional, aunque la noticia es principalmente institucional.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Ecommerce B2B</h2>
+<div class="card" data-idx="5">
+  <div class="card-header">
+    <span class="index">#5</span>
+    <a href="https://ecommerce-news.es/klarna-presenta-un-nuevo-asistente-impulsado-por-inteligencia-artificial/" target="_blank">Klarna presenta un nuevo asistente impulsado por inteligencia artificial</a>
+    <span class="score">18.6</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="summary"><span class="label">Resumen</span> Klarna ha lanzado para un grupo limitado un asistente de IA que busca productos, gestiona compras, reservas, devoluciones, pedidos y otras tareas por cuenta del usuario.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Impulsa el comercio agentivo y puede transformar la intermediación, la conversión y la relación con clientes en plataformas digitales.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>IA</h2>
+<div class="card" data-idx="6">
+  <div class="card-header">
+    <span class="index">#6</span>
+    <a href="https://openai.com/business/customer-stories/hebbia/" target="_blank">Hebbia sees improvements in financial research with GPT-6 Astra</a>
+    <span class="score">37.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">OpenAI News </div>
+  <p class="summary"><span class="label">Resumen</span> Hebbia reporta mejoras de GPT-6 Astra en investigación financiera documental y generación de presentaciones ajustadas a requisitos. El caso muestra avances en flujos de trabajo profesionales basados en agentes y documentos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta evidencia de adopción empresarial de IA avanzada en tareas de análisis financiero y automatización del conocimiento.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="7">
+  <div class="card-header">
+    <span class="index">#7</span>
+    <a href="https://openai.com/index/introducing-medchembench/" target="_blank">Can AI help scientists identify promising drug candidates?</a>
+    <span class="score">33.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">OpenAI News </div>
+  <p class="summary"><span class="label">Resumen</span> OpenAI presenta MedChemBench, un benchmark para evaluar modelos de IA en razonamiento sobre estructuras moleculares, resultados experimentales y selección de compuestos. Busca medir su utilidad práctica en investigación farmacéutica.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante por el avance de la IA aplicada a ciencia y descubrimiento de fármacos, aunque todavía se centra en evaluación de capacidades.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="8">
+  <div class="card-header">
+    <span class="index">#8</span>
+    <a href="https://tecnologiageek.com/signal-bloquea-capturas-de-pantalla/" target="_blank">Tus chats cifrados ya no quedan a la vista de Siri AI ni de Gemini - Tecnología Geek</a>
+    <span class="score">35.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Tecnología Geek </div>
+  <p class="summary"><span class="label">Resumen</span> Signal bloquea capturas de pantalla en iOS y activa protección en Android para impedir que asistentes como Siri AI y Gemini lean chats cifrados.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante por sus implicaciones de privacidad, seguridad y límites regulatorios para asistentes de IA con acceso al contenido de pantalla.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="9">
+  <div class="card-header">
+    <span class="index">#9</span>
+    <a href="https://ecosistemastartup.com/apple-busca-su-agente-de-ia-para-competir-con-openai-y-meta/" target="_blank">Apple busca su agente de IA para competir con OpenAI y Meta - El Ecosistema Startup</a>
+    <span class="score">33.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> Apple busca ingenieros para desarrollar un asistente de IA agéntico capaz de navegar por internet, operar aplicaciones, controlar dispositivos y escribir código de forma autónoma. El movimiento apunta a una ampliación relevante de la competencia entre grandes plataformas de IA.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La entrada de Apple en agentes autónomos puede modificar la adopción empresarial, la distribución de servicios de IA y la posición competitiva de OpenAI, Meta y otros actores.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(9,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(9,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="10">
+  <div class="card-header">
+    <span class="index">#10</span>
+    <a href="https://ecosistemastartup.com/signal-bloquea-capturas-de-pantalla-contra-agentes-de-ia-2/" target="_blank">Signal bloquea capturas de pantalla contra agentes de IA - El Ecosistema Startup</a>
+    <span class="score">28.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> Signal ha activado por defecto el bloqueo de capturas para impedir que agentes de IA accedan a conversaciones privadas mediante permisos del sistema operativo. El caso evidencia riesgos estructurales para la privacidad y la seguridad de las aplicaciones frente a agentes con acceso a pantalla.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la IA general porque muestra cómo la expansión de agentes está forzando cambios en sistemas operativos, aplicaciones y modelos de privacidad.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(10,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(10,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="11">
+  <div class="card-header">
+    <span class="index">#11</span>
+    <a href="https://es.qz.com/holiday-shoppers-ai-agents-gifts-checkout-payment-111726" target="_blank">Los compradores navideños dejan que los agentes de IA encuentren regalos, pero aún pagan ellos mismos. - Quartz</a>
+    <span class="score">26.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Quartz </div>
+  <p class="summary"><span class="label">Resumen</span> Los consumidores utilizan agentes de IA para buscar regalos, pero todavía exigen aprobación humana para completar los pagos. Walmart, Shopify y Meta están desarrollando capacidades de compra autónoma, aunque la confianza sigue siendo limitada.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Muestra una adopción comercial temprana de agentes de IA y la evolución de plataformas clave hacia el comercio automatizado.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(11,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(11,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="12">
+  <div class="card-header">
+    <span class="index">#12</span>
+    <a href="https://ecosistemastartup.com/operadoras-de-telecom-usan-ia-contra-rivales-y-muse/" target="_blank">Operadoras de telecom usan IA contra rivales y Muse - El Ecosistema Startup</a>
+    <span class="score">24.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> Las operadoras de telecomunicaciones están utilizando agentes de IA para simular movimientos de competidores y negociar precios y condiciones. Esto apunta a un uso estratégico de agentes autónomos en mercados competitivos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la IA general por mostrar adopción empresarial avanzada y potencial transformación de la negociación comercial.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(12,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(12,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="13">
+  <div class="card-header">
+    <span class="index">#13</span>
+    <a href="https://ecosistemastartup.com/daniel-ek-apoya-a-europa-fusion-startup-britanica-de-fusion/" target="_blank">Daniel Ek apoya a Europa Fusion, startup británica de fusión - El Ecosistema Startup</a>
+    <span class="score">19.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> Daniel Ek ha invertido en Europa Fusion, una startup británica de fusión nuclear fundada por un investigador procedente de organizaciones de IA. La operación refleja el interés del capital tecnológico por resolver las necesidades energéticas asociadas al crecimiento de la IA.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta una señal estructural sobre la relación entre expansión de la IA, demanda energética e inversión en nuevas tecnologías.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(13,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(13,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — compañías</h2>
+<div class="card" data-idx="14">
+  <div class="card-header">
+    <span class="index">#14</span>
+    <a href="https://www.merca20.com/nvidia-y-microsoft-amplian-su-estrategia-de-ia-desde-azure-hasta-las-computadoras-windows/" target="_blank">NVIDIA y Microsoft amplían su estrategia de IA desde Azure hasta las computadoras Windows - Revista Merca2.0</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Revista Merca2.0 </div>
+  <p class="summary"><span class="label">Resumen</span> NVIDIA y Microsoft amplían su alianza de IA desde Azure hacia infraestructuras locales, entornos industriales y equipos Windows capaces de ejecutar modelos en el dispositivo. La estrategia refuerza la integración entre aceleración, nube y computación empresarial.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Puede fortalecer la posición competitiva y las oportunidades de crecimiento de NVIDIA y Microsoft en infraestructura y despliegue empresarial de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(14,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(14,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="15">
+  <div class="card-header">
+    <span class="index">#15</span>
+    <a href="https://www.tikr.com/es/blog/microsoft-bought-into-anthropic-around-350-billion-the-ipo-says-almost-exactly-1-5-trillion" target="_blank">Microsoft Bought Into Anthropic Around $350 Billion. The IPO Says “Almost Exactly $1.5 Trillion” - TIKR.com</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TIKR.com </div>
+  <p class="summary"><span class="label">Resumen</span> Anthropic habría alcanzado una valoración cercana a 1,5 billones de dólares tras su OPV, multiplicando el valor de la inversión de Microsoft. Además, Anthropic prevé comprometer decenas de miles de millones en Azure.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Impacta potencialmente en la valoración de la participación de Microsoft, el crecimiento de Azure y la competencia en IA empresarial.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(15,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(15,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="16">
+  <div class="card-header">
+    <span class="index">#16</span>
+    <a href="https://mezha.net/es/news/mezha-0d54c0bed2cc30bef45c0b94_salesforce-y-microsoft-lanzan-copilotforce-para/" target="_blank">Salesforce y Microsoft lanzan Copilotforce para conectar los datos de CRM con Microsoft Copilot - Mezha.net</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Mezha.net </div>
+  <p class="summary"><span class="label">Resumen</span> Salesforce y Microsoft lanzan Copilotforce para conectar datos de CRM con Microsoft Copilot. La integración busca mejorar el acceso a datos empresariales y la productividad mediante IA.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es un movimiento estratégico relevante para la competencia y monetización de Microsoft y Salesforce en software empresarial e IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(16,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(16,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="17">
+  <div class="card-header">
+    <span class="index">#17</span>
+    <a href="https://www.aragondigital.es/articulo/economia/varapalo-centros-datos-aragon-denuncia-condiciones-inasumibles-decreto-aprobado-gobierno-sanchez/202611201347121023278.html" target="_blank">Varapalo a los centros de datos: Aragón denuncia las “condiciones inasumibles” del decreto aprobado por el Gobierno de Sánchez - Aragón Digital</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Aragón Digital </div>
+  <p class="summary"><span class="label">Resumen</span> Aragón critica el decreto estatal sobre centros de datos y advierte de que podría poner en riesgo proyectos de inversión de Microsoft, Amazon y Merlin por unos 90.000 millones de euros.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Los nuevos requisitos regulatorios podrían retrasar o impedir infraestructuras relevantes para Microsoft y afectar su expansión de centros de datos en España.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(17,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(17,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="18">
+  <div class="card-header">
+    <span class="index">#18</span>
+    <a href="https://forbes.com.mx/arabia-saudita-prohibio-en-su-dia-gta-ahora-tiene-una-participacion/" target="_blank">Arabia Saudita prohibió en su día GTA. Ahora, tiene una participación • Internacional - Forbes México</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Forbes México </div>
+  <p class="summary"><span class="label">Resumen</span> Arabia Saudita levantó la prohibición de GTA y su fondo soberano mantiene una participación vinculada al editor de la franquicia, mientras GTA VI se lanza legalmente en el país.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La apertura de un mercado y el respaldo de un inversor soberano pueden reforzar la monetización, la distribución y el posicionamiento de Take-Two.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(18,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(18,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="19">
+  <div class="card-header">
+    <span class="index">#19</span>
+    <a href="https://autotest.com.ar/noticias/la-pick-up-con-437-cv-que-bajo-de-precio-y-ahora-cuesta-casi-lo-mismo-que-toyota-hilux/" target="_blank">La pick up con 437 CV que bajó de precio y ahora cuesta casi lo mismo que Toyota Hilux - Auto Test</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Auto Test </div>
+  <p class="summary"><span class="label">Resumen</span> BYD redujo 45.000 reales el precio de la pick-up híbrida enchufable Shark en Brasil, acercándola al precio de una Toyota Hilux.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La rebaja puede acelerar la penetración de BYD y presionar a competidores, aunque también introduce riesgo sobre márgenes y percepción de precios.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(19,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(19,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="20">
+  <div class="card-header">
+    <span class="index">#20</span>
+    <a href="https://www.byd.com/es-es/news-list/nuevo-byd-seal-u-dmi-2027" target="_blank">Nuevo BYD SEAL U DM-i: hasta 1.030 km de autonomía y hasta 374 CV | Noticias | BYD España - BYD</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">BYD </div>
+  <p class="summary"><span class="label">Resumen</span> BYD actualiza el SEAL U DM-i con más potencia, autonomía, carga rápida y equipamiento, manteniendo un precio competitivo en Europa y España.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la posición competitiva de BYD en híbridos enchufables y puede favorecer ventas, cuota y percepción de marca.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(20,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(20,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="21">
+  <div class="card-header">
+    <span class="index">#21</span>
+    <a href="https://www.publico.es/internacional/eeuu/jefe-ciberseguridad-casa-blanca-deja-cargo-medio-fallas-tecnologicas.html" target="_blank">El jefe de ciberseguridad de la Casa Blanca deja su cargo en medio de fallas tecnológicas - Diario Público</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Diario Público </div>
+  <p class="summary"><span class="label">Resumen</span> El responsable de ciberseguridad de la Casa Blanca deja el cargo tras varias fallas tecnológicas que afectaron a empresas y agencias públicas. El relevo puede anticipar mayor presión regulatoria y coordinación en ciberseguridad.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para compañías tecnológicas en cartera por el posible endurecimiento regulatorio y el aumento de exigencias de resiliencia digital.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(21,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(21,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="stats">
+  <p>169 noticias procesadas (171 brutas)</p>
+  <p>Selección editorial: 21 items en 5 secciones</p>
+  <p>Fetch: 169 intentados · 133 verificados · 36 excluidos por no verificación</p>
+  <p>Duplicados filtrados: 48 por storyline, 0 cross-topic</p>
+  <p>Radar: 12 items en seguimiento</p>
+  <p>Fuentes con fallo: 2</p>
+</div>
+<div class="radar-card"><h2>📡 Radar / pendientes</h2><div class="card radar"><div class="card-header"><a href="https://openai.com/index/combatting-adversarial-distillation/" target="_blank">Combatting adversarial distillation</a></div><div class="meta">OpenAI News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Aborda un riesgo estructural de seguridad y protección de propiedad intelectual en el desarrollo de modelos avanzados.</p></div><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/visa-amplia-agentic-ready-para-impulsar-un-comercio-con-ia-seguro-y-de-confianza-en-europa/" target="_blank">Visa amplía Agentic Ready para impulsar un comercio con IA seguro y de confianza en Europa</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una señal relevante para la evolución del ecommerce B2B, los pagos digitales y la adopción segura del comercio mediante agentes de IA.</p></div><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/tiktok-shop-quiere-ser-mucho-mas-que-el-lugar-donde-termina-una-compra-quiere-ser-donde-nace-la-proxima/" target="_blank">“TikTok Shop quiere ser mucho más que el lugar donde termina una compra: quiere ser donde nace la próxima”</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Aunque es principalmente B2C, muestra el avance de nuevos canales de descubrimiento y adquisición que pueden influir en la evolución del ecommerce.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/punch-list-maryland-awards-demo-contract-key-bridge-rebuild/875300/" target="_blank">Punch List: Maryland awards demo contract on $4B Key Bridge rebuild</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La inversión en grandes infraestructuras puede sostener la demanda de materiales de construcción, aunque el impacto es principalmente estadounidense.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/aecom-hunt-clayco-bowa-ohare-airport-project/875362/" target="_blank">AECOM Hunt, Clayco and Bowa start $917M O’Hare project</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> El inicio de grandes proyectos aeroportuarios puede impulsar el consumo de materiales y la actividad del canal profesional.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/tesla-manufacturing-plant-october-construction-starts-rebound/875377/" target="_blank">$17B Tesla manufacturing plant led October’s construction starts rebound</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> El repunte de la construcción industrial señala una fuente relevante de demanda potencial para materiales y distribución profesional.</p></div><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/nuestro-papel-es-hacer-de-la-logistica-un-motor-de-expansion-y-no-una-limitacion/" target="_blank">“Nuestro papel es hacer de la logística un motor de expansión y no una limitación”</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Aporta contexto sobre capacidades logísticas relevantes para el ecommerce B2B, pero es una entrevista corporativa sin novedades operativas cuantificadas.</p></div><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/ganadores-retail-media-awards-2026/" target="_blank">Coca-Cola, Samsung, L’Oréal Groupe, Farmaciasdirect, NIVEA SUN, REETMO o Cabify triunfan en los Retail Media Awards 2026</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> El evento confirma la actividad del sector, pero el carácter institucional y promocional limita su relevancia estratégica para ecommerce B2B.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/dol-flips-independent-contractor-switch-back-with-new-final-rule/875250/" target="_blank">DOL flips independent contractor switch back with new final rule</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una novedad laboral aplicable al sector constructor, pero su impacto sobre la distribución de materiales es indirecto y limitado.</p></div><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/instagram-ya-permite-editar-stories-despues-de-publicarlas-sin-perder-interacciones/" target="_blank">Instagram ya permite editar Stories después de publicarlas sin perder interacciones</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La mejora afecta a una red social de consumo, pero no tiene impacto relevante en ecommerce B2B, procurement o marketplaces.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/amtrak-opens-philadelphia-train-station-concourse/875385/" target="_blank">Amtrak opens Philadelphia train station concourse</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Su impacto en la distribución de materiales de construcción en España o Europa es indirecto y muy limitado.</p></div><div class="card radar"><div class="card-header"><a href="https://root-nation.com/es/news-es/it-news-es/es-apple-developing-own-ai-agent-that-runs-mac/" target="_blank">Un piloto automático propio para macOS: Apple busca ingenieros para crear un agente de IA proactivo capaz de controlar tu Mac - Root-Nation.com</a></div><div class="meta">Root-Nation.com</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La iniciativa de Apple puede influir significativamente en la adopción de agentes y en la competencia entre plataformas tecnológicas.</p></div></div>
+<div class="feedback-panel" id="fbPanel" style="display:none">
+  <div class="fb-summary" id="fbSummary"></div>
+  <textarea id="fbText" class="fb-text" readonly placeholder="Aquí aparecerá el feedback listo para pegar en Telegram"></textarea>
+  <button class="fb-copy-btn" onclick="copyAllFb()" id="fbCopyBtn">Copiar feedback para Telegram</button>
+</div>
+</div>
+<script>
+var fbDate = document.querySelector('.subtitle').textContent.match(/\d{4}-\d{2}-\d{2}/);
+fbDate = fbDate ? fbDate[0] : '';
+var fbState = {};
+
+function toggleFb(idx, val) {
+  var card = document.querySelector('[data-idx="'+idx+'"]');
+  var okBtn = card.querySelector('.fb-btn-ok');
+  var noBtn = card.querySelector('.fb-btn-no');
+  if (fbState[idx] === val) {
+    delete fbState[idx];
+    okBtn.classList.remove('active');
+    noBtn.classList.remove('active');
+  } else {
+    fbState[idx] = val;
+    okBtn.classList.toggle('active', val === 'ok');
+    noBtn.classList.toggle('active', val === 'no');
+  }
+  updatePanel();
+}
+
+function updatePanel() {
+  var panel = document.getElementById('fbPanel');
+  var summary = document.getElementById('fbSummary');
+  var fbText = document.getElementById('fbText');
+  var keys = Object.keys(fbState);
+  if (keys.length === 0) {
+    panel.style.display = 'none';
+    if (fbText) fbText.value = '';
+    return;
+  }
+  panel.style.display = 'block';
+  var okList = [], noList = [];
+  keys.forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  okList.sort(function(a,b) { return Number(a) - Number(b); });
+  noList.sort(function(a,b) { return Number(a) - Number(b); });
+  var parts = [];
+  if (okList.length) parts.push(okList.length + ' relevantes');
+  if (noList.length) parts.push(noList.length + ' no relevantes');
+  summary.textContent = parts.join(', ') + ' marcadas';
+  if (fbText) fbText.value = buildFbMessage();
+}
+
+function buildFbMessage() {
+  var okList = [], noList = [];
+  Object.keys(fbState).forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  var lines = ['nw feedback ' + fbDate];
+  if (okList.length) lines.push('ok ' + okList.join(' '));
+  if (noList.length) lines.push('no ' + noList.join(' '));
+  return lines.join('\n');
+}
+
+function copyAllFb() {
+  var text = buildFbMessage();
+  var btn = document.getElementById('fbCopyBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(btn, text);
+    });
+  } else {
+    fallbackCopy(btn, text);
+  }
+}
+
+function fallbackCopy(btn, text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); showCopied(btn); }
+  catch(e) { alert(text); }
+  document.body.removeChild(ta);
+}
+
+function showCopied(btn) {
+  btn.textContent = '\u2713 Copiado - pega en Telegram';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Copiar feedback para Telegram';
+    btn.classList.remove('copied');
+  }, 2500);
+}
+</script>
+</body></html>
