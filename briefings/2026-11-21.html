@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing 2026-11-21</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117; color: #e0e0e0; padding: 16px; line-height: 1.5;
+  }
+  .container { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+  h2 {
+    font-size: 1.05em; color: #7eb8ff; margin: 20px 0 8px 0;
+    padding-bottom: 4px; border-bottom: 1px solid #222;
+  }
+  .card {
+    background: #1a1d27; border-radius: 8px; padding: 12px; margin-bottom: 10px;
+    border-left: 3px solid #333;
+  }
+  .card:hover { border-left-color: #7eb8ff; }
+  .card-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-header a {
+    color: #c0d0ff; text-decoration: none; font-weight: 600; font-size: 0.95em;
+    flex: 1;
+  }
+  .card-header a:hover { text-decoration: underline; }
+  .index { color: #555; font-size: 0.8em; font-weight: bold; min-width: 24px; }
+  .score {
+    background: #2a2d3a; color: #9ca3af; font-size: 0.75em; padding: 2px 6px;
+    border-radius: 4px; white-space: nowrap;
+  }
+  .meta { font-size: 0.8em; color: #777; margin-top: 4px; }
+  .tag {
+    display: inline-block; font-size: 0.7em; padding: 1px 6px; border-radius: 3px;
+    margin-left: 4px; font-weight: 600;
+  }
+  .tag.focus { background: #1e3a2f; color: #6ee7a0; }
+  .tag.competitor { background: #3a2a1e; color: #f0a060; }
+  .summary {
+    font-size: 0.92em; color: #e5e7eb; margin-top: 8px; line-height: 1.45;
+  }
+  .relevance {
+    font-size: 0.84em; color: #8ab4f8; margin-top: 5px; line-height: 1.4;
+  }
+  .label {
+    display: inline-block; font-size: 0.72em; text-transform: uppercase;
+    letter-spacing: .04em; color: #9ca3af; margin-right: 6px; font-weight: 700;
+  }
+  .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
+  .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
+  .llm-yes { color: #ffd700; margin-left: 4px; font-size: 0.85em; }
+  .llm-no { color: #666; margin-left: 4px; font-size: 0.85em; }
+  .fb-buttons { display: flex; gap: 6px; margin-top: 6px; }
+  .fb-btn {
+    border: 1px solid #333; background: #2a2d3a; color: #ccc; border-radius: 6px;
+    padding: 4px 10px; font-size: 0.85em; cursor: pointer; transition: all 0.15s;
+    min-width: 36px; text-align: center;
+  }
+  .fb-btn:active { transform: scale(0.95); }
+  .fb-btn-ok.active { border-color: #6ee7a0; background: #1e3a2f; color: #6ee7a0; }
+  .fb-btn-no.active { border-color: #f06060; background: #3a1e1e; color: #f06060; }
+  .stats {
+    margin-top: 24px; padding: 12px; background: #1a1d27; border-radius: 8px;
+    font-size: 0.82em; color: #888;
+  }
+  .feedback-panel {
+    margin-top: 12px; padding: 16px; background: #1a2332; border: 1px solid #2a4060;
+    border-radius: 8px; position: sticky; bottom: 12px;
+  }
+  .fb-summary { font-size: 0.82em; color: #aaa; margin-bottom: 8px; }
+  .fb-text {
+    width: 100%; min-height: 88px; resize: vertical; margin-bottom: 8px;
+    border-radius: 8px; border: 1px solid #35507a; background: #0f1724; color: #dbeafe;
+    padding: 10px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .fb-copy-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 8px;
+    background: #2563eb; color: #fff; font-size: 1em; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .fb-copy-btn:hover { background: #1d4ed8; }
+  .fb-copy-btn:active { transform: scale(0.98); }
+  .fb-copy-btn.copied { background: #16a34a; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Briefing diario</h1>
+<p class="subtitle">Cobertura: 2026-11-21 &middot; generado 22/11/2026 08:49</p>
+<h2>IA</h2>
+<div class="card" data-idx="1">
+  <div class="card-header">
+    <span class="index">#1</span>
+    <a href="https://tecnologiageek.com/signal-bloquea-capturas-agentes-de-ia/" target="_blank">Signal frena a Siri AI y Gemini en tus chats cifrados - Tecnología Geek</a>
+    <span class="score">30.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Tecnología Geek </div>
+  <p class="summary"><span class="label">Resumen</span> Signal bloquea las capturas de pantalla cuando detecta asistentes de IA que intentan leer chats cifrados en iOS y Android, para proteger el contenido visible en pantalla.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Evidencia un conflicto estructural entre agentes integrados en sistemas operativos, privacidad y seguridad de aplicaciones de mensajería.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="2">
+  <div class="card-header">
+    <span class="index">#2</span>
+    <a href="https://www.tikr.com/es/blog/if-the-ai-trade-blows-up-metas-saving-grace-is-that-its-social-media-business-still-generates-a-ton-of-cash" target="_blank">If the AI Trade Blows Up, Meta’s Saving Grace Is That Its Social Media Business Still “Generates a Ton of Cash” - TIKR.com</a>
+    <span class="score">26.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TIKR.com </div>
+  <p class="summary"><span class="label">Resumen</span> El análisis sostiene que Meta mantendría una sólida generación de caja publicitaria incluso si se deteriora la inversión en IA, aunque el elevado capex ya supera al flujo de caja operativo. Un recorte de inversión podría afectar a proveedores de infraestructura como Arista Networks.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta contexto sobre la sostenibilidad financiera de la estrategia de IA de Meta y sus posibles efectos sobre el ecosistema de infraestructura.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="3">
+  <div class="card-header">
+    <span class="index">#3</span>
+    <a href="https://mioriente.com/medellin/walmart-nvidia-google-medellin-ia/" target="_blank">Walmart, Nvidia y Google llegan a Medellín para hablar de IA - MiOriente</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">MiOriente </div>
+  <p class="summary"><span class="label">Resumen</span> Walmart, Nvidia y Google participarán en un evento sobre IA generativa en Medellín, centrado en acelerar la adopción empresarial y reducir la brecha entre interés y uso práctico.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta señales moderadas sobre la expansión regional de la IA y la participación de grandes plataformas, aunque el contenido es principalmente promocional.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="4">
+  <div class="card-header">
+    <span class="index">#4</span>
+    <a href="https://www.cronicaviva.com.pe/terremoto-en-wall-street-por-que-se-hunde-la-bolsa-en-eu-cuales-seran-las-consecuencias/" target="_blank">Terremoto en Wall Street: ¿por qué se hunde la Bolsa en EU? ¿Cuál será la consecuencia? - Crónica Viva</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Crónica Viva </div>
+  <p class="summary"><span class="label">Resumen</span> Una fuerte caída de los valores tecnológicos y de las acciones de Anthropic reaviva las dudas sobre las valoraciones y expectativas financieras asociadas a la IA.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Puede afectar la financiación, la valoración y la percepción de riesgo del sector de IA, aunque el enfoque bursátil es amplio y parcialmente especulativo.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="5">
+  <div class="card-header">
+    <span class="index">#5</span>
+    <a href="https://es.tradingview.com/news/tradingview:98b82f7611df8:0/" target="_blank">Datos clave: Alphabet eleva el gasto de capital en IA; la búsqueda se desacelera y el FCF se vuelve negativo - TradingView</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TradingView </div>
+  <p class="summary"><span class="label">Resumen</span> Alphabet prevé elevar su inversión en capital hasta 205.000 millones de dólares en 2026, principalmente para infraestructura de IA, mientras el flujo de caja libre se vuelve negativo y el crecimiento de Search se desacelera.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refleja una apuesta estructural por la IA, pero también riesgos de monetización, intensidad de capital y presión sobre la generación de caja de uno de sus principales actores.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="6">
+  <div class="card-header">
+    <span class="index">#6</span>
+    <a href="https://www.tradingview.com/news/tradingview:ad9989668767f:0-key-facts-alphabet-raises-ai-capex-search-slows-fcf-turns-negative/" target="_blank">Key facts: Alphabet raises AI capex; Search slows; FCF turns negative - TradingView</a>
+    <span class="score">31.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TradingView </div>
+  <p class="summary"><span class="label">Resumen</span> Alphabet prevé elevar su inversión en infraestructura de IA hasta 195.000-205.000 millones de dólares en 2026, mientras la búsqueda desacelera, el flujo de caja libre se vuelve negativo y la IA reduce la monetización por consulta.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Afecta directamente a la estrategia, valoración, rentabilidad y posición competitiva de Alphabet en la carrera de infraestructura y monetización de la IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="7">
+  <div class="card-header">
+    <span class="index">#7</span>
+    <a href="https://www.tradingview.com/news/tradingview:ed36bc2b08933:0-key-facts-anthropic-reports-33-2b-revenue-raises-10b-cash-could-exceed-230b/" target="_blank">Key facts: Anthropic Reports $33.2B Revenue, Raises $10B; Cash Could Exceed $230B - TradingView</a>
+    <span class="score">31.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TradingView </div>
+  <p class="summary"><span class="label">Resumen</span> Anthropic habría comunicado un fuerte crecimiento de ingresos y una nueva financiación de 10.000 millones de dólares, junto con acuerdos ampliados de capacidad de cómputo con Alphabet y Broadcom. La operación reforzaría su capacidad para financiar infraestructura y competir en modelos avanzados.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la IA por su impacto estructural en financiación, capacidad computacional y competencia entre plataformas líderes.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — compañías</h2>
+<div class="card" data-idx="8">
+  <div class="card-header">
+    <span class="index">#8</span>
+    <a href="https://foro3d.com/2026/noviembre/agent-365-microsoft-pone-orden-en-el-ejercito-de-agentes-de-ia-empresa.html" target="_blank">Agent 365: Microsoft pone orden en el ejército de agentes de IA empresariales - Foro3D</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Foro3D </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft lanzó Agent 365 como plano de control para gobernar agentes de IA empresariales, con medición de costes, analítica y gestión dinámica del riesgo. La herramienta busca facilitar despliegues a gran escala, incluidos agentes de terceros.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza el papel de Microsoft como capa de gestión y seguridad de la IA empresarial, con potencial de monetización adicional y mayor fidelización.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="9">
+  <div class="card-header">
+    <span class="index">#9</span>
+    <a href="https://estenerife.com/byd-ti7-bloqueado-ue-copiar-diseno-defender-land-rover/" target="_blank">El Ti7 de BYD queda bloqueado en la UE por copiar el diseño del Defender de Land Rover - estenerife.com</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">estenerife.com </div>
+  <p class="summary"><span class="label">Resumen</span> Un tribunal neerlandés ha ordenado bloquear en la UE la comercialización del SUV eléctrico Ti7 de BYD por infringir el diseño registrado del Defender de Jaguar Land Rover. BYD prevé apelar, mientras el lanzamiento británico sigue previsto para 2027.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La sentencia puede afectar las ventas, los costes legales y la expansión europea de BYD, además de reforzar la posición competitiva de JLR.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(9,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(9,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="10">
+  <div class="card-header">
+    <span class="index">#10</span>
+    <a href="https://geekzilla.tech/copilot-de-windows-11-se-convierte-en-asistente-de-diagnostico-con-ia-asi-cambiara-la-experiencia-del-usuario/" target="_blank">Copilot de Windows 11 se convierte en asistente de diagnóstico con IA: así cambiará la experiencia del usuario - geekzilla.tech</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">geekzilla.tech </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft mostró nuevas funciones de Copilot en Windows 11 capaces de diagnosticar problemas del sistema y sugerir soluciones. La evolución amplía el papel de Copilot desde asistente conversacional hacia soporte técnico integrado.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la estrategia de Microsoft para impulsar la adopción empresarial y de consumo de la IA dentro de su ecosistema de software.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(10,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(10,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="11">
+  <div class="card-header">
+    <span class="index">#11</span>
+    <a href="https://foro3d.com/2026/noviembre/microsoft-e-intel-amplian-su-acuerdo-para-azure-con-emib-y-xeon-diamon.html" target="_blank">Microsoft e Intel amplían su acuerdo para Azure con EMIB y Xeon Diamond Rapids - Foro3D</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Foro3D </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft e Intel amplían su acuerdo para Azure, incluyendo el uso de empaquetado EMIB de Intel Foundry y futuras CPU Xeon Diamond Rapids.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El acuerdo afecta a la capacidad, eficiencia y diversificación tecnológica de la infraestructura Azure, con relevancia para la estrategia de nube e IA de Microsoft.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(11,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(11,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="12">
+  <div class="card-header">
+    <span class="index">#12</span>
+    <a href="https://www.tikr.com/es/blog/a-3-8-billion-fund-just-bought-these-3-stocks" target="_blank">A $3.8 Billion Fund Just Bought These 3 Stocks - TIKR.com</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TIKR.com </div>
+  <p class="summary"><span class="label">Resumen</span> El fondo Avala Global abrió posiciones en Microsoft y Sandisk y elevó un 431% su posición en Intel durante el tercer trimestre. El movimiento refleja interés institucional en grandes compañías tecnológicas pese a sus recientes caídas.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta una señal de flujos y posicionamiento sobre Microsoft, Intel y Sandisk, aunque no cambia por sí mismo sus tesis fundamentales.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(12,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(12,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="13">
+  <div class="card-header">
+    <span class="index">#13</span>
+    <a href="https://www.motor.es/noticias/ranking-ventas-coches-electricos-2026-2026112377.html" target="_blank">Ranking de ventas de coches eléctricos 2026 - Motor.es</a>
+    <span class="score">17.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Motor.es </div>
+  <p class="summary"><span class="label">Resumen</span> El ranking muestra el avance de los vehículos eléctricos de batería en España durante 2026 y la relevancia creciente de los nuevos modelos. No aporta datos detallados de fabricantes ni implicaciones financieras concretas.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Puede indicar tendencias de demanda para compañías automovilísticas en cartera, pero su carácter descriptivo limita el impacto sobre la tesis de inversión.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(13,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(13,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — temáticas</h2>
+<div class="card" data-idx="14">
+  <div class="card-header">
+    <span class="index">#14</span>
+    <a href="https://www.todoalicante.es/english/costa-proposes-10-budget-20261121111136-nt.html" target="_blank">Costa proposes 10% cut to EU budget blueprint in bid to forge consensus among leaders - todoalicante.es</a>
+    <span class="score">14.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">todoalicante.es </div>
+  <p class="summary"><span class="label">Resumen</span> António Costa plantea recortar un 10% el presupuesto de la Unión Europea para 2028-2034 e introducir nuevos impuestos, reduciendo partidas previstas para competitividad, seguridad y defensa.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La propuesta puede alterar las perspectivas de financiación y demanda en defensa, tecnología y otras temáticas europeas de cartera, aunque aún está sujeta a negociación.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(14,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(14,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="stats">
+  <p>84 noticias procesadas (88 brutas)</p>
+  <p>Selección editorial: 14 items en 3 secciones</p>
+  <p>Fetch: 84 intentados · 74 verificados · 10 excluidos por no verificación</p>
+  <p>Duplicados filtrados: 21 por storyline, 0 cross-topic</p>
+  <p>Radar: 12 items en seguimiento</p>
+  <p>Fuentes con fallo: 2</p>
+</div>
+<div class="radar-card"><h2>📡 Radar / pendientes</h2><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/35675/anuncia-etsy-la-revision-de-su-clausula-de-ia" target="_blank">Anuncia Etsy la revisión de su cláusula de IA tras cierres de tiendas - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es relevante para la gobernanza de plataformas, la confianza de usuarios y la adopción empresarial de IA generativa.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/35752/check-point-presenta-el-informe-sobre-artex-y-sus" target="_blank">Check Point presenta el informe sobre ARTEX y sus agentes de IA autónomos - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> El tema puede ser relevante para seguridad y agentes de IA, aunque el contenido es demasiado superficial para evaluar un impacto real.</p></div><div class="card radar"><div class="card-header"><a href="https://www.audacy.com/winsnoticias/noticias/anthropic-claude-matematicas-solucion-ai-a4baffb6c35888b0a8d7e7305ef0e1df" target="_blank">Empleado de Anthropic afirma haber resuelto un Santo Grial matemático con ayuda de la IA - Audacy</a></div><div class="meta">Audacy</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Podría señalar avances en razonamiento, pero la falta de evidencia independiente reduce su relevancia estructural para la IA.</p></div><div class="card radar"><div class="card-header"><a href="https://tynmagazine.com/la-caida-de-microsoft-deja-una-leccion-anticiparse-tambien-es-evitar-que-falte-producto/" target="_blank">La caída de Microsoft deja una lección: Anticiparse también es evitar que falte producto - TyN Magazine</a></div><div class="meta">TyN Magazine</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> No contiene suficiente contenido ni análisis nuevo para evaluar un impacto relevante en la compañía.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/35703/como-editar-fotos-con-inteligencia-artificial-herramientas-gratuitas" target="_blank">Cómo editar fotos con inteligencia artificial, herramientas gratuitas - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un tutorial superficial sin impacto significativo en la adopción, regulación, seguridad o estrategia competitiva de la IA.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/35848/fallo-whatsapp-android-anuncio-revela-direccion-ip" target="_blank">Fallo de WhatsApp en Android, un anuncio revela tu dirección IP - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Tiene poca relación con el estado del arte, la adopción o la regulación de la IA.</p></div><div class="card radar"><div class="card-header"><a href="https://stocktwits.com/news-articles/markets/equity/elon-musk-calls-anthropic-s-models-great-products-jassy-says-we-re-big-believers-mag-7-voices-this-week/cNbmmxHR91n" target="_blank">Elon Musk Calls Anthropic’s Models ‘Great Products,’ Jassy Says ‘We’re Big Believers’: Mag 7 Voices This Week - TradingView</a></div><div class="meta">TradingView</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Las declaraciones reflejan interés de actores relevantes, pero carecen de impacto sustancial o información nueva sobre el desarrollo de la IA.</p></div><div class="card radar"><div class="card-header"><a href="https://es-us.finanzas.yahoo.com/quote/2UJJ.MU/seasonality/" target="_blank">BlackRock Global Funds - ESG Emerging Markets Blended Bond Fund (2UJJ.MU) Gráfico de rendimientos estacionales - Yahoo Finanzas</a></div><div class="meta">Yahoo Finanzas</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una ficha gráfica sin información nueva sobre flujos, valoración, riesgo o cambios relevantes en el ETF o índice.</p></div><div class="card radar"><div class="card-header"><a href="https://es.tradingview.com/x/qUX6TRtK/" target="_blank">NASDAQ:MSFT Imagen del gráfico de akikostas - TradingView</a></div><div class="meta">TradingView</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es ruido de mercado sin impacto fundamental identificable sobre la tesis de inversión.</p></div><div class="card radar"><div class="card-header"><a href="https://es-us.finanzas.yahoo.com/quote/MSFT261123P00440000/" target="_blank">Precio de las acciones, noticias, cotización e historial de MSFT Nov 2026 440.000 put (MSFT261123P00440000) - Yahoo Finanzas</a></div><div class="meta">Yahoo Finanzas</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Ruido genérico de mercado cripto; no aporta cambio material de tesis ni señal clara para valoración.</p></div><div class="card radar"><div class="card-header"><a href="https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode/" target="_blank">OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.02/Min</a></div><div class="meta">MarkTechPost</div><p class="relevance"><span class="label">Estado</span> low source quality</p><p class="summary"><span class="label">Señal</span> Es un avance relevante en agentes de voz porque mejora capacidades y reduce los costes operativos de despliegues empresariales.</p></div><div class="card radar"><div class="card-header"><a href="https://es.tradingview.com/news/tradingview:793b83d32fe9a:0/" target="_blank">Datos clave: Anthropic se compromete a gastar $47.2 mil millones en Azure; chips de Intel y participación de $1 mil millones de MSFT - TradingView</a></div><div class="meta">TradingView</div><p class="relevance"><span class="label">Estado</span> low source quality</p><p class="summary"><span class="label">Señal</span> Afecta directamente a Microsoft e Intel mediante ingresos potenciales, posicionamiento en nube, demanda de chips y exposición estratégica a Anthropic.</p></div></div>
+<div class="feedback-panel" id="fbPanel" style="display:none">
+  <div class="fb-summary" id="fbSummary"></div>
+  <textarea id="fbText" class="fb-text" readonly placeholder="Aquí aparecerá el feedback listo para pegar en Telegram"></textarea>
+  <button class="fb-copy-btn" onclick="copyAllFb()" id="fbCopyBtn">Copiar feedback para Telegram</button>
+</div>
+</div>
+<script>
+var fbDate = document.querySelector('.subtitle').textContent.match(/\d{4}-\d{2}-\d{2}/);
+fbDate = fbDate ? fbDate[0] : '';
+var fbState = {};
+
+function toggleFb(idx, val) {
+  var card = document.querySelector('[data-idx="'+idx+'"]');
+  var okBtn = card.querySelector('.fb-btn-ok');
+  var noBtn = card.querySelector('.fb-btn-no');
+  if (fbState[idx] === val) {
+    delete fbState[idx];
+    okBtn.classList.remove('active');
+    noBtn.classList.remove('active');
+  } else {
+    fbState[idx] = val;
+    okBtn.classList.toggle('active', val === 'ok');
+    noBtn.classList.toggle('active', val === 'no');
+  }
+  updatePanel();
+}
+
+function updatePanel() {
+  var panel = document.getElementById('fbPanel');
+  var summary = document.getElementById('fbSummary');
+  var fbText = document.getElementById('fbText');
+  var keys = Object.keys(fbState);
+  if (keys.length === 0) {
+    panel.style.display = 'none';
+    if (fbText) fbText.value = '';
+    return;
+  }
+  panel.style.display = 'block';
+  var okList = [], noList = [];
+  keys.forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  okList.sort(function(a,b) { return Number(a) - Number(b); });
+  noList.sort(function(a,b) { return Number(a) - Number(b); });
+  var parts = [];
+  if (okList.length) parts.push(okList.length + ' relevantes');
+  if (noList.length) parts.push(noList.length + ' no relevantes');
+  summary.textContent = parts.join(', ') + ' marcadas';
+  if (fbText) fbText.value = buildFbMessage();
+}
+
+function buildFbMessage() {
+  var okList = [], noList = [];
+  Object.keys(fbState).forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  var lines = ['nw feedback ' + fbDate];
+  if (okList.length) lines.push('ok ' + okList.join(' '));
+  if (noList.length) lines.push('no ' + noList.join(' '));
+  return lines.join('\n');
+}
+
+function copyAllFb() {
+  var text = buildFbMessage();
+  var btn = document.getElementById('fbCopyBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(btn, text);
+    });
+  } else {
+    fallbackCopy(btn, text);
+  }
+}
+
+function fallbackCopy(btn, text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); showCopied(btn); }
+  catch(e) { alert(text); }
+  document.body.removeChild(ta);
+}
+
+function showCopied(btn) {
+  btn.textContent = '\u2713 Copiado - pega en Telegram';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Copiar feedback para Telegram';
+    btn.classList.remove('copied');
+  }, 2500);
+}
+</script>
+</body></html>
