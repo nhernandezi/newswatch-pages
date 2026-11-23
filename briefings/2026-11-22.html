@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing 2026-11-22</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117; color: #e0e0e0; padding: 16px; line-height: 1.5;
+  }
+  .container { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+  h2 {
+    font-size: 1.05em; color: #7eb8ff; margin: 20px 0 8px 0;
+    padding-bottom: 4px; border-bottom: 1px solid #222;
+  }
+  .card {
+    background: #1a1d27; border-radius: 8px; padding: 12px; margin-bottom: 10px;
+    border-left: 3px solid #333;
+  }
+  .card:hover { border-left-color: #7eb8ff; }
+  .card-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-header a {
+    color: #c0d0ff; text-decoration: none; font-weight: 600; font-size: 0.95em;
+    flex: 1;
+  }
+  .card-header a:hover { text-decoration: underline; }
+  .index { color: #555; font-size: 0.8em; font-weight: bold; min-width: 24px; }
+  .score {
+    background: #2a2d3a; color: #9ca3af; font-size: 0.75em; padding: 2px 6px;
+    border-radius: 4px; white-space: nowrap;
+  }
+  .meta { font-size: 0.8em; color: #777; margin-top: 4px; }
+  .tag {
+    display: inline-block; font-size: 0.7em; padding: 1px 6px; border-radius: 3px;
+    margin-left: 4px; font-weight: 600;
+  }
+  .tag.focus { background: #1e3a2f; color: #6ee7a0; }
+  .tag.competitor { background: #3a2a1e; color: #f0a060; }
+  .summary {
+    font-size: 0.92em; color: #e5e7eb; margin-top: 8px; line-height: 1.45;
+  }
+  .relevance {
+    font-size: 0.84em; color: #8ab4f8; margin-top: 5px; line-height: 1.4;
+  }
+  .label {
+    display: inline-block; font-size: 0.72em; text-transform: uppercase;
+    letter-spacing: .04em; color: #9ca3af; margin-right: 6px; font-weight: 700;
+  }
+  .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
+  .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
+  .llm-yes { color: #ffd700; margin-left: 4px; font-size: 0.85em; }
+  .llm-no { color: #666; margin-left: 4px; font-size: 0.85em; }
+  .fb-buttons { display: flex; gap: 6px; margin-top: 6px; }
+  .fb-btn {
+    border: 1px solid #333; background: #2a2d3a; color: #ccc; border-radius: 6px;
+    padding: 4px 10px; font-size: 0.85em; cursor: pointer; transition: all 0.15s;
+    min-width: 36px; text-align: center;
+  }
+  .fb-btn:active { transform: scale(0.95); }
+  .fb-btn-ok.active { border-color: #6ee7a0; background: #1e3a2f; color: #6ee7a0; }
+  .fb-btn-no.active { border-color: #f06060; background: #3a1e1e; color: #f06060; }
+  .stats {
+    margin-top: 24px; padding: 12px; background: #1a1d27; border-radius: 8px;
+    font-size: 0.82em; color: #888;
+  }
+  .feedback-panel {
+    margin-top: 12px; padding: 16px; background: #1a2332; border: 1px solid #2a4060;
+    border-radius: 8px; position: sticky; bottom: 12px;
+  }
+  .fb-summary { font-size: 0.82em; color: #aaa; margin-bottom: 8px; }
+  .fb-text {
+    width: 100%; min-height: 88px; resize: vertical; margin-bottom: 8px;
+    border-radius: 8px; border: 1px solid #35507a; background: #0f1724; color: #dbeafe;
+    padding: 10px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .fb-copy-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 8px;
+    background: #2563eb; color: #fff; font-size: 1em; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .fb-copy-btn:hover { background: #1d4ed8; }
+  .fb-copy-btn:active { transform: scale(0.98); }
+  .fb-copy-btn.copied { background: #16a34a; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Briefing diario</h1>
+<p class="subtitle">Cobertura: 2026-11-22 &middot; generado 23/11/2026 08:44</p>
+<h2>IA</h2>
+<div class="card" data-idx="1">
+  <div class="card-header">
+    <span class="index">#1</span>
+    <a href="https://tecnologiageek.com/bloqueo-capturas-signal-agentes-ia/" target="_blank">Signal cierra la pantalla a Siri AI y a Gemini Intelligence - Tecnología Geek</a>
+    <span class="score">30.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Tecnología Geek </div>
+  <p class="summary"><span class="label">Resumen</span> Signal ha incorporado bloqueo de capturas y lectura de pantalla para impedir que asistentes de IA accedan al contenido de las conversaciones. La medida responde a riesgos de privacidad derivados de agentes integrados en los sistemas operativos.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la seguridad y la gobernanza de agentes, al evidenciar la tensión entre funcionalidades de IA y protección de datos.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="2">
+  <div class="card-header">
+    <span class="index">#2</span>
+    <a href="https://foro3d.com/2026/noviembre/empire-ai-gamma-arranca-en-buffalo-con-500-millones-y-meta-para-2028.html" target="_blank">Empire AI Gamma arranca en Buffalo con 500 millones y meta para 2028 - Foro3D</a>
+    <span class="score">26.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Foro3D </div>
+  <p class="summary"><span class="label">Resumen</span> Empire AI Gamma inicia en Buffalo la construcción de un supercomputador de 500 millones de dólares para investigación académica en IA, medicina, biotecnología y fabricación.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La creación de capacidad de cómputo compartida refuerza la infraestructura y la adopción de IA fuera de los grandes actores privados.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="3">
+  <div class="card-header">
+    <span class="index">#3</span>
+    <a href="https://digg.com/tech/hkfj94y9" target="_blank">Apple is reportedly building AI to do the clicking—and the coding - Digg</a>
+    <span class="score">26.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Digg </div>
+  <p class="summary"><span class="label">Resumen</span> Apple estaría desarrollando agentes de IA capaces de ejecutar acciones en dispositivos y ayudar a programar. El movimiento reforzaría su estrategia de IA aplicada y la competencia entre plataformas.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la evolución de los agentes y para la posición competitiva de Apple en IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="4">
+  <div class="card-header">
+    <span class="index">#4</span>
+    <a href="https://infosertecla.com/2026/11/22/google-ai-ultra-ahora-incluye-youtube-premium-family/" target="_blank">Google AI Ultra ahora incluye YouTube Premium Family - Infosertec</a>
+    <span class="score">21.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Infosertec </div>
+  <p class="summary"><span class="label">Resumen</span> Google AI Ultra incorpora YouTube Premium Family en su paquete de suscripción. La medida amplía el bundling de servicios para impulsar el valor percibido y la adopción.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Afecta a la estrategia comercial de una plataforma de IA, aunque no supone un avance tecnológico sustancial.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — compañías</h2>
+<div class="card" data-idx="5">
+  <div class="card-header">
+    <span class="index">#5</span>
+    <a href="https://foro3d.com/2026/noviembre/danaher-y-microsoft-llevan-agentes-de-ia-al-laboratorio-cientifico.html" target="_blank">Danaher y Microsoft llevan agentes de IA al laboratorio científico - Foro3D</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Foro3D </div>
+  <p class="summary"><span class="label">Resumen</span> Danaher y Microsoft desarrollan una plataforma de agentes de IA sobre Azure y Microsoft Foundry para automatizar instrumentos y experimentos científicos. Las pruebas indican reducciones de hasta el 83% en el tiempo de ejecución.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la tesis de Microsoft en IA empresarial y amplía el uso de Azure en un sector especializado con potencial comercial.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="6">
+  <div class="card-header">
+    <span class="index">#6</span>
+    <a href="https://foro3d.com/2026/noviembre/microsoft-suma-siete-modelos-de-ia-para-codigo-imagen-y-voz-con-pesos.html" target="_blank">Microsoft suma siete modelos de IA para código, imagen y voz con pesos licenciados - Foro3D</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Foro3D </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft presentó siete modelos con pesos licenciados para programación, imagen y voz. La ampliación favorece la integración de IA en flujos profesionales y diversifica su oferta más allá del texto.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la posición competitiva de Microsoft en modelos multimodales y puede ampliar la adopción dentro de sus ecosistemas de desarrollo y productividad.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="7">
+  <div class="card-header">
+    <span class="index">#7</span>
+    <a href="https://tecnologiageek.com/entra-connect-health-correos-de-administradores/" target="_blank">Los correos de los administradores quedaron a la vista en Entra - Tecnología Geek</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Tecnología Geek </div>
+  <p class="summary"><span class="label">Resumen</span> Una vulnerabilidad en Entra Connect Health permitió a atacantes acceder durante más de tres meses a correos de administradores y metadatos de organizaciones. Microsoft aún no ha cuantificado el alcance total del incidente.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El fallo de seguridad puede generar costes, riesgo reputacional y presión regulatoria para Microsoft, además de afectar la confianza en sus servicios cloud e identidad.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="8">
+  <div class="card-header">
+    <span class="index">#8</span>
+    <a href="https://www.tikr.com/es/blog/warning-for-coreweave-satya-nadella-says-selling-to-one-or-two-customers-is-not-a-business" target="_blank">Warning for CoreWeave: Satya Nadella Says “Selling to One or Two Customers Is Not a Business” - TIKR.com</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TIKR.com </div>
+  <p class="summary"><span class="label">Resumen</span> Satya Nadella cuestionó la sostenibilidad de los proveedores de infraestructura de IA excesivamente dependientes de uno o dos clientes. CoreWeave concentra el 72% de sus ingresos en sus tres mayores clientes y mantiene un flujo de caja libre muy negativo.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La concentración de clientes y el elevado consumo de capital afectan directamente al riesgo competitivo, financiero y de valoración de CoreWeave, Nebius, IREN y Applied Digital.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="9">
+  <div class="card-header">
+    <span class="index">#9</span>
+    <a href="https://www.3djuegos.com/xbox-series-xs/noticias/xbox-necesitaba-buenas-noticias-sus-ventas-acaba-recibir-su-mercado-importante" target="_blank">XBOX necesitaba buenas noticias sobre sus ventas y acaba de recibir una en su mercado más importante - 3DJuegos</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">3DJuegos </div>
+  <p class="summary"><span class="label">Resumen</span> Las ventas de Xbox Series X|S en Estados Unidos aumentaron un 10% interanual en octubre, aunque el gasto creció un 42% principalmente por una subida del precio medio del 29%. Es una señal positiva limitada para la división de videojuegos de Microsoft.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta un dato operativo relevante para Microsoft, pero el crecimiento en valor está muy condicionado por precios más altos y no resuelve la debilidad acumulada en unidades.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(9,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(9,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="10">
+  <div class="card-header">
+    <span class="index">#10</span>
+    <a href="https://autosdeprimera.com/cifras-del-mercado/nacional/geely-cumple-un-ano-de-operaciones-y-acelera-su-crecimiento-en-colombia/" target="_blank">Geely cumple un año de operaciones y acelera su crecimiento en Colombia - Autos de Primera</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Autos de Primera </div>
+  <p class="summary"><span class="label">Resumen</span> Geely vendió 2,54 millones de vehículos globalmente entre enero y octubre de 2026 y superó en Colombia su objetivo anual, con 1.500 unidades facturadas frente a 1.200 previstas. La compañía también amplió su red comercial y su oferta de SUV electrificados.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El crecimiento de ventas, la expansión de distribución y el avance en vehículos electrificados son indicadores operativos relevantes para la tesis de Geely.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(10,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(10,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="11">
+  <div class="card-header">
+    <span class="index">#11</span>
+    <a href="https://www.tikr.com/es/blog/a-4-4-billion-fund-just-bought-these-3-stocks" target="_blank">A $4.4 Billion Fund Just Bought These 3 Stocks - TIKR.com</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TIKR.com </div>
+  <p class="summary"><span class="label">Resumen</span> Un fondo de 4.400 millones de dólares incrementó posiciones en Microsoft, Sandisk y Alphabet durante el tercer trimestre. Microsoft destaca por cotizar por debajo de su múltiplo histórico, mientras Sandisk presenta mayor riesgo de caída de beneficios.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Puede aportar contexto de valoración y flujos institucionales sobre compañías potencialmente relevantes para la cartera, aunque la información es retrospectiva y parcialmente...</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(11,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(11,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — temáticas</h2>
+<div class="card" data-idx="12">
+  <div class="card-header">
+    <span class="index">#12</span>
+    <a href="https://www.elnuevodia.com/english/news/story/the-puerto-rico-energy-bureau-seeks-to-determine-the-risk-to-customers-from-natural-gas-not-purchased-from-new-fortress-energy/" target="_blank">The Puerto Rico Energy Bureau seeks to determine the risk to customers from natural gas not purchased from New Fortress Energy - El Nuevo Día</a>
+    <span class="score">14.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Nuevo Día </div>
+  <p class="summary"><span class="label">Resumen</span> El regulador energético de Puerto Rico analiza el riesgo para los clientes derivado del gas natural no adquirido a New Fortress Energy y exige previsiones de compras hasta 2026.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La revisión regulatoria puede afectar contratos, volúmenes, ingresos y riesgo de New Fortress Energy dentro de la temática energética.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(12,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(12,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="stats">
+  <p>66 noticias procesadas (67 brutas)</p>
+  <p>Selección editorial: 12 items en 3 secciones</p>
+  <p>Fetch: 66 intentados · 54 verificados · 12 excluidos por no verificación</p>
+  <p>Duplicados filtrados: 12 por storyline, 0 cross-topic</p>
+  <p>Radar: 12 items en seguimiento</p>
+  <p>Fuentes con fallo: 2</p>
+</div>
+<div class="radar-card"><h2>📡 Radar / pendientes</h2><div class="card radar"><div class="card-header"><a href="https://openai.com/index/perplexity-and-intelligence/" target="_blank">Perplexity and Intelligence</a></div><div class="meta">OpenAI News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La estandarización de métricas puede influir en la evaluación de capacidades, aunque el impacto inmediato es limitado.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/35986/google-duplex-gemini-llama-negocios" target="_blank">Google revela Duplex, la voz que llama por teléfono a negocios para Gemini - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Representa un movimiento relevante de plataforma hacia agentes de voz y automatización de tareas comerciales.</p></div><div class="card radar"><div class="card-header"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNQW1PWUgtanhvVFRiVURmMUVjanN4LWd2UFZOd3pkUm94TVhhSnc0bWNNQWFndWI0NU5ra1VZRzlYbi0yMzh2WVZ2Ry1ReGVGWU1tUHg0ZmVrci1tVkhmLXJrQVI2LTZpUTlaa0Q2MnFkLVZObjhmc2RtZFdkTDhrOFpkUzdCZl9fVzBwNjhreTFZcld6dGpVTEhDYV9HTl9CQmJyQ0pRSjRyM3BwdUlz?oc=5" target="_blank">Google presenta Mirror Dimension, un internet sintético para probar agentes de Chrome - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La infraestructura de evaluación y seguridad para agentes es clave para mejorar su fiabilidad y acelerar su adopción.</p></div><div class="card radar"><div class="card-header"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9GTDd2ZWZ3dmtmT1FLaTRwVVUxenZtZ1ZmWWFLUEwzSExNYlBpakxWaDYwQ1JkWjF1U3lXOF83MzFKM19oRDVNdzNWTXhBWDZIWVZ1VGxvRkFvRkdfX000MnFQTFNsMWZTX05uMHlJX3ZjRXY4V2NN?oc=5&amp;hl=en-US&amp;gl=US&amp;ceid=US%3Aen" target="_blank">Danaher y Microsoft meten agentes de IA en los instrumentos del laboratorio - Tecnología Geek</a></div><div class="meta">Tecnología Geek</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La colaboración puede reforzar la adopción de IA y la posición de Microsoft en soluciones empresariales, aunque la información es demasiado escasa para valorar un impacto mayor.</p></div><div class="card radar"><div class="card-header"><a href="https://es.benzinga.com/news/usa/stocks/acciones-microsoft-estrategia-inteligencia-artificial-copilot-bnp-paribas-221126/" target="_blank">Microsoft refuerza su estrategia de IA: BNP Paribas ve potencial en sus acciones hasta los 632 - Benzinga España</a></div><div class="meta">Benzinga España</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La valoración de un analista y una referencia genérica a la IA aportan poca información nueva sobre beneficios, guidance o ejecución empresarial.</p></div><div class="card radar"><div class="card-header"><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE00YzRSM2FvZWlTd01Td24xa2d1VWpMVWdkaW1OdGZGNWFZdGpwQ1VZZ2Y2ZWdWMm1uRjBwQmJkT0tWRUljNUVFUFk2Z1RnOTlLTzlCVEZNaEpGMWFRdGxObndmOA?oc=5" target="_blank">¿Hipótesis de Riemann resuelta? El caso Claude, explicado - Fello AI</a></div><div class="meta">Fello AI</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es contenido especulativo y sensacionalista sin impacto demostrado en el estado del arte de la IA.</p></div><div class="card radar"><div class="card-header"><a href="https://fourweekmba.com/es/ai-us-chip-import-prices-up-23-in-2026-highest-since-2009/" target="_blank">Los precios de importación de chips en EE. UU. aumentarán un 23 % en 2026, el nivel más alto desde 2009. - FourWeekMBA</a></div><div class="meta">FourWeekMBA</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> El encarecimiento de chips podría afectar los costes y la capacidad de expansión de la infraestructura de IA, pero la información es demasiado escasa y especulativa.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/36102/gta-5-ia-carretera-datos-sinteticos-tesla-fsd-v15" target="_blank">GTA 5 enseñó a la IA a ver la carretera, ahora el FSD v15 de Tesla parece GTA - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es contenido especulativo y superficial sobre un producto concreto, sin evidencia suficiente de un movimiento estructural en IA o conducción autónoma.</p></div><div class="card radar"><div class="card-header"><a href="https://anmosugoi.com/xbox-25-aniversario-diez-juegos-identidad/" target="_blank">Xbox cumple 25 años: diez juegos que definen su identidad - Anmo Sugoi</a></div><div class="meta">Anmo Sugoi</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es contenido editorial y nostálgico sin datos nuevos sobre resultados, estrategia, ventas o perspectivas financieras de Microsoft.</p></div><div class="card radar"><div class="card-header"><a href="https://oem.com.mx/elsoldemexico/finanzas/por-que-estan-fallando-tantos-servicios-digitales-en-noviembre-33262460" target="_blank">¿Por qué están fallando tantos servicios digitales en noviembre? - El Sol de México</a></div><div class="meta">El Sol de México</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una pieza genérica sin impacto identificable sobre la tesis de inversión de compañías concretas.</p></div><div class="card radar"><div class="card-header"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBFUjhIazlpY3h2ODlfRktvT1BxalBEOUtIQzFpZWxBVE9XWXFWbGoySDN6M0N0UFVQdmg5T0hDa0ZIandJNUJ2bHRLbW5wejdrTU1IajNxSWNrWmw5bHFnYUNEYUlEX2cyQS1kRQ?oc=5&amp;hl=en-US&amp;gl=US&amp;ceid=US%3Aen" target="_blank">La búsqueda de Windows 11 abandona Edge y se pasa a WinUI 3 - Tecnología Geek</a></div><div class="meta">Tecnología Geek</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un cambio técnico menor de producto sin implicaciones materiales para la valoración, el guidance o la posición competitiva de Microsoft.</p></div><div class="card radar"><div class="card-header"><a href="https://www.pressreader.com/catalog" target="_blank">¿Y si caen Google y Microsoft a la vez? El mundo depende de un puñado de servidores - PressReader</a></div><div class="meta">PressReader</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> El riesgo de concentración tecnológica es relevante, pero el artículo es especulativo y no presenta un evento, impacto financiero o cambio regulatorio concreto.</p></div></div>
+<div class="feedback-panel" id="fbPanel" style="display:none">
+  <div class="fb-summary" id="fbSummary"></div>
+  <textarea id="fbText" class="fb-text" readonly placeholder="Aquí aparecerá el feedback listo para pegar en Telegram"></textarea>
+  <button class="fb-copy-btn" onclick="copyAllFb()" id="fbCopyBtn">Copiar feedback para Telegram</button>
+</div>
+</div>
+<script>
+var fbDate = document.querySelector('.subtitle').textContent.match(/\d{4}-\d{2}-\d{2}/);
+fbDate = fbDate ? fbDate[0] : '';
+var fbState = {};
+
+function toggleFb(idx, val) {
+  var card = document.querySelector('[data-idx="'+idx+'"]');
+  var okBtn = card.querySelector('.fb-btn-ok');
+  var noBtn = card.querySelector('.fb-btn-no');
+  if (fbState[idx] === val) {
+    delete fbState[idx];
+    okBtn.classList.remove('active');
+    noBtn.classList.remove('active');
+  } else {
+    fbState[idx] = val;
+    okBtn.classList.toggle('active', val === 'ok');
+    noBtn.classList.toggle('active', val === 'no');
+  }
+  updatePanel();
+}
+
+function updatePanel() {
+  var panel = document.getElementById('fbPanel');
+  var summary = document.getElementById('fbSummary');
+  var fbText = document.getElementById('fbText');
+  var keys = Object.keys(fbState);
+  if (keys.length === 0) {
+    panel.style.display = 'none';
+    if (fbText) fbText.value = '';
+    return;
+  }
+  panel.style.display = 'block';
+  var okList = [], noList = [];
+  keys.forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  okList.sort(function(a,b) { return Number(a) - Number(b); });
+  noList.sort(function(a,b) { return Number(a) - Number(b); });
+  var parts = [];
+  if (okList.length) parts.push(okList.length + ' relevantes');
+  if (noList.length) parts.push(noList.length + ' no relevantes');
+  summary.textContent = parts.join(', ') + ' marcadas';
+  if (fbText) fbText.value = buildFbMessage();
+}
+
+function buildFbMessage() {
+  var okList = [], noList = [];
+  Object.keys(fbState).forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  var lines = ['nw feedback ' + fbDate];
+  if (okList.length) lines.push('ok ' + okList.join(' '));
+  if (noList.length) lines.push('no ' + noList.join(' '));
+  return lines.join('\n');
+}
+
+function copyAllFb() {
+  var text = buildFbMessage();
+  var btn = document.getElementById('fbCopyBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(btn, text);
+    });
+  } else {
+    fallbackCopy(btn, text);
+  }
+}
+
+function fallbackCopy(btn, text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); showCopied(btn); }
+  catch(e) { alert(text); }
+  document.body.removeChild(ta);
+}
+
+function showCopied(btn) {
+  btn.textContent = '\u2713 Copiado - pega en Telegram';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Copiar feedback para Telegram';
+    btn.classList.remove('copied');
+  }, 2500);
+}
+</script>
+</body></html>
