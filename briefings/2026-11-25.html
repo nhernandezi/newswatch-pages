@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing 2026-11-25</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0f1117; color: #e0e0e0; padding: 16px; line-height: 1.5;
+  }
+  .container { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; color: #fff; }
+  .subtitle { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+  h2 {
+    font-size: 1.05em; color: #7eb8ff; margin: 20px 0 8px 0;
+    padding-bottom: 4px; border-bottom: 1px solid #222;
+  }
+  .card {
+    background: #1a1d27; border-radius: 8px; padding: 12px; margin-bottom: 10px;
+    border-left: 3px solid #333;
+  }
+  .card:hover { border-left-color: #7eb8ff; }
+  .card-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .card-header a {
+    color: #c0d0ff; text-decoration: none; font-weight: 600; font-size: 0.95em;
+    flex: 1;
+  }
+  .card-header a:hover { text-decoration: underline; }
+  .index { color: #555; font-size: 0.8em; font-weight: bold; min-width: 24px; }
+  .score {
+    background: #2a2d3a; color: #9ca3af; font-size: 0.75em; padding: 2px 6px;
+    border-radius: 4px; white-space: nowrap;
+  }
+  .meta { font-size: 0.8em; color: #777; margin-top: 4px; }
+  .tag {
+    display: inline-block; font-size: 0.7em; padding: 1px 6px; border-radius: 3px;
+    margin-left: 4px; font-weight: 600;
+  }
+  .tag.focus { background: #1e3a2f; color: #6ee7a0; }
+  .tag.competitor { background: #3a2a1e; color: #f0a060; }
+  .summary {
+    font-size: 0.92em; color: #e5e7eb; margin-top: 8px; line-height: 1.45;
+  }
+  .relevance {
+    font-size: 0.84em; color: #8ab4f8; margin-top: 5px; line-height: 1.4;
+  }
+  .label {
+    display: inline-block; font-size: 0.72em; text-transform: uppercase;
+    letter-spacing: .04em; color: #9ca3af; margin-right: 6px; font-weight: 700;
+  }
+  .fb-yes { color: #6ee7a0; margin-left: 6px; font-weight: bold; }
+  .fb-no { color: #f06060; margin-left: 6px; font-weight: bold; }
+  .llm-yes { color: #ffd700; margin-left: 4px; font-size: 0.85em; }
+  .llm-no { color: #666; margin-left: 4px; font-size: 0.85em; }
+  .fb-buttons { display: flex; gap: 6px; margin-top: 6px; }
+  .fb-btn {
+    border: 1px solid #333; background: #2a2d3a; color: #ccc; border-radius: 6px;
+    padding: 4px 10px; font-size: 0.85em; cursor: pointer; transition: all 0.15s;
+    min-width: 36px; text-align: center;
+  }
+  .fb-btn:active { transform: scale(0.95); }
+  .fb-btn-ok.active { border-color: #6ee7a0; background: #1e3a2f; color: #6ee7a0; }
+  .fb-btn-no.active { border-color: #f06060; background: #3a1e1e; color: #f06060; }
+  .stats {
+    margin-top: 24px; padding: 12px; background: #1a1d27; border-radius: 8px;
+    font-size: 0.82em; color: #888;
+  }
+  .feedback-panel {
+    margin-top: 12px; padding: 16px; background: #1a2332; border: 1px solid #2a4060;
+    border-radius: 8px; position: sticky; bottom: 12px;
+  }
+  .fb-summary { font-size: 0.82em; color: #aaa; margin-bottom: 8px; }
+  .fb-text {
+    width: 100%; min-height: 88px; resize: vertical; margin-bottom: 8px;
+    border-radius: 8px; border: 1px solid #35507a; background: #0f1724; color: #dbeafe;
+    padding: 10px; font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .fb-copy-btn {
+    width: 100%; padding: 12px; border: none; border-radius: 8px;
+    background: #2563eb; color: #fff; font-size: 1em; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .fb-copy-btn:hover { background: #1d4ed8; }
+  .fb-copy-btn:active { transform: scale(0.98); }
+  .fb-copy-btn.copied { background: #16a34a; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Briefing diario</h1>
+<p class="subtitle">Cobertura: 2026-11-25 &middot; generado 26/11/2026 09:11</p>
+<h2>Saltoki y competidores</h2>
+<div class="card" data-idx="1">
+  <div class="card-header">
+    <span class="index">#1</span>
+    <a href="https://climatizacion-y-confort.cdecomunicacion.es/noticias/distribucion/mejores-almacenes-espana/162978/saltoki-cornella-la-atencion-personalizada-y-el-servicio-integral-como-claves-del-exito-del-mejor-almacen-de-barcelona" target="_blank">Saltoki Cornellà: la atención personalizada como clave del éxito del mejor almacén de Barcelona - CdeComunicacion.es</a>
+    <span class="score">42.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">CdeComunicacion.es <span class="tag focus">Saltoki</span></div>
+  <p class="summary"><span class="label">Resumen</span> Saltoki Cornellà lidera la valoración de almacenes profesionales de climatización, calefacción y fontanería en Barcelona según reseñas de Google. El reconocimiento destaca la atención personalizada y la experiencia del cliente como factores diferenciales.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La reputación local y la calidad del servicio pueden reforzar la captación y fidelización frente a competidores de distribución profesional.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(1,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(1,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="2">
+  <div class="card-header">
+    <span class="index">#2</span>
+    <a href="https://climatizacion-y-confort.cdecomunicacion.es/noticias/proveedores/162990/sonepar-espana-celebrara-su-tercera-semana-digital-del-30-de-noviembre-al-6-de-diciembre" target="_blank">Sonepar España celebrará su tercera Semana Digital del 30 de noviembre al 6 de diciembre - CdeComunicacion.es</a>
+    <span class="score">39.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">CdeComunicacion.es <span class="tag competitor">Sonepar</span></div>
+  <p class="summary"><span class="label">Resumen</span> Sonepar España organizará su tercera Semana Digital con promociones en su web y app, además de webinars para impulsar el uso de sus herramientas digitales entre instaladores. La campaña busca mejorar la experiencia de compra y la adopción de servicios digitales.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la estrategia de ecommerce B2B y la competencia digital en la distribución eléctrica profesional.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(2,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(2,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Distribución de materiales de construcción</h2>
+<div class="card" data-idx="3">
+  <div class="card-header">
+    <span class="index">#3</span>
+    <a href="https://www.elperiodicodelazulejo.es/industria/resultados-del-primer-barometro-de-la-innovacion-en-la-construccion-en-espana-IE2237684" target="_blank">Resultados del primer Barómetro de la Innovación en la Construcción en España - elperiodicodelazulejo.es</a>
+    <span class="score">21.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">elperiodicodelazulejo.es </div>
+  <p class="summary"><span class="label">Resumen</span> El primer Barómetro de la Innovación en la Construcción analiza las capacidades tecnológicas del sector y sus principales retos. La innovación se vincula especialmente con la obtención de contratos y licitaciones, aunque todavía se percibe menos su impacto sobre la eficiencia económica.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta señales sobre la adopción tecnológica y la evolución competitiva del canal profesional de construcción, relevantes para la estrategia de distribución.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(3,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(3,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="4">
+  <div class="card-header">
+    <span class="index">#4</span>
+    <a href="https://www.ifema.es/construtec/noticias-sector/distribucion-de-materiales" target="_blank">Distribución de materiales | CONSTRUTEC - IFEMA Madrid</a>
+    <span class="score">27.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">IFEMA Madrid </div>
+  <p class="summary"><span class="label">Resumen</span> El congreso de CONSTRUTEC analiza la competitividad de las redes de distribución, la colaboración entre asociados y la convivencia entre tiendas físicas y venta digital. También aborda el valor de las marcas locales y la adaptación de servicios.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Aporta información directa sobre estrategia competitiva, digitalización y evolución del canal profesional de materiales de construcción.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(4,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(4,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="5">
+  <div class="card-header">
+    <span class="index">#5</span>
+    <a href="https://construccion.cdecomunicacion.es/noticias/140127/adipaex-lanzara-en-sevilla-su-primera-escuela-de-formacion-para-instaladores-de-placa-de-yeso-laminado-y-techosprimera-escuela-formacion-adipaex-sevilla" target="_blank">ADIPAEX pasa a la acción: abrirá en Sevilla su propia escuela de instaladores de placa de yeso - CdeComunicacion.es</a>
+    <span class="score">14.5</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">CdeComunicacion.es </div>
+  <p class="summary"><span class="label">Resumen</span> ADIPAEX creará en Sevilla una escuela especializada en instalación de placas de yeso, con apoyo de fabricantes y participación de distribuidores del sector. La iniciativa busca paliar la falta de profesionales cualificados.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la distribución de materiales porque puede mejorar la disponibilidad de instaladores y favorecer la demanda de soluciones de fabricantes y distribuidores.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(5,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(5,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Ecommerce B2B</h2>
+<div class="card" data-idx="6">
+  <div class="card-header">
+    <span class="index">#6</span>
+    <a href="https://ecommerce-news.es/hemos-triplicado-y-cuadruplicado-las-ventas-en-algunos-mercados-europeos/" target="_blank">«Hemos triplicado y cuadruplicado las ventas en algunos mercados europeos»</a>
+    <span class="score">25.6</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="summary"><span class="label">Resumen</span> Ferretería Online VTC ha multiplicado las ventas en algunos mercados europeos mediante marketplaces, con unas 40.000 referencias en Amazon, expansión internacional y desarrollo de marca propia. El caso muestra oportunidades de escala y competencia digital en ferretería y materiales de construcción.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para el ecommerce B2B por evidenciar la presión competitiva de los marketplaces y la importancia del surtido, la internacionalización y la marca propia.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(6,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(6,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="7">
+  <div class="card-header">
+    <span class="index">#7</span>
+    <a href="https://ecommerce-news.es/walmart-lleva-sus-ofertas-de-black-friday-a-meta-muse/" target="_blank">Walmart lleva sus ofertas de Black Friday a Meta Muse</a>
+    <span class="score">23.6</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="summary"><span class="label">Resumen</span> Walmart integra su tienda con Meta Muse para que un agente de IA busque productos, compare ofertas y prepare compras sin salir de la conversación, mediante Walmart Agent Gateway.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es un avance relevante del comercio agéntico y puede alterar la adquisición de clientes, la intermediación digital y la experiencia de compra en ecommerce.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(7,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(7,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="8">
+  <div class="card-header">
+    <span class="index">#8</span>
+    <a href="https://ecommerce-news.es/vender-la-devolucion-antes-de-que-acabe-la-temporada-asi-funciona-smart-devos-el-servicio-de-moddo-para-marketplaces/" target="_blank">Vender la devolución antes de que acabe la temporada: así funciona SMART DEVOS, el servicio de MODDO para Marketplaces</a>
+    <span class="score">22.84</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Ecommerce News </div>
+  <p class="summary"><span class="label">Resumen</span> MODDO presenta SMART DEVOS para acelerar la reventa de productos devueltos en marketplaces, un proceso que puede tardar unas tres semanas y provocar descuentos y pérdida de margen.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para el ecommerce por su impacto operativo en logística inversa, disponibilidad de inventario y rentabilidad de marketplaces.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(8,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(8,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>IA</h2>
+<div class="card" data-idx="9">
+  <div class="card-header">
+    <span class="index">#9</span>
+    <a href="https://www.cio.com/article/4251589/ai-needs-4-2-trillion-in-new-revenue-which-industries-could-create-it.html" target="_blank">AI needs $4.2 trillion in new revenue. Which industries could create it? - CIO</a>
+    <span class="score">31.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">CIO </div>
+  <p class="summary"><span class="label">Resumen</span> Bain estima que el ecosistema de IA necesitará generar 4,2 billones de dólares de nuevos ingresos para justificar la inversión en infraestructuras. El gasto de los grandes operadores podría alcanzar 780.000 millones de dólares en 2026 y 1,5 billones anuales en 2031.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La relación entre inversión masiva en infraestructura y generación de ingresos es una cuestión estructural clave para la adopción, la valoración y la sostenibilidad del sector...</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(9,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(9,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="10">
+  <div class="card-header">
+    <span class="index">#10</span>
+    <a href="https://ecosistemastartup.com/reino-unido-el-ico-pone-la-lupa-en-los-agentes-de-ia/" target="_blank">Reino Unido: el ICO pone la lupa en los agentes de IA - El Ecosistema Startup</a>
+    <span class="score">28.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> El regulador británico ICO advierte que los agentes de IA deben cumplir la normativa de protección de datos desde su diseño y anuncia posibles actuaciones contra incumplimientos. El aviso afecta especialmente a agentes que reservan, compran o transfieren datos en nombre de usuarios.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La aplicación de la normativa de privacidad introduce riesgos regulatorios y requisitos de diseño relevantes para el despliegue empresarial de agentes de IA.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(10,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(10,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="11">
+  <div class="card-header">
+    <span class="index">#11</span>
+    <a href="https://www.france24.com/es/minuto-a-minuto/20261125-meta-y-ray-ban-amenazadas-por-demandas-en-alemania-por-sus-gafas-inteligentes" target="_blank">Meta y Ray-Ban, amenazadas por demandas en Alemania por sus gafas inteligentes - France 24</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">France 24 </div>
+  <p class="summary"><span class="label">Resumen</span> Una asociación alemana de consumidores prepara acciones legales contra Meta y los fabricantes de Ray-Ban por riesgos de privacidad asociados a cámaras, audio e IA en gafas inteligentes.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Introduce un riesgo regulatorio y legal relevante para Meta y para la adopción de dispositivos de IA en Europa.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(11,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(11,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="12">
+  <div class="card-header">
+    <span class="index">#12</span>
+    <a href="https://tecnologiageek.com/shellbench-agentes-de-ia-tareas-cotidianas/" target="_blank">El mejor agente de IA aprobó solo el 62,5 % en ShellBench - Tecnología Geek</a>
+    <span class="score">26.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Tecnología Geek </div>
+  <p class="summary"><span class="label">Resumen</span> El benchmark ShellBench habría mostrado que los agentes de IA fallan con frecuencia en tareas cotidianas desordenadas, con un mejor resultado del 62,5 %. El dato apunta a limitaciones actuales de fiabilidad, memoria y gestión de instrucciones contradictorias, aunque la noticia presenta elementos no verificables.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Las pruebas de agentes en entornos reales pueden influir en la adopción empresarial y en las expectativas sobre la madurez de esta tecnología.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(12,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(12,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="13">
+  <div class="card-header">
+    <span class="index">#13</span>
+    <a href="https://ecosistemastartup.com/openai-navier-stokes-y-la-crisis-de-confianza-en-la-ciencia/" target="_blank">OpenAI, Navier-Stokes y la crisis de confianza en la ciencia - El Ecosistema Startup</a>
+    <span class="score">23.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Ecosistema Startup </div>
+  <p class="summary"><span class="label">Resumen</span> La atribución de un supuesto avance de OpenAI sobre Navier-Stokes ha generado controversia con un matemático que publicó resultados relacionados y ha reabierto el debate sobre revisión y autoría científica. El caso todavía requiere validación independiente.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Afecta a la confianza, la verificación y la gobernanza de descubrimientos científicos producidos con IA, aunque la información sigue siendo preliminar.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(13,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(13,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="14">
+  <div class="card-header">
+    <span class="index">#14</span>
+    <a href="https://es.qz.com/anthropic-zurich-office-expansion-ai-talent-healthcare-112526" target="_blank">Anthropic está expandiendo su oficina en Zúrich para aprovechar el talento en IA y los lazos con el sector de la salud. - Quartz</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Quartz </div>
+  <p class="summary"><span class="label">Resumen</span> Anthropic está ampliando su oficina de Zúrich para captar talento en IA y reforzar sus vínculos con el sector sanitario. La expansión incluye nuevas instalaciones para investigación en Suiza.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Refuerza la capacidad de un actor clave de la IA y su posicionamiento en un sector empresarial sensible como la salud.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(14,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(14,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="15">
+  <div class="card-header">
+    <span class="index">#15</span>
+    <a href="https://www.neoteo.com/es/que-verifico-lean-en-los-algoritmos-cuanticos-de-deepmind" target="_blank">Qué verificó Lean en los algoritmos cuánticos de DeepMind - NeoTeo</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">NeoTeo </div>
+  <p class="summary"><span class="label">Resumen</span> Google DeepMind combinó agentes Gemini 4 con Lean para diseñar y verificar circuitos de menor coste en cinco problemas cuánticos. Los resultados son simulaciones y verificación formal, no ejecuciones en hardware cuántico.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la evolución de agentes especializados, razonamiento formal y optimización de modelos, aunque su impacto práctico aún es preliminar.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(15,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(15,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="16">
+  <div class="card-header">
+    <span class="index">#16</span>
+    <a href="https://www.neoteo.com/es/apple-fija-limites-diarios-a-siri-ai-icloud-no-los-amplia-en-espana" target="_blank">Límite de Siri AI e iCloud+ en España: uso diario - NeoTeo</a>
+    <span class="score">21.75</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">NeoTeo </div>
+  <p class="summary"><span class="label">Resumen</span> Apple aplica límites diarios por dispositivo y categoría a ciertas funciones de Siri y Apple Intelligence, sin ampliar esos cupos mediante iCloud+ en España. La exclusión de la Unión Europea condiciona el acceso a funciones avanzadas.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Es relevante para la disponibilidad y adopción de IA de Apple en Europa, pero su impacto estratégico parece limitado y principalmente operativo.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(16,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(16,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<h2>Cartera — compañías</h2>
+<div class="card" data-idx="17">
+  <div class="card-header">
+    <span class="index">#17</span>
+    <a href="https://elcomercio.pe/tecnologia/ciberseguridad/microsoft-declara-codigo-rojo-tras-la-historica-caida-de-outlook-y-teams-que-significa-noticia/" target="_blank">Microsoft declara “código rojo” tras la histórica caída de Outlook y Teams, ¿qué significa? - El Comercio Perú</a>
+    <span class="score">31.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">El Comercio Perú </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft activó un “código rojo” interno tras una caída mundial de Outlook, Teams y otros servicios de Microsoft 365 durante casi 24 horas. La compañía revisará sus sistemas para evitar nuevas interrupciones masivas.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La interrupción expone riesgos operativos, de fiabilidad y reputación en una plataforma empresarial clave, con posible impacto comercial si se repite.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(17,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(17,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="18">
+  <div class="card-header">
+    <span class="index">#18</span>
+    <a href="https://www.neoteo.com/es/chatmate-la-cadena-de-ataque-reportada-contra-microsoft-365-copilot" target="_blank">Ataque ChatMate a Copilot: etapas y parche reportado - NeoTeo</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">NeoTeo </div>
+  <p class="summary"><span class="label">Resumen</span> La investigación ChatMate describe una cadena de ataque contra Microsoft 365 Copilot que podía explotar documentos preparados y el entorno de ejecución, con una corrección del lado del servidor reportada por Microsoft.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La vulnerabilidad afecta a la seguridad, confianza empresarial y posibles costes regulatorios de uno de los productos estratégicos de Microsoft.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(18,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(18,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="19">
+  <div class="card-header">
+    <span class="index">#19</span>
+    <a href="https://www.tikr.com/es/blog/warning-for-nvidia-investors-satya-nadella-calls-its-75-margin-a-remarkable-situation" target="_blank">Warning for Nvidia Investors: Satya Nadella Calls Its 75% Margin “a Remarkable Situation” - TIKR.com</a>
+    <span class="score">27.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">TIKR.com </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft estudia reducir costes de IA ejecutando modelos con cierto retraso respecto a la frontera tecnológica y prolongando el uso de GPU antiguas, lo que podría presionar el margen de NVIDIA. Aun así, la escasez mantiene precios elevados para algunos chips Hopper.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La noticia afecta directamente a la tesis de NVIDIA al contraponer su fuerte poder de fijación de precios con el creciente poder de negociación y eficiencia de grandes clientes...</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(19,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(19,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="20">
+  <div class="card-header">
+    <span class="index">#20</span>
+    <a href="https://www.autobild.es/coche-electrico/he-probado-byd-sealion-7-un-suv-electrico-chino-con-virtudes-para-que-se-preocupe-competencia-europea-pero-tambien-con-algunas-carencias_7065207_0.html" target="_blank">He probado el BYD Sealion 7: un SUV eléctrico chino con virtudes para que se preocupe la competencia europea, pero también con algunas carencias - autobild.es</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">autobild.es </div>
+  <p class="summary"><span class="label">Resumen</span> La prueba del BYD Sealion 7 destaca su tamaño, potencia y posicionamiento como SUV eléctrico capaz de competir con marcas europeas, aunque también señala algunas carencias. Refuerza la presión competitiva de BYD en el mercado europeo.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El producto ofrece señales sobre la capacidad de BYD para ganar cuota y desafiar a fabricantes europeos, con posible impacto en su posición competitiva y valoración.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(20,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(20,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="21">
+  <div class="card-header">
+    <span class="index">#21</span>
+    <a href="https://www.profesionalreview.com/2026/11/25/microsoft-lanza-uno-de-los-mini-pc-con-rtx-spark-mas-compactos-del-mercado/" target="_blank">Microsoft lanza uno de los Mini PC con RTX Spark más compactos del mercado - Profesional Review</a>
+    <span class="score">26.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Profesional Review </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft lanzó el Surface RTX Spark Dev Box, un mini PC orientado a desarrollo con 128 GB de memoria y un precio de 5.999,99 dólares.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> El producto refuerza la presencia de Microsoft en hardware y computación de IA, aunque su impacto financiero inmediato parece limitado.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(21,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(21,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="22">
+  <div class="card-header">
+    <span class="index">#22</span>
+    <a href="https://www.muycanal.com/2026/11/25/arrow-plataforma-arrowsphere" target="_blank">Arrow incorpora una plataforma de ventas en ArrowSphere - MuyCanal</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">MuyCanal </div>
+  <p class="summary"><span class="label">Resumen</span> Arrow amplía ArrowSphere Cloud con un portal de ventas que integra datos de Microsoft, AWS y la propia plataforma para gestionar oportunidades, consumo, suscripciones y renovaciones.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La iniciativa puede mejorar la monetización recurrente y la eficiencia comercial de Arrow en distribución cloud, con impacto potencial en su posición competitiva.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(22,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(22,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="23">
+  <div class="card-header">
+    <span class="index">#23</span>
+    <a href="https://www.neoteo.com/es/vs-code-como-funcionan-sus-routers-de-modelos" target="_blank">VS Code: cómo funcionan sus routers de modelos - NeoTeo</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">NeoTeo </div>
+  <p class="summary"><span class="label">Resumen</span> Microsoft documentó una función experimental de VS Code que enruta solicitudes de Copilot hacia distintos modelos según el tipo de tarea.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> La capacidad refuerza la integración de modelos y la eficiencia del ecosistema de desarrollo de Microsoft, aunque todavía es experimental y de impacto financiero incierto.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(23,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(23,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="card" data-idx="24">
+  <div class="card-header">
+    <span class="index">#24</span>
+    <a href="https://autotest.com.ar/noticias/aprovecha-la-rebaja-byd-song-pro-dm-i-suv-compite-fuerte-con-el-toyota-corolla-cross/" target="_blank">Casi 6 millones de pesos más barato que el Toyota Corolla Cross: el SUV con 1.000 km de autonomía declarada y pantalla de 12,8 pulgadas - Auto Test</a>
+    <span class="score">22.0</span>
+    <span class="llm-yes" title="LLM: relevante">&#9733;</span>
+    
+  </div>
+  <div class="meta">Auto Test </div>
+  <p class="summary"><span class="label">Resumen</span> BYD rebaja el SUV híbrido enchufable Song Pro DM-i y lo posiciona por debajo del Toyota Corolla Cross, reforzando su atractivo comercial. La oferta está limitada a noviembre y a determinadas unidades.</p>
+  <p class="relevance"><span class="label">Por qué importa</span> Puede afectar a la demanda, el posicionamiento competitivo y las perspectivas comerciales de BYD en el mercado de vehículos electrificados.</p>
+  <div class="fb-buttons">
+    <button class="fb-btn fb-btn-ok" onclick="toggleFb(24,'ok')" title="Relevante">&#128077;</button>
+    <button class="fb-btn fb-btn-no" onclick="toggleFb(24,'no')" title="No relevante">&#128078;</button>
+  </div>
+</div>
+<div class="stats">
+  <p>168 noticias procesadas (173 brutas)</p>
+  <p>Selección editorial: 24 items en 5 secciones</p>
+  <p>Fetch: 168 intentados · 136 verificados · 32 excluidos por no verificación</p>
+  <p>Duplicados filtrados: 43 por storyline, 1 cross-topic</p>
+  <p>Radar: 12 items en seguimiento</p>
+  <p>Fuentes con fallo: 2</p>
+</div>
+<div class="radar-card"><h2>📡 Radar / pendientes</h2><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/dpr-exec-healthcare-builds-tech-ai-robots/875678/" target="_blank">DPR exec details how tech is changing healthcare builds</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La adopción de IA puede mejorar planificación, productividad y control operativo en la construcción, con posibles efectos sobre la demanda y el servicio de distribuidores de...</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/apartment-projects-start-construction/875718/" target="_blank">3 apartment projects start construction</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> El inicio de nuevas promociones aporta una señal positiva, aunque localizada en Estados Unidos, para la demanda de materiales de construcción.</p></div><div class="card radar"><div class="card-header"><a href="https://www.reuters.com/business/energy/eni-repsol-pledge-invest-2-billion-venezuela-jvs-2026-11-25/" target="_blank">Eni, Repsol pledge to invest $2 billion in Venezuela JVs - Reuters</a></div><div class="meta">Reuters</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Puede afectar a la tesis de inversión mediante cambios en crecimiento, generación de beneficios, acceso a reservas y riesgo regulatorio y geopolítico.</p></div><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/linkedin-recupera-el-concepto-de-las-tarjetas-de-visita-con-un-nuevo-formato-digital-y-personalizable/" target="_blank">LinkedIn recupera el concepto de las tarjetas de visita con un nuevo formato digital y personalizable</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Tiene escaso impacto estratégico sobre el ecommerce B2B al ser principalmente una funcionalidad de networking sin efectos comerciales demostrados.</p></div><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/ibericomio-apuesta-por-transparencia-dropshipping-y-expansion-internacional/" target="_blank">Ibericomio apuesta por transparencia, dropshipping y expansión internacional</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Aporta una referencia comercial sobre confianza y modelos digitales, pero su enfoque principalmente B2C limita la aplicabilidad directa al ecommerce B2B.</p></div><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/pinterest-permite-a-los-padres-limitar-el-contenido-generado-por-ia-que-ven-sus-hijos/" target="_blank">Pinterest permite a los padres limitar el contenido generado por IA que ven sus hijos</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> La medida afecta a seguridad y moderación de contenidos en redes sociales, pero no tiene una conexión estratégica directa con ecommerce B2B o procurement.</p></div><div class="card radar"><div class="card-header"><a href="https://www.constructiondive.com/news/ny-ag-workers-comp-deadline-construction-settlement/875765/" target="_blank">NY AG extends workers’ comp deadline in $1.4M construction firm settlement</a></div><div class="meta">Construction Dive - Latest News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es un caso legal específico sin impacto material identificable sobre la distribución de materiales, el canal profesional o la demanda sectorial.</p></div><div class="card radar"><div class="card-header"><a href="https://ecommerce-news.es/canva-presenta-las-tendencias-de-diseno-que-marcaran-el-2027/" target="_blank">Canva presenta las tendencias de diseño que marcarán el 2027</a></div><div class="meta">Ecommerce News</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una pieza de tendencias creativas sin impacto relevante en plataformas B2B, procurement, distribución o comercio electrónico profesional.</p></div><div class="card radar"><div class="card-header"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQbFRoNTd4cHZJRGR6UE0xczRLTVBUaXJiQ2Q1ODVxNjVzMWtNci1YTDJXeVFrQS1zTUhuRWprZlVwVXFHTFpQdF9GY2ZRSlBrTGZBY2EyWkRpN0p0VVBfM0xqM0FMR3dUNGR5S1hidWtScHZ5cWJZWW1hbGJmYUZvZWY4T3VqRTJxTkh1OVQ0LVVIY3RMbVRvdkhVU0IxZlVhTDR4b2RvTV9PUXFHejlfcEVvTdIBuAFBVV95cUxQSGY4TGk4Q1VNbXVTN3owejNLd2pLT3lXeXd5WGVRLWcxTF9nSGJJOEFtT0VWS2pESmdHV0prbTJ5a0hKUHc3N3JDNVhlUHVoZVcyRk9zQm1maDRaYTJqUGlkV0o1TXBNUHVuNDZaNFVjbDFkbVp4cGFIQWNmQjBlbkRsSWhObHB6bEhJMXdzaUpUSXoxU3dPR1RmYVc2NDFMVG5Ec3FLRlJGZW5ESlBXTXdxWWd5R181?oc=5" target="_blank">Deutsche Asset Management adapts one of its ETFs to track the S&amp;P 1000 index - Demócrata</a></div><div class="meta">Demócrata</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es relevante para el seguimiento de ETFs e índices de la cartera, aunque no se detallan el fondo ni sus implicaciones operativas.</p></div><div class="card radar"><div class="card-header"><a href="https://pasqualepillitteri.it/es/news/36717/abacus-ai-chatllm-deepagent-planes-guia" target="_blank">Abacus AI, qué es ChatLLM y cuánto cuesta frente a ChatGPT y Claude - Pasquale Pillitteri</a></div><div class="meta">Pasquale Pillitteri</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Es una comparación superficial de herramientas de IA sin impacto estructural, regulatorio o competitivo significativo.</p></div><div class="card radar"><div class="card-header"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQUy16dXFlbFlhanV2QXNQeHFWLWZZdm9vdS1tZkpZaURUWWp1YlpTdFRiM1FwNS1CQUw4Nm5zV1dKRl9lNGNfbU9uMEdleEJyVjRoNk1zLVBzYWJGeEwybUxoOUptUGV3d25LaHZKOF9MQjA4VzdNN1p3YnZyWWREQW5vMlVPUWdrekNIV0Y0WjNJZnZnQVNaY0Fya0tPX2pwcVBWVmlXay1XU0JWRGdmTEM1VHV5dGFNeWNiXzdUR214MUo2?oc=5" target="_blank">Musk Says Grok Bot Can Find the “Best Black Friday Deals.” Grok Already Places 24% of AI Agent Orders - TIKR.com</a></div><div class="meta">TIKR.com</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> El comercio ejecutado por agentes podría ser relevante para la adopción de IA, pero la evidencia presentada es insuficiente y sensacionalista.</p></div><div class="card radar"><div class="card-header"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPZGhreWo3N3ZmM3E0QWhIREdjYzJ1b1JVQWNBWG5aX3paTFA0NzYxajZBMG9rdlZlNUVmdGduNHpNXzVyY2tCcFVrcVpzLVdWT0FnYk9NOTlQcnZ4dDVqVmJOVGd6YW01aURSSGVPMk9uOFRELWdYRVNlS2NXem9zbVVLY0xvaEFsNTJ0ZXNZVTFFejEwNmVzalZiYzVsT3JfLVF4YUxCNFJYQVhR?oc=5" target="_blank">Microsoft confirma problemas de autenticación tras las actualizaciones de noviembre - Mezha.net</a></div><div class="meta">Mezha.net</div><p class="relevance"><span class="label">Estado</span> unverified content</p><p class="summary"><span class="label">Señal</span> Los fallos de autenticación pueden afectar la fiabilidad de sus servicios y generar costes de soporte, aunque faltan detalles sobre alcance e impacto.</p></div></div>
+<div class="feedback-panel" id="fbPanel" style="display:none">
+  <div class="fb-summary" id="fbSummary"></div>
+  <textarea id="fbText" class="fb-text" readonly placeholder="Aquí aparecerá el feedback listo para pegar en Telegram"></textarea>
+  <button class="fb-copy-btn" onclick="copyAllFb()" id="fbCopyBtn">Copiar feedback para Telegram</button>
+</div>
+</div>
+<script>
+var fbDate = document.querySelector('.subtitle').textContent.match(/\d{4}-\d{2}-\d{2}/);
+fbDate = fbDate ? fbDate[0] : '';
+var fbState = {};
+
+function toggleFb(idx, val) {
+  var card = document.querySelector('[data-idx="'+idx+'"]');
+  var okBtn = card.querySelector('.fb-btn-ok');
+  var noBtn = card.querySelector('.fb-btn-no');
+  if (fbState[idx] === val) {
+    delete fbState[idx];
+    okBtn.classList.remove('active');
+    noBtn.classList.remove('active');
+  } else {
+    fbState[idx] = val;
+    okBtn.classList.toggle('active', val === 'ok');
+    noBtn.classList.toggle('active', val === 'no');
+  }
+  updatePanel();
+}
+
+function updatePanel() {
+  var panel = document.getElementById('fbPanel');
+  var summary = document.getElementById('fbSummary');
+  var fbText = document.getElementById('fbText');
+  var keys = Object.keys(fbState);
+  if (keys.length === 0) {
+    panel.style.display = 'none';
+    if (fbText) fbText.value = '';
+    return;
+  }
+  panel.style.display = 'block';
+  var okList = [], noList = [];
+  keys.forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  okList.sort(function(a,b) { return Number(a) - Number(b); });
+  noList.sort(function(a,b) { return Number(a) - Number(b); });
+  var parts = [];
+  if (okList.length) parts.push(okList.length + ' relevantes');
+  if (noList.length) parts.push(noList.length + ' no relevantes');
+  summary.textContent = parts.join(', ') + ' marcadas';
+  if (fbText) fbText.value = buildFbMessage();
+}
+
+function buildFbMessage() {
+  var okList = [], noList = [];
+  Object.keys(fbState).forEach(function(k) {
+    if (fbState[k] === 'ok') okList.push(k);
+    else noList.push(k);
+  });
+  var lines = ['nw feedback ' + fbDate];
+  if (okList.length) lines.push('ok ' + okList.join(' '));
+  if (noList.length) lines.push('no ' + noList.join(' '));
+  return lines.join('\n');
+}
+
+function copyAllFb() {
+  var text = buildFbMessage();
+  var btn = document.getElementById('fbCopyBtn');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(btn);
+    }).catch(function() {
+      fallbackCopy(btn, text);
+    });
+  } else {
+    fallbackCopy(btn, text);
+  }
+}
+
+function fallbackCopy(btn, text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); showCopied(btn); }
+  catch(e) { alert(text); }
+  document.body.removeChild(ta);
+}
+
+function showCopied(btn) {
+  btn.textContent = '\u2713 Copiado - pega en Telegram';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Copiar feedback para Telegram';
+    btn.classList.remove('copied');
+  }, 2500);
+}
+</script>
+</body></html>
